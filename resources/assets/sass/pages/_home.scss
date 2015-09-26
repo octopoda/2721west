@@ -57,7 +57,11 @@ body {
 
 .app-container {
 	background:$white;
-	padding:rem-calc(20);
+	padding:rem-calc(10);
+
+	@include breakpoint('large-phone') {
+		padding: rem-calc(20);
+	}
 }
 
 
@@ -90,6 +94,8 @@ body {
 		color:$gray;
 		font-family:$header-font;
 		text-align: left;
+		margin-right:rem-calc(-20);
+		margin-left:rem-calc(-20);
 	}
 
 	&--hello {
@@ -101,6 +107,7 @@ body {
 	h1 {
 		margin-top:rem-calc(5);
 		font-size:rem-calc(30);
+
 	}
 
 	h3 {
@@ -111,6 +118,8 @@ body {
 	h5 {
 		font-weight:100;
 		margin-bottom:0;
+		margin-right:rem-calc(-20);
+		margin-left:rem-calc(-20);
 	}
 
 
@@ -127,6 +136,14 @@ body {
 
 	.red {
 		color:$red;
+	}
+
+
+	@include breakpoint('large-phone') {
+		h1, h3, h5 {
+			margin-left:0;
+			margin-right:0;
+		}
 	}
 
 
@@ -326,16 +343,24 @@ body {
 	li {
 		@include clearMP;
 		list-style:none;
-		display: inline-block;
-		margin-right:rem-calc(35);
+		display:block;
+		margin-left:rem-calc(-20);
+	}
+
+	@include breakpoint('tablet') {
 		
+		li {
+			display: inline-block;
+			margin-right:rem-calc(35);
+			margin-left:0;
+			
+			a {
+				cursor:pointer;
 
-		a {
-			cursor:pointer;
-
-			i {
-				display: inline-block;
-				margin-left:rem-calc(5);
+				i {
+					display: inline-block;
+					margin-left:rem-calc(5);
+				}
 			}
 		}
 	}

@@ -33,7 +33,7 @@
 
       <div data-into class="into tablet-down">
         <section class="home__case-studies">
-          @include('layouts.front.projects');                        
+          @include('layouts.front.projects')                    
         </section>
       </div>
 

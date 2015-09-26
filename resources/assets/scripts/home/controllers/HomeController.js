@@ -144,6 +144,7 @@
          * @return {object} 
          */
         function fillCompanyInformation(guid) {
+            if (guid == '') {return}
             var data = companyDataService.getData();
             
             if (data == undefined) {
