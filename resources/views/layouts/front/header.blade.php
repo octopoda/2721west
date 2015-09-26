@@ -65,7 +65,12 @@
 
   
   <!-- CSS: implied media="all" -->
-  <link rel="stylesheet" href="{{ $pageInfo['assetPath'] }}/css/app.min.css">
+  @if ($app->enviroment('local'))
+    <link rel="stylesheet" href="assets/css/app.min.css">
+  @elseif ($app->enviroment('production')) 
+    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css">
+  @endif
+
   <base href="/">
   
   <!--[if lt IE 9]>
