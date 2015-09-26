@@ -3,6 +3,7 @@
 
 @section('content')
     <div data-ng-controller="HomeController as vm" class="home__wrapper">
+      
       @if (session()->has('guid'))
           <div data-ng-init="vm.fillCompanyInformation('{{ Session::get('guid') }}')"></div>
       @endif 

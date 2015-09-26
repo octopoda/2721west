@@ -21,12 +21,8 @@
        |
        */      
 
-       
-
         vm.errors = false;
         
-        
-
         vm.titles  = [
             'Designer and Full Stack Developer',
             'Hybrid',
@@ -156,9 +152,9 @@
                     vm.fullName = data.first_name + ' ' + data.last_name;
                     common.sendHook(data.company + ' is visiting the site', 'Get excited because '  +  vm.fullName  + ' is checking out your shit');
                 });
-            } else {
-                vm.fullName = data.first_name + ' ' + data.last_name;
-            }
+            } 
+
+            return false;
             
         }
 

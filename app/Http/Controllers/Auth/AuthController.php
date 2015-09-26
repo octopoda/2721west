@@ -48,7 +48,7 @@ class AuthController extends Controller {
 	 * @return redirect 
 	 */
 	public function getRegister() {
-		return redirect('/');
+		// return redirect('/');
 	}
 
 	/**
@@ -56,7 +56,7 @@ class AuthController extends Controller {
 	 * @return redirect
 	 */
 	public function postRegister() {
-		return redirect('/');
+		// return redirect('/');
 	}
 
 	/**

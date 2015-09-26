@@ -58,8 +58,10 @@ $dev: false !default;
 
 @if $dev { 
 	$imagePath: '/assets/images/';
+	$fontPath: '/assets/fonts';
 } @else  {
 	$imagePath: 'https://s3.amazonaws.com/2721west-assets/images/';
+	$fontPath: 'http://2721west.com/assets/fonts';
 }
 
 
@@ -67,7 +69,7 @@ $icon: '#{$imagePath}icons/';
 $assetbuilder-image: '#{$imagePath}assetbuilder';
 $innovation-image: '#{$imagePath}innovation';
 $flds-image: '#{$imagePath}flds';
-$fontPath: '/assets/fonts';
+
 
 
 /**
