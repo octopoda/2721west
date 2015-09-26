@@ -46,8 +46,11 @@
   <meta name="msapplication-square310x310logo" content="images/icons/large.jpg"/>
 	
   <!-- CSS: implied media="all" -->
-  <link rel="stylesheet" href="/assets/css/app.min.css">
-  <base href="/">
+  @if ($app->environment('local'))
+    <link rel="stylesheet" href="assets/css/app.min.css">
+  @elseif ($app->environment('production')) 
+    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css">
+  @endif
 
   
   <!--[if lt IE 9]>
