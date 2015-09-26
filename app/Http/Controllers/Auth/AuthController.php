@@ -47,17 +47,17 @@ class AuthController extends Controller {
 	 * Remove Registration View from the site
 	 * @return redirect 
 	 */
-	public function getRegister() {
-		// return redirect('/');
-	}
+	// public function getRegister() {
+	// 	return redirect('/');
+	// }
 
 	/**
 	 * Removing Registartion from the site
 	 * @return redirect
 	 */
-	public function postRegister() {
-		// return redirect('/');
-	}
+	// public function postRegister() {
+	// 	return redirect('/');
+	// }
 
 	/**
 	 * Get the Csrf Token
