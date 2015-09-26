@@ -1,0 +1,96 @@
+.row {
+    @include container;
+		
+    padding-left:rem-calc(20);
+    padding-right:rem-calc(20);
+
+    @include breakpoint('laptop') {
+    	padding:0;
+    }
+}
+
+
+.g-two-columns {
+	@include breakpoint('tablet') {
+		section, article, p {
+			@include clearMP;
+			@include span(6 of 12);		
+			&:last-child {@include last;}
+
+			span {
+				display: block;
+				width:70%;
+				margin:auto;
+			}
+		}
+
+		
+	}
+
+
+}
+
+
+/** Three Coloums with Padding */
+.g-three-columns{
+	
+	@include breakpoint('tablet') { 
+		section {
+				@include clearMP;
+				@include span(4 of 12);
+				&:last-child { @include last;}
+
+				span {
+					width:80%;
+					display: block;
+				}
+		}
+	}
+
+	&__no-gutters {
+		
+		@include breakpoint('tablet') { 
+			section {
+				@include clearMP;
+				@include span(4 of 12 wide no-gutters);
+	
+				&:last-child { @include last;}
+			}
+		}	
+	
+	}
+}
+
+
+/** Four Column Grids */
+.g-four-columns{
+	section, article, div {
+		padding:rem-calc(20);
+		margin-bottom:rem-calc(20);
+	}
+	
+	
+	@include breakpoint('tablet-only') {
+		section, article, div {
+			@include clearMP();
+			@include span(6 of 12);
+			&:nth-child(even) { @include last;}
+			padding:rem-calc(20);
+			margin-bottom: rem-calc(20);
+		}
+	}
+
+	@include breakpoint('laptop') { 
+		section, article, div {
+				@include span(3 of 12);
+				&:last-child { @include last;}
+		}
+	}
+
+
+
+}
+
+
+
+

@@ -1,0 +1,274 @@
+<?php namespace twentyseven\Http\Controllers;
+
+use twentyseven\Http\Requests\MailRequest;
+use twentyseven\Http\Controllers\Controller;
+
+use Illuminate\Http\Request;
+use twentyseven\ProjectImage;
+use twentyseven\Repositories\ProjectRepository;
+
+use Illuminate\Contracts\Filesystem\Cloud as Cloud;
+use Illuminate\Contracts\Mail\Mailer;
+
+use Session;
+use Mail;
+
+use twentyseven\User;
+
+
+class PagesController extends Controller {
+
+	public $project;
+	protected $mailer;
+	protected $assetPath;
+
+	function __construct(ProjectRepository $project, Mailer $mailer) {
+		$this->project = $project;
+		$this->mailer = $mailer;
+
+		$this->dev = env('DEV');
+		$this->setAssets();
+	}
+
+/*
+|--------------------------------------------------------------------------
+| Site Setup
+|--------------------------------------------------------------------------
+|
+| Description 1
+|  Description 2
+| 
+|
+*/	
+	/**
+	 * Sets up the assets based on Dev mode or not.
+	 */
+	protected function setAssets() {
+		if ($this->dev) {
+			$this->assetPath = "/assets";
+		} else {
+			$this->assetPath = "https://s3.amazonaws.com/2721west-assets";
+		}
+	}
+
+
+	protected function sendAHook($title, $message) {
+		$data = [
+		    'hooksTitle'    => $title,
+		    'hooksMessage'  => $message,
+		    'hooksApi'      => env('HOOKS_API')
+		];
+		
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, 'http://hooks.events/hooks/post.php');
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded'));
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_exec($ch);
+		curl_close ($ch);
+	}
+
+
+/*
+|--------------------------------------------------------------------------
+| API Calls
+|--------------------------------------------------------------------------
+|
+| Methods to do something with inforamtion but not specifically 
+| for the site views.
+|
+*/
+
+	/**
+	 * Puts the Guid into the session for comapny information
+	 * @param  string $guid 
+	 * @return        
+	 */
+	public function guid($guid) {
+		Session::put('guid',  $guid);
+		return redirect('/');
+	}
+
+	/**
+	 * Handle the Mail Request 
+	 * @param  MailRequest $request [description]
+	 * @return [type]               [description]
+	 */
+	public function mail(MailRequest $request) {
+		Mail::send('emails.test', ['request' => $request], function ($m) use ($request) {
+			$m->to($request['email'], $request['name'])->from('zack@2721west.com')->subject('Someone wants to talk to you from 2721west.com');
+			$this->sendAHook("You're About to Get Mail from ", $request['email'] . " from 2721west want to contact you");
+		});
+
+		return Mail::failures();
+	}
+
+
+	public function mailTest() {
+		$this->sendAHook("You're About to Get Mail", "Someone from 2721west want to contact you");
+	}
+
+
+
+/*
+|--------------------------------------------------------------------------
+| About Views
+|--------------------------------------------------------------------------
+|
+| These views are about Me and will show contact on the phone
+|
+*/
+
+	public function index() {
+		$pageInfo = [
+			'pageTitle'  => "Zack Davis Digital Designer / Full Stack Developer",
+			'pageDesc' => 'Zack Davis is a Digital Designer and Full Stack Developer who is passionate about solving problems.',
+			'navigation' => 'show-contact',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/icons/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer'
+		];
+
+		return view('pages.index', compact('pageInfo'));
+	}
+
+
+
+	public function about() {
+		$pageInfo = [
+			'pageTitle'  => "About Zack Davis Digital Designer / Full Stack Developer",
+			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
+			'navigation' => 'show-work',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/icons/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer'
+		];
+
+		return view('pages.about', compact('pageInfo'));
+	}
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Work Views -- Case Studies
+|--------------------------------------------------------------------------
+|
+| These Views are about My work and will show work on the phone
+| 
+|
+*/
+
+
+	public function flds() {
+		$pageInfo = [
+			'pageTitle'  => "Faith Lutheran Day School - Case Study by Zack Davis",
+			'pageDesc' => 'Zack Davis has been working with Faith Lutheran Day School for the past two years to build a top of the line website to increase communication and awareness with the local community.',
+			'navigation' => 'show-work',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/flds/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Website Strategy, Website Planning, Website Development'
+		];
+
+		return view('pages.flds', compact('pageInfo'));
+	}
+
+	public function innovation() {
+		$pageInfo = [
+			'pageTitle'  => "Innovation Compounding Branding - Case Study by Zack Davis",
+			'pageDesc' => 'Zack Davis strategized with Innovation Compounding to build a new brand and a architecture for there new enterprise application.',
+			'navigation' => 'show-work',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/innovation/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Company Branding, Site Architecture' 
+		];
+
+		return view('pages.innovation', compact('pageInfo'));
+	}
+
+	public function assetbuilder() {
+		$pageInfo = [
+			'pageTitle'  => "AssetBuilder Website - Case Study by Zack Davis",
+			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
+			'navigation' => 'show-work',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/assetbuilder/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Company Branding, Creative Direction, Front-end Development'
+		];
+
+		return view('pages.assetbuilder', compact('pageInfo'));
+	}	
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Work Views -- Show Cases
+|--------------------------------------------------------------------------
+|
+| 
+|
+*/	
+
+	/**
+	 * My Marks View
+	 * @return [type] [description]
+	 */
+	public function marks() {
+		$pageInfo = [
+			'pageTitle'  => "Various Branding Marks - Zack Davis Digital Designer / Full Stack Developer",
+			'pageDesc' => 'Various Branding Marks Zack Davis has completed in the past 2 years.',
+			'navigation' => 'show-work',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/logos/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Logos, Identity Marks'
+		];
+		
+		return view('pages.logos', compact('pageInfo'));
+	}
+
+	
+	/**
+	 * Aiga Design Week View
+	 * @return [type] [description]
+	 */
+	public function aiga() {
+		$pageInfo = [
+			'pageTitle'  => "AIGA Design Week -- Show case by Zack Davis",
+			'pageDesc' => 'Zack Davis designed and developed the mobile application for AIGA DFW Design Week 2014.',
+			'navigation' => 'show-work',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/aiga/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, AIGA, Board Member, Web Application, Mobile Application'
+		];
+
+		return view('pages.aiga', compact('pageInfo'));
+	}
+
+
+	/**
+	 * Dbu View
+	 * @return [type] [description]
+	 */
+	public function dbu() {
+		$pageInfo = [
+			'pageTitle'  => "Dallas Baptist University - Graduate School of Business - Showcase by Zack Davis",
+			'pageDesc' => 'Zack Davis worked with DXZ to design and develop a new website for the Dallas Baptist University Graduate School of Business.',
+			'navigation' => 'show-work',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath + '/images/dbu/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Joomla,  Website, Development'
+		];
+
+		return view('pages.dbu', compact('pageInfo'));
+	}
+
+
+	
+	
+
+}

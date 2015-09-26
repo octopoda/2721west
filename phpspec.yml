@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: twentyseven
+        psr4_prefix: twentyseven
+        src_path: app

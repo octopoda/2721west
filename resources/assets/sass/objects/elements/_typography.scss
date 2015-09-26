@@ -1,0 +1,246 @@
+/*
+|--------------------------------------------------------------------------
+| Site Typography
+|--------------------------------------------------------------------------
+|
+| All Element Typography is handled below
+|
+*/
+
+h1 {
+	font-size:rem-calc(50);
+	line-height:1.2;
+	
+
+	@include breakpoint('tablet') {
+		line-height:1.61;
+	}
+}
+
+h2 {
+	font-size:rem-calc(38);
+	line-height:$base-line-height;
+	font-family:$header-font;
+	
+	color:$gray;
+
+
+	@include breakpoint('laptop') {
+		font-size:rem-calc(42);
+		line-height:rem-calc(54);
+	}
+}
+
+h3 {
+	font-size:rem-calc(42);
+	line-height:1.2;
+	font-family:$header-font;
+
+	@include breakpoint('tablet') {
+		line-height:$base-line-height;
+	}
+
+}
+
+h4 {
+	font-size:rem-calc(24);
+	line-height:$base-line-height;
+	font-family:$header-font;
+
+
+}
+
+h5 {
+	font-size:rem-calc(20);
+	line-height:$base-line-height;
+	
+}
+
+blockquote {
+	font-size:rem-calc(18);
+	line-height:1.81;
+	
+}
+
+p {
+	font-size:rem-calc(16);
+	line-height:$base-line-height;
+	font-family:$body-font-family;
+	font-weight:100;
+	
+
+	&.large {
+		font-size:rem-calc(20);
+	}
+
+	&.small {
+		font-size:rem-calc(14);
+	}
+
+	@include breakpoint('laptop') {
+		font-size:rem-calc(18);;
+	}
+}
+
+strong, b {
+	
+	font-weight:bold;
+}
+
+li {
+	font-size:rem-calc(16);
+	line-height:$base-line-height;
+	font-weight:100;
+
+
+	.large &{
+		font-size:rem-calc(20);
+		line-height: $base-line-height;
+	}
+
+	@include breakpoint('laptop') {
+		font-size:rem-calc(16);
+		line-height:$base-line-height;
+
+		.large &{
+			font-size:rem-calc(20);
+			line-height: $base-line-height;
+		}
+	}
+}
+
+
+
+
+/**
+ * Navigation
+ */
+nav {
+	@include displayList(block);
+
+	ul {
+		text-align: center;
+	}
+
+	li {
+		list-style:none;
+	}
+
+	a {text-decoration:none;}
+
+	@include breakpoint('tablet') {
+		li {
+			display: inline-block;
+		}
+	}	
+}
+
+
+
+/**
+ * Links
+ */
+
+a {
+	color:$red;
+	text-decoration: none;
+
+	&:hover {
+		color:$black;
+	}
+}
+
+
+
+
+
+
+/** Placement Styles */
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+/**Other Styles */
+.legal {
+	font-size:$font-size-small;
+	color:$gray;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Site Specific Type
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+.copy {
+	width:100%;
+
+
+	h3 {
+		color:$red;
+		text-align: center;
+	}
+
+	p:first-child {
+		margin-top:0;
+	}
+
+
+
+	@include breakpoint('tablet') {
+		width:span(8 of 12);
+		margin:auto;
+
+		.across {
+			width:span(8 of 8 10);
+			margin:auto;
+			margin-bottom:rem-calc(30);;
+		}
+
+		.left-col-two {
+			margin-top:0;
+			@include span(4 of 8 10);
+		}
+
+		.right-col-two {
+			margin-top:0;
+			@include span(4 of 8 10);
+			@include last;
+		}
+
+
+		.right-col-three {
+			@include span(4 of 12 10);
+		}
+
+
+		.mid-col-three {
+			@include span(4 of 12 10);
+		}
+
+		.left-col-three {
+			@include span(4 of 12 10);
+			@include last;
+		}
+	}
+	
+	@include breakpoint('desktop') {
+		width: span(6 of 12);
+		margin:auto;
+	}
+
+}
+
+

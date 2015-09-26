@@ -1,0 +1,27 @@
+/**
+ * Button Container
+ */
+
+
+button, .button {
+	@include clearMP;
+
+
+	border:none;
+	outline:none;
+	background:$red;
+	padding:rem-calc(8) rem-calc(15);
+	color:$white;
+	
+
+	a {
+		color:$white;
+	}
+
+	&:hover {
+		background:darken($red, 10%);
+	}
+}
+
+
+

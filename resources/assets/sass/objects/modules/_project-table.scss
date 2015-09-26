@@ -1,0 +1,167 @@
+.project-table {
+	width:100%;
+}
+
+/**
+ * Titles
+ */
+.project-table__title {
+	width:100%;
+	border-bottom:2px solid $gray;
+
+	h3 {
+		margin-bottom:0;
+	}
+}
+
+
+
+/**
+ * Projects
+ */
+.project-table__project {
+	@include container;
+	width:100%;
+	border-bottom:rem-calc(1) solid $gray;
+	position: relative;
+	overflow:hidden;
+	cursor:pointer;
+	
+	
+
+
+
+	
+
+	ul {
+		position: relative;
+		@include clearMP;
+		li {
+			list-style:none;
+			display: inline-block;
+			width:100%;
+			line-height:4.4;
+
+			a {
+				color:$black;
+			}
+		}
+
+		li:nth-child(2), li:nth-child(3) {
+			display:none;
+		}
+	}
+	
+	
+
+
+
+	@include breakpoint('tablet') {
+		@include transition(all $cubic 0.1s);
+		@include transition-delay(0.3s);
+
+		ul {
+			li {
+				@include span(1 of 2);
+			}
+			li:nth-child(2) {
+				display: inline-block;
+				@include last;
+				font-size:rem-calc(12);
+				color:lighten($gray, 10%);
+				padding-top:rem-calc(10);
+			}
+		}
+
+
+		&--header {
+			position: absolute;
+			height:100%;
+			width:100%;
+			box-shadow:none;
+			@include transition(transform $cubic 0.3s);
+			@include translate3d(-110%, 0, 0);
+			
+			&.flds {
+				background: $flds-red;
+			}
+
+			&.innovation {
+				background: $innovation-blue;
+			}
+
+			&.assetbuilder {
+				background:$assetbuilder-green;
+			}
+
+			&.dbu {
+				background:$dbu-blue;
+			}
+
+			&.aiga {
+				background:$aiga-pink;
+			}
+
+			&.marks {
+				background:$black;
+			}
+		}
+
+		animation:projectTableOut 0.1s ease-in;
+
+		&:hover {
+				animation:projectTableIn 0.2s ease-in 0.2s 1;
+				@include scale(1.02);
+				box-shadow:0 0 10px rgba($gray, 0.5);
+
+				.project-table__project--header {
+					@include translate3d(0,0,0);
+				}
+
+				ul li, ul li a {
+					color:$white !important;
+				}
+		}
+
+	}
+
+
+	@include breakpoint('laptop') {
+		ul {
+			li {
+				@include span(1 of 3);
+			}
+
+			li:nth-child(3) {
+				display: inline-block;;
+				@include last;
+			}
+		}
+	}
+}
+
+
+
+
+@keyframes projectTableIn {
+	0% {
+		@include scale(1);
+		box-shadow:0 0 0px rgba($gray, 0.5);
+	}
+	100% {
+		@include scale(1.02);
+		box-shadow:0 0 10px rgba($gray, 0.5);
+	}
+}
+
+
+@keyframes projectTableOut {
+	0% {
+		@include scale(1.02);
+		box-shadow:0 0 0px rgba($gray, 0.5);
+	}
+	100% {
+		@include scale(1);
+		box-shadow:0 0 0px rgba($gray, 0.5);
+	}
+}

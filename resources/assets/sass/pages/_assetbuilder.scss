@@ -1,0 +1,254 @@
+/*
+|--------------------------------------------------------------------------
+| WireFrames
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+.assetbuilder__wrapper {
+	.project-copy h3, .project-title h1  {
+		color:$assetbuilder-green;
+	}
+}
+
+
+
+.assetbuilder__wireframes {
+	background-color:$assetbuilder-ivory;
+	background-size:contain;
+	background-position:top right;
+	background-image: url('#{$assetbuilder-image}/wireframe-background@phone.jpg');
+	background-repeat:no-repeat;
+	
+	padding-top:rem-calc(80);
+	padding-bottom:rem-calc(40);
+
+	h3 {
+		color:$gray;
+		font-size:rem-calc(30);
+	}
+
+	&__images {
+		width:100%;
+		clear:both;
+	}
+
+
+
+
+	@include breakpoint('tablet') {
+		padding-top:rem-calc(0);
+		background-image: url('#{$assetbuilder-image}/wireframe-background@tablet.jpg');
+
+		&__images {
+			div {
+				@include span(4 of 12);
+				&:last-child {@include last;}
+				box-shadow:0 0 rem-calc(10) darken($assetbuilder-ivory, 20%);
+			}
+
+		}
+	}
+
+	@include breakpoint('laptop') {
+		background-image: url('#{$assetbuilder-image}/wireframe-background@laptop.jpg');
+	}
+
+	@include breakpoint('desktop') {
+		background-image: url('#{$assetbuilder-image}/wireframe-background@large.jpg');
+	}
+}
+
+
+
+/*
+|--------------------------------------------------------------------------
+| A New beginning
+|--------------------------------------------------------------------------
+|
+|
+*/
+.assetbuilder__ui {
+	background-color:$assetbuilder-green;
+	margin-top:rem-calc(60);
+	padding-top:rem-calc(40);
+	padding-bottom:rem-calc(40);
+
+	.project-copy h3, .project-copy p {
+		color:$white;
+	}
+
+	.project-copy h3 {
+		text-align: center;
+	}
+
+	&--right {
+		color:$white;
+		text-transform: uppercase;
+		font-size:rem-calc(12);
+	}
+
+	@include breakpoint('tablet') {
+		&--right {
+			img {
+				box-shadow: 0 0 10px darken($assetbuilder-green, 20%);
+				margin-top:rem-calc(5);
+			}
+			
+			div {
+				@include span(3 of 12);
+				&:last-child {
+					@include last;
+				}
+			}
+
+			// .portfolios {
+			// 	@include span(6 of 12);
+			// 	margin:auto;
+			// }
+
+			// .survey {
+			// 	clear:both;
+			// 	margin-top:rem-calc(-340);
+			// 	@include span(6 of 12);
+			// 	@include push(6 of 12);
+				
+			// }
+
+			// .lazy  {
+			// 	margin-top:rem-calc(-140);
+			// 	@include span(6 of 12);
+			// 	@include push(6 of 12);
+			// }
+
+			// .article {
+			// 	clear:both;
+			// 	@include span(6 of 12);
+			// 	margin-top:rem-calc(-270);
+			// }
+		}
+	}
+
+	
+}
+
+
+
+.assetbuilder__boomer {
+	h3 {
+		text-align: left;
+	}
+
+	@include breakpoint('tablet') {
+		width:span(8 of 12);
+		margin:auto;
+
+		h3 {
+			text-align: center;
+		}
+	}
+}
+
+
+
+.assetbuilder__ipad {
+	img {
+		width:100%;
+	}
+
+	@include breakpoint('phone') {
+		max-height:1500px;
+
+		&--ipad {
+			width:span(10 of 12);
+			margin:auto;
+			position: absolute;
+			@include center(x);
+			
+			z-index:$z-layer-range-5;
+
+			img {
+				width:100%;
+			}
+
+		}
+
+		.owl-item {
+			margin-top:rem-calc(-26);
+			margin-left:0px;
+			
+			z-index:$z-layer-range-5;
+			box-shadow:0px 0px 10px rgba($gray, 0.4);
+
+			@include scale(0.70);
+
+			&.center {
+				box-shadow:none;
+			}
+		}
+
+	}
+
+	@include breakpoint('tablet') {
+		max-height:800px;
+
+		&--ipad {
+			width:span(4 of 12);
+			margin:auto;
+			position: absolute;
+			@include center(x);
+			
+			z-index:$z-layer-range-5;
+
+			img {
+				width:100%;
+			}
+		}
+
+		.owl-item {
+			margin-top:rem-calc(10);
+			margin-left:rem-calc(0);
+			@include scale(0.83);
+			z-index:$z-layer-range-5;
+			box-shadow:0px 0px 10px rgba($gray, 0.4);
+
+			&.center {
+				box-shadow:none;
+			}
+		}
+	}
+
+	@include breakpoint('laptop') {
+		&--ipad {
+			text-align: center;
+
+			img {
+				width:75% !important;
+				
+				max-height:460px;
+				margin-top:rem-calc(10);
+			}
+		}
+	}
+
+	@include breakpoint('desktop') {
+		width:60%;
+		margin:auto;
+
+		&--ipad {
+			img  {
+				width:47% !important;
+				max-height:520px;
+		    	// margin-top:rem-calc(10);
+		    
+		    }
+		}
+
+		
+		.owl-item {
+			top:2px;
+			
+		}
+	}
+}

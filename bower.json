@@ -1,0 +1,33 @@
+{
+  "name": "twentyseven",
+  "version": "4.0.0",
+  "authors": [
+    "Zack Davis <zack@2721west.com>"
+  ],
+  "description": "Portfolio site for Zack Davis",
+  "main": "/public/index.php",
+  "license": "MIT",
+  "homepage": "2721west.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.2",
+    "angular-animate": "~1.4.2",
+    "angular-cookies": "~1.4.6",
+    "angular-loading-bar": "~0.8.0",
+    "angular-messages": "~1.4.2",
+    "angular-touch": "~1.4.2",
+    "ng-directive-lazy-image": "afkl-lazy-image#~0.1.4",
+    "owl.carousel": "owl-carousel2#~2.0.0-beta.3",
+    "susy": "~2.2.5",
+    "waypoints": "~3.1.1",
+    "malarkey": "yuanqing/malarkey#~1.3.0"
+  }
+}

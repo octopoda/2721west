@@ -1,0 +1,12 @@
+<div class="m-flash__wrapper">
+	<a ng-show="vd.close" class="m-flash__close" ng-click="vd.closeFlash();">&times;</a>
+	
+	<div class="m-flash__heading">
+		<p>{{ vd.heading }}</p>
+	</div>
+	
+	<div ng-show="vd.actionButton" class="m-flash__action">
+		<button ng-click="vd.actionSubmit">{{ vd.actionText }}</button>
+	</div>
+
+</div>

@@ -1,0 +1,9 @@
+<div id="projectContainer" class="project-container">
+	<!-- <div class="project-container__blackout" id="blackout"></div> -->
+	<div data-ng-repeat="project in vd.Projects" class="project-container__project" data-ng-class="project.class" >
+			<div class="project-title" data-ng-click="vd.changeProject(project.class)">
+				<h3>{{ project.title }}</h3>
+				<p>{{ project.role }}</p>
+			</div>
+	</div>
+</div>
