@@ -54,7 +54,7 @@
         if (vm.testing) {
             vm.formData = {
                 name: 'Bill Nye',
-                email: 'bill@2721west.com', 
+                email: 'zack2721@gmail.com', 
                 message: 'Hey this is Bill Nye.  I think you\'re cool and should work on my site.  Call Me!',
                 company: 'Myself',
                 select: vm.formSelectOptions[2].name,
@@ -67,6 +67,8 @@
 
         vm.formSubmit = formSubmit;
         vm.loading = false;
+        vm.success = false;
+        vm.error = false;
         
 
         activate();
@@ -109,8 +111,15 @@
             
             mailService.sendMail(vm.formData)
                 .then(function (data) {
-                    console.dir(data);
+                    console.log(data);
                     vm.loading = false;
+
+                    if (data.status === 200) {
+                        vm.success = true;
+                        clearForm();
+                    } else {
+                        vm.error = true;
+                    }
                 });
         }
 
@@ -144,6 +153,19 @@
             vm.formData.name = null;
             vm.formData.email = null;
             vm.formData.company = null;
+          }
+
+
+          function clearForm() {
+            return  vm.formData = {
+                name: null,
+                email: null, 
+                message: null,
+                company: null,
+                select: vm.formSelectOptions[0].name,
+                budget: null,
+                organization: null,
+            };
           }
 
 

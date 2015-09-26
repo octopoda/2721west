@@ -63,18 +63,35 @@
 	
 
 	button {
-		background:$white;
-		color:$red;
+		border:rem-calc(2) solid $white;
+		color:$white;
 		padding:rem-calc(10) rem-calc(20);
 		font-size:rem-calc(20);
-		box-shadow: 0 0 rem-calc(10) darken($red, 20%);
-		@include transition(box-shadow ease-in 0.3s);
+
+		@include transition(color $cubic 0.4s, background-color $cubic 0.4s);
 		
 		&:hover {
-			color:$red;
-			box-shadow:none;
+			color:darken($red, 10%);
+			background:$white;
 		}
 	}
+
+
+	.mail__success, .mail__error {
+		margin-top:0;
+		opacity:0;
+		@include translate3d(0, 100%, 0);
+		@include transition(transform ease-in 0.3s, opacity ease-in 0.3s);
+
+
+		&.active {
+			opacity:1;
+			@include translate3d(0, -50%, 0);
+		}
+	}
+
+
+
 	
 	@include breakpoint('tablet') {
 		form {
@@ -82,8 +99,14 @@
 			margin:auto;
 		}
 
+		&--forms {
+			overflow:hidden;
+		}
+
 
 		&--hide {
+			@include clearfix;
+
 			&.ng-animate {
 				@include transition(all $cubic 0.4s);
 				position: absolute;
@@ -94,14 +117,13 @@
 
 			}
 
-
 			&.ng-leave.ng-leave-active, &.ng-enter {
-				left:rem-calc(-250);
+				top:rem-calc(-250);
 				opacity:0;
 			}
 
 			&.ng-leave, &.ng-enter.ng-enter-active {
-				left:0;
+				top:0;
 				opacity:1;
 			}
 		}

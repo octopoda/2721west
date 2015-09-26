@@ -106,10 +106,19 @@
               </div>
               
               <div class="form-group">
-                <button class="button__loading {! vm.loading !}" data-ng-disabled="contactForm.$invalid">
-                      <div class="progress-spinner"></div>
-                      <div class="button-text">Open an Account</div> 
+                <button class="button__loading" data-ng-disabled="contactForm.$invalid" data-ng-class="{'done' : vm.success, 'loading': vm.loading}">
+                      <div class="progress-spinner white"></div>
+                      <div class="button-text">Say Hello</div> 
                 </button> 
+
+                <div class="mail__success"  data-ng-class="{ 'active' :  vm.success }">
+                  <p>Thanks for contacting me.  I'll get back with ASAP.</p>
+                </div>
+
+                <div class="mail__error" data-ng-class="{ 'active' : vm.error }">
+                  <p>Shit! I dropped the ball.  Something&rsquos;s not working now.  Contact me at zack [@] 2721west [dot] com</p>
+               </div>
+
               </div>
     </form>
 </div>

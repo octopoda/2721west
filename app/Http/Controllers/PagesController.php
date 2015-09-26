@@ -99,7 +99,7 @@ class PagesController extends Controller {
 	 */
 	public function mail(MailRequest $request) {
 		Mail::send('emails.test', ['request' => $request], function ($m) use ($request) {
-			$m->to('zack@2721west.com', 'Zack Davis')->from($request['email'], $request['name'])->subject('Someone wants to talk to you from 2721west.com');
+			$m->to('zack@2721west.com')->from($request['email'], $request['name'])->subject('Someone wants to talk to you from 2721west.com');
 			$this->sendAHook("You're About to Get Mail from ", $request['email'] . " from 2721west want to contact you");	
 		});
 
