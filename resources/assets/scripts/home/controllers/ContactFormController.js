@@ -111,7 +111,6 @@
             mailService.sendMail(vm.formData)
                 .then(function (data) {
                     vm.loading = false;
-                    console.log(data.status);
                     if (data.status === 200) {
                         vm.success = true;
                         clearForm();
