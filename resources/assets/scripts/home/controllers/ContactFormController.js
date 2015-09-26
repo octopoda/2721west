@@ -11,7 +11,7 @@
     function ContactFormController($rootScope, mailService, companyDataService, common) {
         var vm = this;
         vm.title = 'ContactFormController';
-        vm.testing = true;
+        vm.testing = false;
 
        /**
         * Select Options
@@ -21,7 +21,7 @@
             {
                 id: 1,
                 name: 'hire',
-                value: 'Hire me for a 9-5 gig'
+                value: 'Talk about Hiring me for a 9-5 gig'
             }, {
                 id: 2,
                 name: 'project',
@@ -106,14 +106,12 @@
          * @return {[type]} [description]
          */
         function formSubmit() {
-            console.log('sending....');
             vm.loading = true;
             
             mailService.sendMail(vm.formData)
                 .then(function (data) {
-                    console.log(data);
                     vm.loading = false;
-
+                    console.log(data.status);
                     if (data.status === 200) {
                         vm.success = true;
                         clearForm();

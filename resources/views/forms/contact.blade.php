@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="mail__error" data-ng-class="{ 'active' : vm.error }">
-                  <p>Shit! I dropped the ball.  Something&rsquos;s not working now.  Contact me at zack [@] 2721west [dot] com</p>
+                  <p>Shit! I dropped the ball.  Something&rsquo;s not working now.  Contact me at zack [@] 2721west [dot] com</p>
                </div>
 
               </div>

@@ -20,14 +20,15 @@
         ////////////////
 
         function sendMail(data) {
-            console.dir(data);
             return $http.post(apiUrl, data)
                 .then(mailComplete)
-                .catch(function () {
+                .catch(function (data, message) {
                     errors.catcher('Mail could not be sent at this time. ')(message);
+                    return data;
                 });
 
                 function mailComplete(data, status, headers, config) {
+                    // console.dir(data);
                     return data;
                 }
         }

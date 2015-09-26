@@ -98,19 +98,45 @@ class PagesController extends Controller {
 	 * @return [type]               [description]
 	 */
 	public function mail(MailRequest $request) {
-		Mail::send('emails.test', ['request' => $request], function ($m) use ($request) {
-			$m->to('zack@2721west.com')->from($request['email'], $request['name'])->subject('Someone wants to talk to you from 2721west.com');
-			$this->sendAHook("You're About to Get Mail from ", $request['email'] . " from 2721west want to contact you");	
+		$emailType = 'emails.project';
+
+		switch ($request['select']) {
+			case 'hire':
+				$request['title'] = $request['company'] . " Wants to Hire You";
+				$emailType = 'emails.hire';
+				break;
+			case 'project':
+				$request['title'] = $request['name'] . " Wants to Talk About Project";
+				$emailType = 'emails.project';
+				break;
+			case 'speaking':
+				$request['title'] = $request['organization'] . " Wants to Talk About Speaking";
+				$emailType = 'emails.speaking';
+				break;
+			case 'beer':
+				$request['title'] = $request['name'] . " Wants to Drink a Beer with You";
+				$emailType = 'emails.beer';
+				break;
+
+		}
+
+
+
+		Mail::send('emails.adminSend', ['request' => $request], function ($message) use ($request) {
+			$message->to('zack@2721west.com')->from($request['email'], $request['name'])->subject($request['title']);
+			$this->sendAHook("You're About to Get Mail from ", $request['title']);	
 		});
 
-		return Mail::failures();
+
+		Mail::send($emailType, ['request'=> $request], function ($message) use ($request) {
+			$message->to($request['email'])->from('zack@2721west.com','Zack Davis')->subject('Thanks for contacting me');
+		});
+
+		return;
 	}
 
 
-	public function mailTest() {
-		$this->sendAHook("You're About to Get Mail", "Someone from 2721west want to contact you");
-	}
-
+	
 
 
 /*
