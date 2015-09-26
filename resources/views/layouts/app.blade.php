@@ -22,7 +22,7 @@
   
 
   {{-- Contact Modal --}}
-  <div class="contact-modal" id="contactModal">
+  <div class="contact-modal open" id="contactModal">
     <div data-modal-toggle data-target="contactModal" class="contact-modal__close">&times;</div>
     @include('forms.contact')
   </div>

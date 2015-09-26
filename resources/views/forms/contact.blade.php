@@ -105,10 +105,11 @@
 
               </div>
               
-              <div>
-                <button>
-                  Say Hello
-                </button>
+              <div class="form-group">
+                <button class="button__loading {! vm.loading !}" data-ng-disabled="contactForm.$invalid">
+                      <div class="progress-spinner"></div>
+                      <div class="button-text">Open an Account</div> 
+                </button> 
               </div>
     </form>
 </div>
