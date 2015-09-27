@@ -217,6 +217,7 @@
 		line-height:1.5;
 		padding-bottom:rem-calc(20);
 		color:$innovation-blue !important;
+		padding-bottom:rem-calc(40);
 	}
 
 	@include breakpoint('tablet') {

@@ -61,8 +61,8 @@
             </section>
           </div>
 
-            <div class="innovation__elaborate--carousel row" itemprop="description">
-                <div data-carousel class="innovation__elaborate--carousel--text owl-carousel" >
+            <div class="innovation__elaborate--carousel row">
+                <div data-carousel class="innovation__elaborate--carousel--text owl-carousel"  itemprop="description">
                     <div class="item">Innovation Compounding will not sit on the sidelines. We are not interested in being a participant in pharmaceutical care. We are at the forefront, and we are a leader. We will play an active role in the well-being of our patients. We are attentive to new technologies and formulations, and we will be disciplined in delivering those options to our patients. </div>
                     <div class="item">Innovation Compounding not only dispenses medication, it dispenses knowledge, compassion, and personalized wellness </div>
                     <div class="item">They recognize that knowledge leads to control, and as they get older and busier they need partnerships to help them participate more in medical care. </div>

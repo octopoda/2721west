@@ -9,26 +9,26 @@
     function carousel () {
         // Usage:
         // <div carousel>
-        // Creates:
-        //
         var directive = {
             link: link,
             restrict: 'A',
-            scope: {
-            }
         };
         
         return directive;
 
         function link(scope, element, attrs) {
         	
+
 			jq(element[0]).owlCarousel({
-        		loop:true,
+        		items: 1,
+                dots: true,
+                autoplay:true,
+                loop:true,
         		nav: false,
         		dots: true,
         		margin:0,
-        		autoplay:true,
-        		items:1,
+        		
+                items:1,
         		width: '80%',
                 responsive: {
                     0: {

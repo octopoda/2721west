@@ -73,7 +73,7 @@ gulp.task('templates', function () {
           standalone: false,
           root: '/templates'
       }))
-      // .pipe(plugins.uglify()).on('error', conf.errorHandler('Uglify Templates'))
+      .pipe(plugins.uglify()).on('error', conf.errorHandler('Uglify Templates'))
       .pipe(plugins.concat('templates.js'))
       .pipe(gulp.dest(path.join(conf.paths.min, '/tmp')));
 });
