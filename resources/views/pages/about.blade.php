@@ -7,7 +7,7 @@
 				<h1> I&rsquo;m a digital designer and a full stack developer. Someone who will work 
 					<span class="malarkey" ng-click="vm.type()">
 						<span class="malarkey--hover"></span>
-                		<span class="malarkey--text" id="malarkey">Smart</span>
+                		<span class="malarkey--text" id="malarkey">smart</span>
                 	</span>
 				to get the job done.  </h1>
 				<p>I have over 13 years in the industry and over nine years of experience in start-ups.  During that time I have also run my own digital boutique agency, Octopoda Interactive. I understand what it takes to build an application from the ground up.  I am experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design. </p>
