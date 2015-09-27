@@ -11,7 +11,7 @@
                 	</span>
 				to get the job done.  </h1>
 				<p>I have over 13 years in the industry and over nine years of experience in start-ups.  During that time I have also run my own digital boutique agency, Octopoda Interactive. I understand what it takes to build an application from the ground up.  I am experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design. </p>
-				<p>I am fixated on building delightful and engaging digital experiences with not only the user&rsquo;s in mind, but the company&rsquo;s goals too. </p>
+				<p>I am fixated on building delightful and engaging digital experiences with not only the users in mind, but the company&rsquo;s goals too. </p>
 				<p>If you feel you have a place for me in your company/agency, <a data-modal-toggle data-target="contactModal">contact me</a> and <br>let&rsquo;s talk.</p>
 			</section>
 		</div>

@@ -57,7 +57,7 @@
             <section class="project-copy" itemprop="description">
               <h3>Elaborating</h3>
               <p>After our meeting, I wrote a branding guide to elaborate on the decisions made in our workshop.   This 10-page document details the brand promise in simple language that Innovation Compounding could share with its employees or any other company that might touch the brand. </p>
-              <p>Below is some of the main points I created to reiterate the fours pillars of the brand with clarity and emphasis. </p>
+              <p>Below are some of the main points I created to reiterate the fours pillars of the brand with clarity and emphasis. </p>
             </section>
           </div>
 

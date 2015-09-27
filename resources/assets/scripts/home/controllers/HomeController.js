@@ -144,13 +144,13 @@
          * @return {object} 
          */
         function fillCompanyInformation(guid) {
-            if (guid == '') {return}
             var data = companyDataService.getData();
             
             if (data == undefined) {
                 companyService.getCompanyInformation(guid).then(function (data) {
                     companyDataService.addData(data);
                     vm.fullName = data.first_name + ' ' + data.last_name;
+                    
                     common.sendHook(data.company + ' is visiting the site', 'Get excited because '  +  vm.fullName  + ' is checking out your shit');
                 });
             } 
