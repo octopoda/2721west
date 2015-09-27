@@ -23,7 +23,7 @@
 				@foreach($companies as $company)
 					<li>
 						<span class="title">{{ $company->company }}</span>
-						<span class="info">{{ $company->guid }}</span>
+						<span class="info">http://2721west.com/{{ $company->guid }}</span>
 						<span><a href="mailto:{{ $company->email }}">{{ $company->email }}</a></span>
 						<span>
 							<ul class="dashboard__edits">
