@@ -21,15 +21,12 @@
 
 			jq(element[0]).owlCarousel({
         		items: 1,
-                dots: true,
                 autoplay:true,
                 loop:true,
         		nav: false,
         		dots: true,
         		margin:0,
-        		
-                items:1,
-        		width: '80%',
+                width: '80%',
                 responsive: {
                     0: {
                         stagePadding: 0

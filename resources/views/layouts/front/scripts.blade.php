@@ -5,6 +5,6 @@
   	<script src="/tmp/angular.js"></script>
   	<script src="/tmp/templates.js"></script>
  @elseif ($app->environment('production')) 
- 	<script src="{{ $pageInfo['assetPath'] }}/scripts/app.min.js?v=0.00001"></script> 
+ 	<script src="{{ $pageInfo['assetPath'] }}/scripts/app.min.js?v=0.00002"></script> 
  @endif
   

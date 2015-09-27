@@ -21,7 +21,7 @@
   <!-- Google+ Metadata /-->
   <meta itemprop="name" content="{{ $pageInfo['pageTitle'] }}">
   <meta itemprop="description" content="{{ $pageInfo['pageDesc'] }}">
-  <meta itemprop="image" content="/$pageInfo['assetPath']/icons/facebook.jpg">
+  <meta itemprop="image" content="{{  $pageInfo['assetPath'] }}/icons/facebook.jpg">
 
   <!-- Twitter Card Metadata /-->
   <meta name="twitter:card" content="summary">
@@ -68,7 +68,7 @@
   @if ($app->environment('local'))
     <link rel="stylesheet" href="/assets/css/app.min.css">
   @elseif ($app->environment('production')) 
-    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css?v=000000001">
   @endif
 
   <base href="/">
