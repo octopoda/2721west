@@ -24,14 +24,14 @@
         vm.errors = false;
         
         vm.titles  = [
-            'Designer and Full Stack Developer',
-            'Hybrid',
-            'Full Process Designer',
-            'Full Stack Designer',
-            'Unicorn',
-            'Devigner',
-            'Deseloper',
-            'Pink Squirrel'
+            'Designer and Full Stack Developer.',
+            'Hybrid.',
+            'Full Process Designer.',
+            'Full Stack Designer.',
+            'Unicorn.',
+            'Devigner.',
+            'Deseloper.',
+            'Pink Squirrel.'
         ];
 
         
