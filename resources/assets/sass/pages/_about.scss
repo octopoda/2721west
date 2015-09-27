@@ -52,11 +52,17 @@
 
 		&--hover:after {
 			content:'';
+			
 		}
 
 		@include breakpoint('laptop') {
 			margin-top:rem-calc(-20);
-			top:rem-calc(20) !important;
+			top:rem-calc(20);
+			
+			&.safari {
+				top:0;	
+			}
+			
 		}
 
 	}
