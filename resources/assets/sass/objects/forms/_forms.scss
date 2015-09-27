@@ -125,10 +125,9 @@ label, .label {
 /** Errors on Input Field */
 .input-errors {
     text-align: center;
-
     
     .error {
-       color:$error;
+       color:$white;
     }
 }
 
@@ -162,14 +161,14 @@ label, .label {
         }    
 
         .input-errors {
-         display: inline-block;
-         margin-left:rem-calc(10);
-         @include transition(transform $cubic 0.4s, opacity $cubic 0.4s);
+             display: inline-block;
+             margin-left:rem-calc(10);
+             @include transition(transform $cubic 0.4s, opacity $cubic 0.4s);
 
-        //  &.ng-inactive {
-        //     @include translateX(rem-calc(20));
-        //     @include transition( traform $cubic 0.2s, opacity $cubic 0.2s);   
-        //  }
+         &.ng-inactive {
+            @include translateX(rem-calc(20));
+            @include transition( traform $cubic 0.2s, opacity $cubic 0.2s);   
+         }
          
         &.ng-inactive {
             opacity:0;

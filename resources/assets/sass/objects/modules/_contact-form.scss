@@ -74,6 +74,14 @@
 			color:darken($red, 10%);
 			background:$white;
 		}
+
+		&:disabled {
+			color:$white;
+
+			&:hover {
+				background:none;
+			}
+		}
 	}
 
 

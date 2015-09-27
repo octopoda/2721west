@@ -395,7 +395,7 @@ select:disabled {
 
 //Error 
 input.ng-invalid.ng-dirty {
-	border:1px solid $error;
+	border:rem-calc(2) solid $black;
 }	
 
 //Remove red border from firefox
