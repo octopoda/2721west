@@ -11,38 +11,38 @@
 
         <div class="amp logo-container">
            <section class="row" itemprop="workExample">
-              <div afkl-lazy-image="/assets/images/logos/amp@2x.jpg 620w, /assets/images/logos/amp.jpg" class="afkl-lazy-wrapper"></div>
+              <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/logos/amp@2x.jpg 620w, {{ $pageInfo['assetPath'] }}/images/logos/amp.jpg" class="afkl-lazy-wrapper"></div>
            </section>
         </div>
 
         <div class="angela logo-container">
            <section class="row" itemprop="workExample">
-              <div afkl-lazy-image="/assets/images/logos/angela@2x.jpg 620w, /assets/images/logos/angela.jpg" class="afkl-lazy-wrapper"></div>
+              <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/logos/angela@2x.jpg 620w, {{ $pageInfo['assetPath'] }}/images/logos/angela.jpg" class="afkl-lazy-wrapper"></div>
            </section>
         </div>
 
 
         <div class="gagan logo-container">
            <section class="row" itemprop="workExample">
-              <div afkl-lazy-image="/assets/images/logos/gagan@2x.jpg 620w, /assets/images/logos/gagan.jpg" class="afkl-lazy-wrapper"></div>
+              <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/logos/gagan@2x.jpg 620w, {{ $pageInfo['assetPath'] }}/images/logos/gagan.jpg" class="afkl-lazy-wrapper"></div>
            </section>
         </div>
 
         <div class="kellyn logo-container">
            <section class="row" itemprop="workExample">
-              <div afkl-lazy-image="/assets/images/logos/kellyn@2x.jpg 620w, /assets/images/logos/kellyn.jpg" class="afkl-lazy-wrapper"></div>
+              <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/logos/kellyn@2x.jpg 620w, {{ $pageInfo['assetPath'] }}/images/logos/kellyn.jpg" class="afkl-lazy-wrapper"></div>
            </section>
         </div>
 
         <div class="robin logo-container">
            <section class="row" itemprop="workExample">
-              <div afkl-lazy-image="/assets/images/logos/robin@2x.jpg 620w, /assets/images/logos/robin.jpg" class="afkl-lazy-wrapper"></div>
+              <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/logos/robin@2x.jpg 620w, {{ $pageInfo['assetPath'] }}/images/logos/robin.jpg" class="afkl-lazy-wrapper"></div>
            </section>
         </div>
 
         <div class="octopoda logo-container">
            <section class="row" itemprop="workExample">
-              <div afkl-lazy-image="/assets/images/logos/octopoda@2x.jpg 620w, /assets/images/logos/octopoda.jpg" class="afkl-lazy-wrapper"></div>
+              <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/logos/octopoda@2x.jpg 620w, {{ $pageInfo['assetPath'] }}/images/logos/octopoda.jpg" class="afkl-lazy-wrapper"></div>
            </section>
         </div>
 

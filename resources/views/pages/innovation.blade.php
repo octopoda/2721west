@@ -23,7 +23,7 @@
                 <h3>Bridging the Gap</h3>
                 <p>The first objective was to set up a new internal brand promise.   With no previous branding and a large team the voice of the company was not consistent and didn&rsquo;t separate Innovation from it&rsquo;s competitors. </p>
                 <p>During the discovery process we learned that their patients were still suffering in fear from the 2011 NECC meningitis cases.   With increase regulations from the government, Innovation is primed to become one the national leaders in compounding pharmacy within the next few years. </p>
-                <p>I held a workshop with the key stakeholders of the company to develop a focused brand promise.  In that workout we reviewed the discovery process, looking at their industry, their competitors, and their internal company.  We then worked as a team to define Innovation&rsquo;s new brand promise  to it&rsquos;s customers.  What emerged from that meeting will serve as the strategic foundation for all future decisions related to Innovation Compounding and it&rsquo;s vision. </p>
+                <p>I held a workshop with the key stakeholders of the company to develop a focused brand promise.  In that workout we reviewed the discovery process, looking at their industry, their competitors, and their internal company.  We then worked as a team to define Innovation&rsquo;s new brand promise  to it&rsquo;s customers.  What emerged from that meeting will serve as the strategic foundation for all future decisions related to Innovation Compounding and it&rsquo;s vision. </p>
               </section>
             </div>
       

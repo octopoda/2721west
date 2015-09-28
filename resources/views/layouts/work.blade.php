@@ -26,7 +26,7 @@
     @yield('content')
   </div>
 
-
+  <p to-top class="top-button">Top<i class="fa fa-angle-up"></i></p>
    @include('layouts.front.scripts', array('pageInfo', $pageInfo))
 </body>
 </html>

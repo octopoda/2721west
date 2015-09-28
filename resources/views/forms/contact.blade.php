@@ -112,7 +112,7 @@
                 </button> 
 
                 <div class="mail__success"  data-ng-class="{ 'active' :  vm.success }">
-                  <p>Thanks for contacting me.  I'll get back with ASAP.</p>
+                  <p>Thanks for contacting me.  I'll get back with you ASAP.</p>
                 </div>
 
                 <div class="mail__error" data-ng-class="{ 'active' : vm.error }">

@@ -18,11 +18,11 @@
                 <span class="malarkey--hover"></span>
                 <span class="malarkey--text" id="malarkey">Designer and Full Stack Developer.</span>
               </span><br>
-              I am a problem solver. A do-er.  Someone <wbr> that 
+              I am a problem solver. A doer.  Someone <wbr> that 
               can wear any hat necessary to complete the job.  
             </h1>
-            <h3>I am currently <span class="red">looking</span> for work.</h3>
-
+            
+            
             <ul class="home__more">
               <li><a href="{{ route('about') }}">Learn More About Me <i class="fa fa-angle-right"></i></a></li>
               <li><a data-modal-toggle data-target="workModal" class="laptop-up">View My Work <i class="fa fa-angle-right"></i></a> </li>

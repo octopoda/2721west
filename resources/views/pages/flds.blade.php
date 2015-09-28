@@ -60,7 +60,7 @@
           <section class="project-copy" itemprop="description">
             <h3>In Focus</h3>
             <p>During the discovery process I learned that the school had recently gone through a small branding process.  While I agreed with what came out of that process, I wanted to build upon it. </p>
-            <p>I wanted to use the parents&rsquo' comments about the loving and compassionate environment they feel at Faith Lutheran Day School and mix it with the <em>Shaping Young Hearts</em> brand that came out of the previous process. </p>
+            <p>I wanted to use the parents&rsquo;s comments about the loving and compassionate environment they feel at Faith Lutheran Day School and mix it with the <em>Shaping Young Hearts</em> brand that came out of the previous process. </p>
             <p>Working with my copywriter we built a statement in which the foundation of the brand could stand upon. </p>
           </section>
         </div>

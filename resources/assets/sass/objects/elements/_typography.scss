@@ -6,10 +6,18 @@
 | All Element Typography is handled below
 |
 */
+*
+h1, h2, h3, h4, h5, h6, 
+p, li, a, div, section, article {
+	text-rendering: optimizeLegibility; 
+	font-smoothing: antialiased;
+}
+
 
 h1 {
 	font-size:rem-calc(50);
 	line-height:1.2;
+	font-weight: 900;
 	
 
 	@include breakpoint('tablet') {
