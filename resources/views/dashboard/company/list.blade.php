@@ -25,6 +25,7 @@
 						<span class="title">{{ $company->company }}</span>
 						<span class="info">http://2721west.com/{{ $company->guid }}</span>
 						<span><a href="mailto:{{ $company->email }}">{{ $company->email }}</a></span>
+						<span><a href="{{ route('company-sessions', $company->id) }}">View Sessions</a></span>
 						<span>
 							<ul class="dashboard__edits">
 								<li class="button--edit"><a href=" {{ route('dashboard.company.edit', $company->id) }}">Edit</a></li>

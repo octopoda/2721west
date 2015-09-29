@@ -53,8 +53,8 @@ $aiga-blue: #0d99d7;
  * Image Paths
  */
 
-$dev: false !default; 
-// $dev: true !default;
+// $dev: false !default; 
+$dev: true !default;
 
 @if $dev { 
 	$imagePath: '/assets/images/';
@@ -119,13 +119,13 @@ $breakpoints: (
 		min-width: em-calc(768),
 	),
 	tablet-only: (
-		mq: setRange(768, 1024)
+		mq: setRange(768, 1075)
 	),
 	laptop: (
-		min-width: em-calc(1061)
+		min-width: em-calc(1075)
 	),
 	laptop-only: (
-		mq: setRange(1024, 1152)
+		mq: setRange(1075, 1152)
 	),
 	desktop: (
 		min-width: em-calc(1452)

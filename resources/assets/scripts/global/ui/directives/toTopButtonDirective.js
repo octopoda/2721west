@@ -44,9 +44,9 @@
           sticky = new Waypoint({
       			element: document.getElementById('goToNext'),
       			handler: function () {
-      				el.toggleClass('fixed');
+              el.toggleClass('fixed');
       			},
-      			offset:'80%'
+      			offset:'60%'
       		});
         
         }

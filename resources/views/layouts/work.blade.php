@@ -22,7 +22,7 @@
     @include('layouts.front.navigation', array('pageInfo',  $pageInfo))
   </header>
 
-  <div id="contentContainer" class="project-container">
+  <div id="contentContainer" class="project-container" data-ng-controller="ProjectController as vm">
     @yield('content')
   </div>
 

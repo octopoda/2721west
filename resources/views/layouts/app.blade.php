@@ -52,7 +52,6 @@
 
           <footer>
             @include('layouts.front.footer')
-            <p to-top class="top-button">Top <i class="fa fa-angle-up"></i></p>
           </footer>
       </div>
   </div>

@@ -270,8 +270,62 @@
 	@include breakpoint('laptop') {
 		width:span(6 of 12);
 	}
+}
 
 
+.project-thanks {
+	text-align: center;
+
+	h5 {
+		color:$red;
+		font-family:$header-font;
+	}
+
+	ul {
+		@include clearMP;
+		text-align: center;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	@include breakpoint('phone') {
+		ul {
+			@include clearMP;
+
+			li {
+				width:100%;
+				line-height:1.6;
+				display: inline-block;
+				margin-top:rem-calc(10);
+				
+				span, a, span:before {
+					width:100%;
+					display: block;
+				}
+			}
+		}
+	}
 
 
+	@include breakpoint('tablet') {
+		width:span(8 of 12);
+		margin:auto;
+
+		margin-top:rem-calc(50);
+		margin-bottom:rem-calc(50);
+		
+
+		h5 {
+			margin-bottom:0;
+		}
+		
+	}
+
+	@include breakpoint('laptop') {
+		width:span(6 of 12);
+
+
+	}
 }

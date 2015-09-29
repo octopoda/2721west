@@ -51,14 +51,14 @@ input[type=search] {
   -webkit-appearance: none;
 	width:100%;
 	margin:auto;
-	padding:rem-calc(20) rem-calc(20);
+	padding:rem-calc(20) rem-calc(10);
 	border:1px solid $gray;
 	border-radius:0;
 	outline:none;
 
  
 	@include breakpoint('laptop') {
-		padding:rem-calc(15) rem-calc(20);
+		padding:rem-calc(15) rem-calc(10);
 	}
 }
 
@@ -359,13 +359,11 @@ textarea {
 
 
 select {
-   
    background-color: rgba($white, 0.9);
    border: 1px solid $input-border-color;
    border-radius:0px !important;
    width: 100%;
-   padding: rem-calc(10);
-   
+   padding: rem-calc(20);
    height: rem-calc(54);
 }
 

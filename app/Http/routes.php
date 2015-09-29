@@ -37,6 +37,12 @@ Route::group(['prefix' => 'dashboard', 'middleware' => 'auth'], function () {
 	Route::resource('/project-types', 'ProjectTypeController');	
 	Route::resource('/projects', 'ProjectController');	
 	Route::resource('/company', 'CompanyController');
+
+
+	Route::get('/company/sessions/{id}', [
+		'as' => 'company-sessions',
+		'uses' => 'CompanyController@DisplaySessions'
+ 	]);
 });
 
 
@@ -46,6 +52,7 @@ Route::group(['prefix' => 'api'], function () {
 	Route::get('projects', 'ProjectController@apiIndex');
 	Route::post('mailme', 'PagesController@mail');
 	Route::get('company/{guid}', 'CompanyController@api');
+	Route::post('addSession', 'CompanyController@addSession');
 });
 
 
@@ -91,6 +98,7 @@ Route::get('about-zack-davis', [
 	'as' => 'about',
 	'uses' => 'PagesController@about'
 ]);
+
 
 
 /**

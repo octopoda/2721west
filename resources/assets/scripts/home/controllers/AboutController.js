@@ -5,8 +5,10 @@
         .module('twentyseven.home')
         .controller('AboutController', AboutController);
 
+    AboutController.$inject = ['companyDataService', 'sessionService'];
+
     /* @ngInject */
-    function AboutController() {
+    function AboutController(companyDataService, sessionService) {
         var vm = this;
         vm.title = 'AboutController';
 
@@ -40,7 +42,11 @@
         ////////////////
         
         function activate () {
+            var data = companyDataService.getData();
 
+            if (data != false) {
+                sessionService.recordSession(companyDataService.getCompanyId());
+            }
         }
 
 /*

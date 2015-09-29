@@ -1,10 +1,13 @@
 <?php namespace twentyseven\Http\Controllers;
 
 use twentyseven\Http\Requests\CompanyRequest;
+use twentyseven\Http\Requests\SessionRequest;
 use twentyseven\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use twentyseven\Company;
+use twentyseven\Session;
+use Carbon\Carbon;
 
 class CompanyController extends Controller {
 
@@ -29,14 +32,67 @@ class CompanyController extends Controller {
 		return view('dashboard.company.create');
 	}
 
-	public function apiAll() {
-
-	}
-
-
+	
+	/**
+	 * Get the Company from the Guid
+	 * @param  string $guid 
+	 * @return twentyseven\company 
+	 */
 	public function api($guid) {
 		$company = Company::where('guid', $guid)->first();
 		return $company;
+	}
+
+
+	/**
+	 * Add a session to the Company
+	 * @param SessionRequest $request 
+	 */
+	public function addSession(SessionRequest $request) {
+		$session = new Session($request->all());
+		$company = Company::findOrFail($request['company_id']);
+		$company->session()->save($session);
+
+		return 'done';
+	}
+
+
+	public function displaySessions($id) {
+		$company = Company::with('session')->findorFail($id);
+		$sessions = $company->session()->get();
+
+		$sessions = $this->setTimeOnPage($sessions);
+
+
+		
+		return view('dashboard.company.session', compact(['company', 'sessions']));
+	}
+
+	
+	/**
+	 * Get the time on Page
+	 * @param  /twentyseven/session $object 
+	 * @return /twentyseven/session 
+	 */
+	public function setTimeOnPage($object) {
+		
+		for ($i = 1; $i < count($object); $i++) {
+			$newTime = Carbon::parse($object[$i]->created_at);
+			$oldTime = Carbon::parse($object[$i-1]->created_at);
+			$date = Carbon::parse($object[$i]);
+			$seconds = $oldTime->diffInSeconds($newTime);
+			
+			$divisor_for_minutes = $seconds % (60 * 60);
+    		$minutes = floor($divisor_for_minutes / 60);
+
+    		$divisor_for_seconds = $divisor_for_minutes % 60;
+    		$seconds = ceil($divisor_for_seconds);
+
+			$object[$i-1]['time_on_page'] = $minutes .  ":" .  $seconds;
+			$object[$i]['created_at'] = $date
+		}
+
+		return $object;
 	}
 
 	/**

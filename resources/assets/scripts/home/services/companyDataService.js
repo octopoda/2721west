@@ -5,10 +5,10 @@
         .module('twentyseven.home')
         .service('companyDataService', companyDataService);
 
-   	companyDataService.$inject = ['$rootScope', '$q', '$cookies'];
+   	companyDataService.$inject = ['$rootScope', '$cookies'];
 
     /* @ngInject */
-    function companyDataService($rootScope, $q, $cookies) {
+    function companyDataService($rootScope,  $cookies) {
     	var now = new Date();
 
     	var company = {
@@ -19,6 +19,7 @@
 		this.removeData = removeData;
 		this.getData = getCompanyCookie;
 		this.fullName = fullName;
+        this.getCompanyId = getCompanyId;
 
         ////////////////
 
@@ -27,6 +28,7 @@
          * @param {[type]} data [description]
          */
         function addData(data) {
+
         	company.dataObject = data;
         	storeCompanyCookie();
 
@@ -63,11 +65,16 @@
          * @return {[type]} [description]
          */
         function getCompanyCookie() {
-        	   company.dataObject = parseJSON($cookies.get('companyData'));
-               return company.DataObject;
+    	   company.dataObject = parseJSON($cookies.get('companyData'));
+           return company.dataObject;
         }
 
 
+        /**
+         * Parse JSON Data
+         * @param  {object} data 
+         * @return {object}      
+         */
         function parseJSON(data) {
             if (data !== undefined) {
                 return JSON.parse(data);
@@ -77,12 +84,17 @@
         }
 
 
+        function getCompanyId() {
+            return company.dataObject.id;
+        }
+
+
         /**
          * Print the Full Name
          * @return {[type]} [description]
          */
         function fullName() {
-
+            if (company.dataObject.first_name === undefined) return;
         	return company.dataObject.first_name + ' ' +  company.dataObject.last_name;
         }
     }

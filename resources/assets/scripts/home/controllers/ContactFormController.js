@@ -25,7 +25,7 @@
             }, {
                 id: 2,
                 name: 'project',
-                value: "I got a project for you"
+                value: "I have a project for you"
             }, {
                 id: 3,
                 name: 'speaking',

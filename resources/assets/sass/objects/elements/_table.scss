@@ -14,7 +14,12 @@ table {
 }
 
 thead {
-	background:$blue;
+	background:$gray-light;
+	th {
+		padding:rem-calc(10) rem-calc(20);
+		color:$white;
+		text-align: left;
+	}
 }
 
 tr {

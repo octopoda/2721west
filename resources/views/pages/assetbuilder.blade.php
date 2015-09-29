@@ -8,8 +8,8 @@
  
         <div data-into class="row">
           <section class="project-copy" itemprop="description">
-            <p>After eight years of business and almost no money spent on marketing, AssetBuilder realized it had reached the brink of it&rsquo;s viral coefficient.  We needed to reinvest money into marketing and lead generation, reinvent our brand, and reduce our reliance on Scott Burns. </p>
-            <p>While most of these responsibilities would fall on my shoulders as the creative director, we felt it was best to get an outside opinion on our services.   We hired The Richards Group (TRG), one of the best agencies in America, to help us gain a new perspective and increase the awareness of our service product. </p>
+            <p>After eight years of business and almost no money spent on marketing, AssetBuilder realized it had reached the brink of its viral coefficient.  We needed to reinvest money into marketing and lead generation, reinvent our brand, and reduce our reliance on Scott Burns. </p>
+            <p>While most of these responsibilities would fall on my shoulders as the creative director, I led the team to get the best outside opinion on our services.   We hired The Richards Group (TRG), one of the best agencies in America, to help us gain a new perspective and increase the awareness of our service product. </p>
           </section>
         </div>      
  
@@ -25,7 +25,7 @@
               <section class="project-copy--left row" itemprop="description">
                 <h3>Setting up the Structure.</h3>
                 <p>TRG started out with a review of our current site and our competitors.  After an exhaustive study they made 106 recommendations to increase the lead generation of our site.   These recommendations ranged from removing the blocks off our old logo to predictive searching based on our readers previous history.</p>
-                <p>I worked with their strategy team to narrow down the 106 recommendation into a more manageable list in which my small development team could complete in three months or less.   We pared-down the list to 60 recommendations and began working on the wire-frames and site design utilizing our new brand and our previous visual identity.</p>
+                <p>I worked with their strategy team to narrow down the 106 recommendations into a more manageable list in which my small development team could complete in three months or less.   We pared-down the list to 60 recommendations and began working on the wire-frames and site design utilizing our new brand and our previous visual identity.</p>
               </section>
             
               <section class="row assetbuilder__wireframes__images" data-project-image itemprop="workExample">
@@ -106,7 +106,7 @@
 
 
 
-         <section class="assetbuilder__boomer">
+         <section class="assetbuilder__boomer row">
           <div class="project-copy" itemprop="description">
               <h3>Built for Boomers</h3>
               <p>AssetBuilder&rsquo;s target market is the Baby Boomers.  More and more Boomers are leaving the comfort of large desktops and searching the Internet on their tablets.   After watching our tablet viewership grow 30% in one year, I wanted to make sure version 6.0 worked on tablets as well as a desktop.  </p>
@@ -132,17 +132,23 @@
         </div>
 
 
-
-
-
-         <section class="project-credits row">  
-            <h5>Thanks for Reading</h5>
-            <ul class="credits">
+        <section class="project-credits row">
+          <ul class="credits">
               <li itemprop="author"><strong>Strategy:</strong> The Richards Group, Zack Davis</li>
               <li><strong>Design:</strong> Luis Acevedo, Zack Davis</li>
               <li><strong>Front-end:</strong> Zack Davis</li>
               <li><strong>Back-end:</strong> Mark Johnson</li>
+          </ul>
+        </section>
+
+
+         <section class="project-thanks row">  
+            <h5>Thanks for Reading</h5>
+            <p>Do you like what you see?</p>
+            <ul>
+              <li><span data-underlined-link data-text="Learn More About Me" data-page="{{ route('about') }}"></span></li>
             </ul>
+
          </section>
 
           

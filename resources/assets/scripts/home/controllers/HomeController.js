@@ -5,10 +5,10 @@
         .module('twentyseven.home')
         .controller('HomeController', HomeController);
 
-   HomeController.$inject = ['$timeout', 'mailService', 'companyService', 'companyDataService', 'common'];
+   HomeController.$inject = ['$timeout', 'mailService', 'companyService', 'companyDataService', 'common', 'sessionService'];
 
     /* @ngInject */
-    function HomeController($timeout, mailService, companyService, companyDataService, common) {
+    function HomeController($timeout, mailService, companyService, companyDataService, common, sessionService) {
         var vm = this;
         vm.title = 'HomeController';
 
@@ -54,13 +54,16 @@
         
         vm.fillCompanyInformation = fillCompanyInformation;
 
+        
+
         ////////////////
+
 
         /**
          * Controller Activeed
          */
         function activate() {
-            // type(); 
+            
         }
 
 
@@ -146,14 +149,17 @@
         function fillCompanyInformation(guid) {
             var data = companyDataService.getData();
             
-            if (data == undefined) {
+            if (data == false) {
                 companyService.getCompanyInformation(guid).then(function (data) {
-                    companyDataService.addData(data);
-                    vm.fullName = data.first_name + ' ' + data.last_name;
                     
+                    if (data.first_name == undefined) return;
+                    companyDataService.addData(data);
                     common.sendHook(data.company + ' is visiting the site', 'Get excited because '  +  vm.fullName  + ' is checking out your shit');
                 });
             } 
+
+            vm.fullName = companyDataService.fullName();
+            sessionService.recordSession(companyDataService.getCompanyId());
 
             return false;
             

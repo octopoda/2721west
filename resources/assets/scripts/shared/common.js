@@ -24,6 +24,7 @@
             addCommas: addCommas,
             removeCommas: removeCommas,
             toTitleCase : toTitleCase,
+            fullName : fullName,
             sendHook: sendHook
         };
         
@@ -51,6 +52,10 @@
 
         function sendHook(title, message) {
             hooks(title, message, 'VsAvc9a7Hb');
+        }
+
+        function fullName(data) {
+            return data.first_name + ' ' + data.last_name;
         }
 
 

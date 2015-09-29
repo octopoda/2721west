@@ -30,7 +30,7 @@
             <p>For the discovery I wanted to get at the root of the issue. I interviewed teachers, staff members, parents, and anyone in the demographic I could get to talk to me.</p>
             <blockquote>&ldquo;The staff is so loving and caring for each child.  You make us feel like part of the family. &rdquo;</blockquote>
             <p>It was evident that the school's branding of <em>Shaping Young Hearts</em> was being broadcast.  Parents made great comments like, The staff is so loving and caring for each child.  You make us feel like part of the family.</p>
-            <p>The problem of engagement came down to communication.  The parents and teachers didn't have a central place to communicate.  It was always a before school/after school discussion between one parent and one teacher.  The staff were trying to communicate through emails but didn't have knowledge of their open rate.  And most of the important information for parents were given as printed handouts in the children&rsquo;s folders. </p>
+            <p>The problem of engagement was actually one of communication.  The parents and teachers didn't have a central place to communicate.  It was always a before school/after school discussion between one parent and one teacher.  The staff was trying to communicate through emails but didn't have knowledge of their open rate.  The only source of important information for parents was through printed handouts in the children&rsquo;s take home folders. </p>
             <p>My objective quickly became clear to me. I needed to:</p>
             
           </section>
@@ -286,21 +286,7 @@
 
           
 
-  
-               
-       
-        
-
-
-
-
-
-     
-         
-
-
-     <section class="project-credits">  
-        <h5>Thanks for Reading</h5>
+   <section class="project-credits">  
         <ul class="credits">
           <li itemprop="author"><strong>Strategy:</strong> Zack Davis</li>
           <li><strong>Design:</strong> Zack Davis</li>
@@ -308,6 +294,18 @@
           <li><strong>Photography:</strong> Ariel Cabe Martin, Barbara Cassidy</li>
         </ul>
      </section> 
+
+
+
+     <section class="project-thanks row">  
+            <h5>Thanks for Reading</h5>
+            <p>Do you like what you see?</p>
+            <ul>
+              <li><span data-underlined-link data-text="Learn More About Me" data-page="{{ route('about') }}"></span></li>
+            </ul>
+
+         </section>
+
     
 
     <div class="up-next innovation" go-to-next data-link="{{ route('innovation') }}" id="goToNext"> 

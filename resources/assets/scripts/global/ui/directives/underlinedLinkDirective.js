@@ -13,12 +13,11 @@
             bindToController: true,
             controller: underlinedLinkController,
             controllerAs: 'vd',
-            link: link,
             templateUrl: '/templates/ui/link.html',
             restrict: 'A',
             replace:true,
             scope: {
-            	href: "@",
+            	page: "@",
             	text: "@",
             }
         };
@@ -26,13 +25,7 @@
         return directive;
 
         function link(scope, element, attrs) {
-        	var vd = scope
-
-            if (scope.href === undefined) {
-                element.bind('click', function (e) {
-                  e.preventDefault();
-                });    
-            }
+        	
             
        	}
     }
@@ -41,7 +34,13 @@
 
     /* @ngInject */
     function underlinedLinkController($scope, $element, $attrs) {
+            var vd = $scope
 
+            if (vd.page === undefined) {
+                // $element.bind('click', function (e) {
+                //   e.preventDefault();
+                // });    
+            }
     }
 })();
 

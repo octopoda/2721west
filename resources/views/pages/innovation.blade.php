@@ -131,21 +131,31 @@
             <h3>A Familiar Direction </h3>
             <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/innovation/iPads.png"  class=""  itemprop="workExample"></div>
             <p>After the discovery of distrust from physicians from the NECC incident, Innovation Compounding felt it needed a way to gain the trust of the prescriber and re-educated them on the benefits of compounding. </p>
-            <p>During a previous project I developed Innovation an application called the Compounding Compass in which doctors could log in and review information about the compounded medication, but the Compass hadn&rsquo;t been updated in years and was no longer being used. </p>
-            <p>Using it as a content lead generation tool, the Compass was designed with doctors in mind.  Using simplified UI designed for the tablet or ultra book, the Compass would be separated into the different drug lines with search capabilities across all medications.  The physician would have access to information from white papers to prescribing work flows to help them prescribe compounded medications and understand the uses and proper application of each medication. </p>
-            <p>As the main content strategy and lead generation tool, the Compounding Compass would lock down certain features such as a face-to-face online meeting with a pharmacist in exchange of an email address or other contact information.    With that contact information the CRM would work with Mandrill to send drip campaigns and dynamically generate future articles or tools for physicians to keep interacting with the compass and Innovation Compounding. </p>
+            <p>Previously I had developed an application for Innovation called the Compounding Compass in which doctors could log in and review information about the compounded medication, but the application hadn&rsquo;t been updated in years and was no longer being used. </p>
+            <p>Using it as a content lead generation tool, the Compass was designed with doctors in mind.  Using simplified UI designed for the tablet or ultra book; the strategy was for the Compass to be separated into the different drug lines with search capabilities across all medications.  The physician would have access to information from white papers to prescribing work flows to help them prescribe compounded medications and understand the uses and proper application of each medication. </p>
+            <p>Compounding Compass would lock down certain features such as a face-to-face online meeting with a pharmacist in exchange for an email address or other contact information.    With that contact information the CRM would work with Mandrill to send drip campaigns and dynamically generate future articles or tools for physicians to continue interacting with the Compass and Innovation Compounding. </p>
             <p>Unfortunately the compass project was canceled before production could commence.</p>
           </section>
         </div>
 
      
          <section class="project-credits row">  
-            <h5>Thanks for Reading</h5>
+            
             <ul class="credits">
               <li itemprop="author"><strong>Strategy:</strong> Zack Davis</li>
               <li><strong>Design:</strong> Zack Davis, Deigo Nava</li>
               <li><strong>Copy:</strong> Zack Davis</li>
             </ul>
+         </section>
+
+
+         <section class="project-thanks row">  
+            <h5>Thanks for Reading</h5>
+            <p>Do you like what you see?</p>
+            <ul>
+              <li><span data-underlined-link data-text="Learn More About Me" data-page="{{ route('about') }}"></span></li>
+            </ul>
+
          </section>
         
 
