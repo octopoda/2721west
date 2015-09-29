@@ -17,7 +17,7 @@ class Company extends Model {
 
 
 	public function session() {
-		return $this->hasMany('twentyseven\session');
+		return $this->hasMany('twentyseven\Session');
 	}
 
 
