@@ -149,18 +149,23 @@
         function fillCompanyInformation(guid) {
             var data = companyDataService.getData();
             
+
             if (data == false) {
-                companyService.getCompanyInformation(guid).then(function (data) {
+                companyService.getCompanyInformation(guid).then(function (data) {   
                     
                     if (data.first_name == undefined) return;
+                    vm.fullName = data.first_name + ' ' + data.last_name;
+                    
                     companyDataService.addData(data);
+                    sessionService.recordSession(companyDataService.getCompanyId());
                     common.sendHook(data.company + ' is visiting the site', 'Get excited because '  +  vm.fullName  + ' is checking out your shit');
                 });
-            } 
+            } else {
+                companyDataService.addData(data);
+                sessionService.recordSession(companyDataService.getCompanyId());
+            }
 
-            vm.fullName = companyDataService.fullName();
-            sessionService.recordSession(companyDataService.getCompanyId());
-
+            
             return false;
             
         }
