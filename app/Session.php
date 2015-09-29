@@ -16,7 +16,7 @@ class Session extends Model {
 	 * Get the company assoicated with the session
 	 */
 	public function company() {
-		return $this->belongsTo('twentyseven\company');
+		return $this->belongsTo('twentyseven\Company');
 	}
 
 	
