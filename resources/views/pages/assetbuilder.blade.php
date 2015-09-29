@@ -127,9 +127,8 @@
                 <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/assetbuilder/iPad2@2x.png" class="afkl-lazy-wrapper item"></div>
                 <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/assetbuilder/iPad3@2x.png" class="afkl-lazy-wrapper item"></div>
                 <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/assetbuilder/iPad4@2x.png" class="afkl-lazy-wrapper item"></div>
-                <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/assetbuilder/iPad5@2x.png" class="afkl-lazy-wrapper item"></div>
-            </div>
-        </div>
+                <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/assetbuilder/ipad5%402x.png" class="afkl-lazy-wrapper item"></div>
+          </div>
 
 
         <section class="project-credits row">
