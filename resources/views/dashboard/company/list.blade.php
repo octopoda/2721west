@@ -20,24 +20,47 @@
 			<h5>There are no companies in the database</h5>
 		@else
 			<ul class="dashboard__list">
-				@foreach($companies as $company)
-					<li>
-						<span class="title">{{ $company->company }}</span>
-						<span class="info">http://2721west.com/{{ $company->guid }}</span>
-						<span><a href="mailto:{{ $company->email }}">{{ $company->email }}</a></span>
-						<span><a href="{{ route('company-sessions', $company->id) }}">View Sessions</a></span>
-						<span>
-							<ul class="dashboard__edits">
-								<li class="button--edit"><a href=" {{ route('dashboard.company.edit', $company->id) }}">Edit</a></li>
-								<li class="button--delete transparent">
-									 {!! Form::open(['method'=>'DELETE', 'route' => ['dashboard.company.destroy', $company->id]]) !!}
-								 		{!! Form::submit('Delete', ['class' => 'transparent']) !!}
-								  	{!! Form::close() !!}
-								</li>
-							</ul>
-						</span>
-					</li>
-				@endforeach
+			<table class="dashboard__list">
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Guid</th>
+						<th>Session</th>
+						<th>Edit</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach($companies as $company)
+						
+						<tr>
+							
+							<td class="title">
+								@if ($company->visited)
+									<i class="fa fa-check"></i>
+								@endif
+								{{ $company->company }}
+							</td>
+							<td>{{ $company->first_name }}  {{ $company->last_namae }}</td>
+							<td class="info">http://2721west.com/{{ $company->guid }}</td>
+							<td><a href="mailto:{{ $company->email }}">{{ $company->email }}</a></td>
+							<td><a href="{{ route('company-sessions', $company->id) }}">View Sessions</a></td>
+							<td>
+								<ul class="dashboard__edits">
+									<li class="button--edit"><a href=" {{ route('dashboard.company.edit', $company->id) }}">Edit</a></li>
+									<li class="button--delete transparent">
+										 {!! Form::open(['method'=>'DELETE', 'route' => ['dashboard.company.destroy', $company->id]]) !!}
+									 		{!! Form::submit('Delete', ['class' => 'transparent']) !!}
+									  	{!! Form::close() !!}
+									</li>
+								</ul>
+							</td>
+						</tr>
+					@endforeach
+				</tbody>
+			</table>
+				
 			</ul>
 		 @endif
 	</section>

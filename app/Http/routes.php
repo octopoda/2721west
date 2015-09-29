@@ -100,6 +100,9 @@ Route::get('about-zack-davis', [
 ]);
 
 
+Route::get('test/{id}', 'CompanyController@addSession');
+
+
 
 /**
  * Guid Route for Companies that I setup. 

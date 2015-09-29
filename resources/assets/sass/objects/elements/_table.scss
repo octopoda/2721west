@@ -14,7 +14,7 @@ table {
 }
 
 thead {
-	background:$gray-light;
+	background:lighten($gray-light, 5%);
 	th {
 		padding:rem-calc(10) rem-calc(20);
 		color:$white;
@@ -23,9 +23,14 @@ thead {
 }
 
 tr {
-	border-top:1px solid $black;
+	border-top:1px solid lighten($gray-light, 10%);
 	&:first-child {
 		border:0;
+	}
+
+	&.header-column {
+		padding-top:rem-calc(30);
+		background-color:lighten($gray-light, 20%);
 	}
 }
 

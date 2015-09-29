@@ -40,8 +40,15 @@ class CompanyController extends Controller {
 	 */
 	public function api($guid) {
 		$company = Company::where('guid', $guid)->first();
+		
+		if ($company->visited == 0) {
+			$company->visited = 1;	
+		}
+		
+		$company->save();
 		return $company;
 	}
+
 
 
 	/**
@@ -59,11 +66,9 @@ class CompanyController extends Controller {
 
 	public function displaySessions($id) {
 		$company = Company::with('session')->findorFail($id);
-		$sessions = $company->session()->get();
+		$sessions = $company->session()->orderBy('created_at', 'desc')->get();
 
 		$sessions = $this->setTimeOnPage($sessions);
-
-
 		
 		return view('dashboard.company.session', compact(['company', 'sessions']));
 	}
@@ -79,7 +84,7 @@ class CompanyController extends Controller {
 		for ($i = 1; $i < count($object); $i++) {
 			$newTime = Carbon::parse($object[$i]->created_at);
 			$oldTime = Carbon::parse($object[$i-1]->created_at);
-			$date = Carbon::parse($object[$i]);
+			$date = Carbon::parse($object[$i]->created_at);
 			$seconds = $oldTime->diffInSeconds($newTime);
 			
 			$divisor_for_minutes = $seconds % (60 * 60);
@@ -88,8 +93,8 @@ class CompanyController extends Controller {
     		$divisor_for_seconds = $divisor_for_minutes % 60;
     		$seconds = ceil($divisor_for_seconds);
 
-			$object[$i-1]['time_on_page'] = $minutes .  ":" .  $seconds;
-			$object[$i]['created_at'] = $date
+    		$object[$i-1]['time_on_page'] = $minutes .  ":" .  $seconds;
+			$object[$i]['date_viewed'] = $date->toFormattedDateString();
 		}
 
 		return $object;
