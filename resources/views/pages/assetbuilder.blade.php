@@ -8,8 +8,8 @@
  
         <div data-into class="row">
           <section class="project-copy" itemprop="description">
-            <p>After eight years of business and almost no money spent on marketing, AssetBuilder realized it had reached the brink of its viral coefficient.  We needed to reinvest money into marketing and lead generation, reinvent our brand, and reduce our reliance on Scott Burns. </p>
-            <p>While most of these responsibilities would fall on my shoulders as the creative director, I led the team to get the best outside opinion on our services.   We hired The Richards Group (TRG), one of the best agencies in America, to help us gain a new perspective and increase the awareness of our service product. </p>
+            <p>After eight years of business and a low marketing budget, AssetBuilder realized it had reached the brink of its viral coefficient.  It needed to reinvest money into marketing and lead generation, reinvent our brand, and reduce our reliance on Scott Burns. </p>
+            <p>As the creative director, I led the team in getting an outside opinion on our services.   We hired The Richards Group (TRG), one of the best agencies in America, to help us gain a new perspective and increase the awareness of our service product. </p>
           </section>
         </div>      
  
@@ -24,8 +24,8 @@
             <div class="row">
               <section class="project-copy--left row" itemprop="description">
                 <h3>Setting up the Structure.</h3>
-                <p>TRG started out with a review of our current site and our competitors.  After an exhaustive study they made 106 recommendations to increase the lead generation of our site.   These recommendations ranged from removing the blocks off our old logo to predictive searching based on our readers previous history.</p>
-                <p>I worked with their strategy team to narrow down the 106 recommendations into a more manageable list in which my small development team could complete in three months or less.   We pared-down the list to 60 recommendations and began working on the wire-frames and site design utilizing our new brand and our previous visual identity.</p>
+                <p>TRG started out with a review of our current site and our competitors.  After an exhaustive study they made 106 recommendations to increase the lead generation of our site.   These recommendations ranged from removing the blocks fromour old logo to predictive searching based on our reader&rsquo;s previous reading history.</p>
+                <p>I worked with their strategy team to narrow down the 106 recommendations to 60, creating a more manageable list which my development team could complete in three months or less. </p>
               </section>
             
               <section class="row assetbuilder__wireframes__images" data-project-image itemprop="workExample">
@@ -41,14 +41,14 @@
         <div class="assetbuilder__code row">
               <section class="project-copy" itemprop="description">
                 <h3>Building from Scratch</h3>
-                <p>While reviewing the wire-frames and initial design specification and planning for a future application, our development team decided the best course of action was to split the front-end from the back-end.  This would allow us the flexibility for upcoming applications to integrate easily, but also help us break up the site into more manageable modules. </p>
+                <p>While reviewing the wire-frames and initial design specification and planning for a future application; our development team decided the best course of action was to split the front-end from the back-end.  This would allow us the flexibility for the integration of upcoming applications, but also help us break up the site into more manageable modules. </p>
                 <p>We dropped almost the entire code base we had used for the past six years and we rebuilt the site from the ground up using a RESTFUL back-end consumed by a Angular JS front-end. We wanted more control over our graphs and charts, so we revamped our entire charting system using a custom coded D3 implementation.</p>  
               </section>
 
               <section class="project-copy" itemprop="description"> 
                 <h3>Changing Focus</h3>
                 <p>My responsibilities changed dramatically during this project.  While I have always been in charge of the creative direction and front end development, the new specifications required me to learn Angular, D3, and promise/request patterns. </p>
-                <p>While it was a large learning curve, our development team of two was able to rebuild the entire code base in less than three months.  While my main focus was on the front-end development, I also continued to design and build out the remaining templates that were not part of the scope for TRG and made sure the site was responsive. </p>
+                <p>It was a large learning curve and our development team of two was able to rebuild the entire code base in less than three months.  While my main focus was on the front-end development, I also continued to design and build out the remaining templates that were not part of the scope for TRG and made sure the site was responsive. </p>
              </section>
         </div>
 

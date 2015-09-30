@@ -12,7 +12,7 @@
       <div class="row">
        	<section data-into class="home__main into">
             <h5 data-ng-if="vm.fullName" class="ng-cloak">Hi {! vm.fullName !},</h5>
-            <h1>I&rsquo;m Zack Davis a <br>
+            <h1>I am Zack Davis a <br>
               
               <span class="malarkey" ng-click="vm.type()">
                 <span class="malarkey--hover"></span>

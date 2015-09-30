@@ -59,9 +59,9 @@
         <div class="row">
           <section class="project-copy" itemprop="description">
             <h3>In Focus</h3>
-            <p>During the discovery process I learned that the school had recently gone through a small branding process.  While I agreed with what came out of that process, I wanted to build upon it. </p>
-            <p>I wanted to use the parents&rsquo;s comments about the loving and compassionate environment they feel at Faith Lutheran Day School and mix it with the <em>Shaping Young Hearts</em> brand that came out of the previous process. </p>
-            <p>Working with my copywriter we built a statement in which the foundation of the brand could stand upon. </p>
+            <p>During the discovery process, I learned that the school had recently gone through a small branding process.  While I agreed with the results of that process, I wanted to build upon it. </p>
+            <p>I wanted to use the parents&rsquo;s comments about the loving and compassionate environment they feel at Faith Lutheran Day School and mix it with the <em>Shaping Young Hearts</em> brand that was produced during the previous process. </p>
+            <p>Working with my copywriter we built a statement on which the foundation of the brand could stand. </p>
           </section>
         </div>
 
@@ -78,8 +78,8 @@
         <div class="row">
           <section class="flds__type--text" itemprop="description">
             <h4>Typography</h4>
-            <p>I wanted to keep the childlike feeling of the school throughout the visual design. With a small budget and no room for purchased fonts, I turned to Google.  As I was searching handwritten fonts I came across a particular family that was still readable but had a look as if a child had written it.  The name then solidified it for me: <em>Loved by a King</em>. </p>
-            <p>I needed to pair that font with a san-serif typeface that would be great for paragraphs but still have a childlike quality.   I chose a thick rounded serif called Nunito.</p>
+            <p>I wanted to keep the childlike feeling of the school throughout the visual design. With a small budget and no room for purchased fonts, I turned to Google.  In my search for handwritten fonts I came across a particular family that was still readable but had a look as if a child had written it.  The name then solidified it for me: <em>Loved by a King</em>. </p>
+            <p>I needed to pair that font with a san-serif typeface that would be great for paragraphs but still have a childlike quality.   I chose a thick rounded san-serif called Nunito.</p>
          </section>
 
          <section class="flds__type--images">
@@ -97,8 +97,8 @@
         <div class="row">
           <section class="project-copy" itemprop="description">
             <h3>Photography & Icons</h3>
-            <p>With a pro-bono budget, we were very lucky that a student&rsquo;s grandparent, and my partner at the time were accomplished photographers. To keep the <em>in focus</em> concept we decreased the depth of field so that only the children up front are in focus and background blurs.</p>
-            <p>The kids being the most important part I made sure to incorporate all custom photography and include large images of the kids on all of the collateral.  I also increased the tint on the existing color scheme to add more excitement and made large overlays of the images for ease of reading.</p>
+            <p>With a pro-bono budget, we were very lucky that a student&rsquo;s grandparent, and my partner at the time were accomplished photographers. To keep the <em>in focus</em> concept we decreased the depth of field so that only the children in the foreground are in focus and the background blurred.</p>
+            <p>Because the children were the most important part I made sure to incorporate all custom photography and include large images of the kids on all of the collateral.  I increased the tint on the existing color scheme to add more excitement and made large overlays of the images for ease of reading.</p>
             <p>The school&rsquo;s identity mark was created during the previous branding campaign and included four icons symbolizing the school: heart, cross, music note, and abc&rsquo;s. I expanded upon the previous icons and created a set of icons for each program the school offered.</p>
             <p>Using the same styling, I built out the remaining programs and designed rules of use for each icon, designating the heart icon to represent the entire school.</p>
           </section>
@@ -130,9 +130,9 @@
         <div class="row">
           <section class="flds__wireframes--text" itemprop="description">
             <h3>Updating the Site</h3>
-            <p>During the discovery process I found that the main issue of communication was the plethora of communication tools each teacher was using.   A parent may have a two children in two different classes and communicate with each teacher with completely different tools.  I needed to build a consistent communication for all the staff members and make it easy for parents and teachers to use. </p>
-            <p>Watching my wife and her friends I realized most parents are in their cars all day, transporting kids from one place to another.   When they get a second to themselves they aren&rsquo;t opening up their laptop to surf the Internet, they&rsquo;re picking up their phones. So I designed and constructed each layout and component with all screens in mind, and if a feature didn&rsquo;t work on a mobile screen then it wasn&rsquo;t included in the site.</p>
-            <p>I began to  wire-frame an online application that teachers could update parents about the latest events, activities, and volunteer opportunities at the school with a few simple clicks, making it easy for both teachers and parents.</p>
+            <p>During the discovery process, I found that the main issue of communication was the plethora of communication tools each teacher was using.   A parent may have a two children in two different classes and communicate with each teacher with completely different tools.  I needed to build a consistent communication pathway for all the staff members and make it easy for parents and teachers to use. </p>
+            <p>Observing my wife and her friends, I realized most parents are in their cars all day transporting kids from one place to another.   When they get a second to themselves they aren&rsquo;t opening up their laptop to surf the Internet, they&rsquo;re picking up their phones. So I designed and constructed each layout and component with all screens in mind, and if a feature didn&rsquo;t work on a mobile screen then it wasn&rsquo;t included in the site.</p>
+            <p>I wire-framed an online application allowing teachers to update parents, using a few clicks, about the latest events, activities, and volunteer opportunities at the school.</p>
             <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/flds/flds-wireframes@phone.jpg" class="afkl-lazy-wrapper phone-only"></div>
           </section>
         </div>
@@ -150,9 +150,9 @@
               <section class="project-copy" itemprop="description">
                  <h3>The Bulletin Board</h3>    
                  <p>Taking into consideration the parents&rsquo; needs to be updated easily and with many different devices, and the staff&rsquo;s needs to highlight upcoming events, posts about classroom activities, and volunteer opportunities, I set off to build an application to handle it all. </p>
-                 <p>Using my custom small business CMS, Black Ink, and Google calendar I incorporated the calendar, updates, and classroom/teacher information for each class. </p>
+                 <p>Using my custom small business CMS, Black Ink, and Google calendar, I incorporated the calendar, updates, and classroom/teacher information for each class. </p>
                  <p>With children&rsquo;s safety in mind, a parent who is registered for the site is redirected to their own dashboard about their children and their classrooms, along with an update thread for the school and special programs.</p>
-                 <p>The teacher updates the parents on what their child is doing in the classroom along with the next five days of events.  It also gives classroom information such as room parent and teacher contact information, important forms to download, and general information about the aides in the classroom.  Parents also have the ability to download, sync, or print full month calendars for their child’s classroom.</p>
+                 <p>The teacher updates the parents on what their child is doing in the classroom along with the next five days of events.  It gives classroom information such as room parent and teacher contact information, important forms to download, and general information about the aides in the classroom.  Parents have the ability to download, sync, or print full month calendars for their child&rsquo;s classroom.</p>
                  <p>To increase volunteering at the school,  a parent can volunteer for any need with the click of one button.  They are registered for the need and then an email is sent to them with more information about the event.</p>
               </section>   
           </div>
@@ -186,8 +186,8 @@
             <h3>Talking to Prospective Parents</h3>
             <p>After designing the bulletin board, I needed to make sure prospective parents had a vision of the school and the teachers.  Using the same design principle and the new visual identity system I rebuilt the five pages from the previous site. </p>
             <p>I highlighted the school&rsquo;s branding and programs by giving greater descriptions and images of each one.  I rebuilt the FAQ’s into a simple system that was searchable and changed the fees from a table to an easy drop down module in which the parent could get fees and tuition quickly.  </p>
-            <p>I also wanted prospective parents to have the ability to see their potential teacher&rsquo;s personality.    We interviewed each teacher in front of a camera.  Asking different questions we saw each teachers personality arise.  We then cut those videos into 20-second background videos that play without audio on the faculty page. </p>
-            <p>Last, I opened up the bulletin board to the public so that they can see what is going on in the school and in each classroom, but are locked out of more individualized parent content. </p>
+            <p>I wanted prospective parents to have the ability to see their potential teacher&rsquo;s personality.    We interviewed each teacher videoing their questions and answer and saw their personalities emerge.  I cut each video to 20 seconds or less and place them in the background of the faculty page without audio.</p>
+            <p>The bulletin board was opened to the public to further educate them on the school and classroom activities.  Individualized parent content; however remained secure. </p>
           </section>
         </div>
 
@@ -261,11 +261,11 @@
         <div class="row">
           <section class="project-copy" itemprop="description">
             <h3>Maximizing Engagement</h3>
-            <p>Once the site was up and running we started to test engagement of the parents and users. At first we saw a phenomenal participation rate. The site increased from 30 users a month to over 4,000, time on site increased from 0:23 to over 7:10 and over 98% of the school’s families had at least one parent online.</p>
-            <p>As time passed we noticed that parents engagement dropped and they were still getting multiple versions of communication from teachers. We pushed for more consistency from the teachers, but also added a daily/weekly email for each parent.</p>
-            <p>During registration a parent has an option of daily or weekly. The email dynamically compiles the days activities for their children, and wraps it up in a short email that is delivered to all parents around their children&rsquo;s bed time.</p>
-            <p>I also added each parent to a MailChimp list and built newsletters for important upcoming events in the school. These email go out twice a quarter.</p>
-            <p>Launching the new email format we saw an dramatic increase in engagement. 76% of parents open the MailChimp newsletters and the daily emails have open rates of 120% and click rates of 50+%</p>
+            <p>Once the site was operational, we started to test engagement of the parents and users. Initially, we saw a phenomenal participation rate. The site increased from 30 users a month to over 4,000, time on site increased from 0:23 to over 7:10 and over 98% of the school&rsquo;s families had at least one parent online.</p>
+            <p>As time passed, we noticed that parents engagement dropped and they were still getting multiple versions of communication from teachers. We pushed for more consistency from the teachers, but also added a daily/weekly email for each parent.</p>
+            <p>Parents now have an option of daily or weekly email emails that dynamically compiles the days activities for their children, and wraps it up in a short email that is delivered to all parents around their children&rsquo;s bed time.</p>
+            <p>Each parent was added to a MailChimp list and I built newsletters for important upcoming events in the school. These emails go out twice a quarter.</p>
+            <p>Launching the new email format, we saw an dramatic increase in engagement. 76% of parents open the MailChimp newsletters and the daily emails have open rates of 120% and click rates of 50+%</p>
 
           </section>
         </div>

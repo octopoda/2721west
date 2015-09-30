@@ -9,8 +9,8 @@
         <section class="innovation__pills">
           <div class="row">
             <section data-into class="project-copy" itemprop="description">
-              <p>Over its seven years of business Innovation Compounding built it&rsquo;s business infrastructure to compete on a national scale, but the branding and development behind their advertising and website was still on par with a local pharmacy. </p>
-              <p>They were ready to take the next step, so I was brought in to help build enterprise solutions to help them on a compete national scale. </p>
+              <p>Over its seven years of business, Innovation Compounding built its business infrastructure to compete on a national scale, but the branding and development behind their advertising and website was still on par with a local pharmacy. </p>
+              <p>They were ready to take the next step, so I was brought in to help build enterprise solutions to help them compete on a national scale. </p>
             </section>
           </div>
         </section>
@@ -20,9 +20,9 @@
             <div class="row">
               <section class="project-copy" itemprop="description">
                 <h3>Bridging the Gap</h3>
-                <p>The first objective was to set up a new internal brand promise.   With no previous branding and a large team the voice of the company was not consistent and didn&rsquo;t separate Innovation from it&rsquo;s competitors. </p>
-                <p>During the discovery process we learned that their patients were still suffering in fear from the 2011 NECC meningitis cases.   With increase regulations from the government, Innovation is primed to become one the national leaders in compounding pharmacy within the next few years. </p>
-                <p>I held a workshop with the key stakeholders of the company to develop a focused brand promise.  In that workout we reviewed the discovery process, looking at their industry, their competitors, and their internal company.  We then worked as a team to define Innovation&rsquo;s new brand promise  to it&rsquo;s customers.  What emerged from that meeting will serve as the strategic foundation for all future decisions related to Innovation Compounding and it&rsquo;s vision. </p>
+                <p>The first objective was to set up a new internal brand promise.   With no previous branding and a large team, the voice of the company was not consistent and didn&rsquo;t separate Innovation from its competitors. </p>
+                <p>During the discovery process, we learned that their patients were still fearful from the 2011 NECC meningitis cases.   With increased regulations from the government, Innovation is primed to become one the national leaders in compounding pharmacy within the next few years. </p>
+                <p>I held a workshop with the key stakeholders of the company to develop a focused brand promise.  We reviewed the discovery process, looking at their industry, their competitors, and their internal company.  We worked as a team to define Innovation&rsquo;s new brand promise  to its customers.  What emerged from that meeting will serve as the strategic foundation for all future decisions related to Innovation Compounding and its vision. </p>
               </section>
             </div>
       
@@ -56,7 +56,7 @@
             <section class="project-copy" itemprop="description">
               <h3>Elaborating</h3>
               <p>After our meeting, I wrote a branding guide to elaborate on the decisions made in our workshop.   This 10-page document details the brand promise in simple language that Innovation Compounding could share with its employees or any other company that might touch the brand. </p>
-              <p>Below are some of the main points I created to reiterate the fours pillars of the brand with clarity and emphasis. </p>
+              <p>Below are some of the main points created to reiterate the fours pillars of the brand with clarity and emphasis. </p>
             </section>
           </div>
 
@@ -85,9 +85,9 @@
             </h3>
           </section>
           <div data-into class="innovation__site--right" itemprop="description">
-            <p>Innovation Compounding products and services included six drug lines with future lines in production, a main compounding pharmacy, and an informational site for physicians called the compounding compass.  I was faced with an overwhelming amount of data and content to organize into a large site. </p>
-            <p>Through sketching and deliberation, I broke the content into multiple sites with different objectives. This could keep the user interface clean and simple and help build different lead generation techniques for each product.  </p>
-            <p>But still, that&rsquo;s a lot of data management</p>
+            <p>Innovation Compounding products and services included six drug lines with future lines in production, a main compounding pharmacy, and an informational site for physicians called the Compounding Compass.  I was faced with an overwhelming amount of data and content to organize into a large site. </p>
+            <p>Through sketching and deliberation, I broke the content into multiple sites with different objectives. Keeping the user interface clean and simple and building different lead generation techniques for each product.  </p>
+            <p>That&rsquo;s a lot of data management</p>
             <p>I developed a plan using one API based CMS  built on Angular and FireBase that could create multiple site and support multiple platforms.  This not only allowed them to break up their content in any way they felt possible, but also help with the future development of products or drug lines. </p>
           </div>
         </div>
@@ -102,8 +102,8 @@
         <section class="project-copy innovation__new-look" itemprop="description">
             <h3>A New Look</h3>
             <p>With a new company voice, Innovation&rsquo;s visual identity needed a face lift.</p> 
-            <p>I started by updating the color scheme and the type face choices.   I added a yellow to the blue and gray color scheme to portray wellness and happiness and I redesigned the word mark to incorportate the wellness brand with a more abstract view of compounding.</p>
-            <p>Working with the designer Diego Nava we rebuilt four of the six drug lines and increased consistency by using similar typeface and visual treatments across all of the drug lines. </p>
+            <p>I started by updating the color scheme and the type face choices.   I added a yellow to the blue and gray color scheme to portray wellness and happiness and I redesigned the word mark to incorporate the wellness brand with a more abstract view of compounding.</p>
+            <p>Working with the designer, Diego Nava, we rebuilt four of the six drug lines and increased consistency by using similar typeface and visual treatments across all of the drug lines. </p>
         </section>
       </div>
 
@@ -129,8 +129,8 @@
           <section class="project-copy">
             <h3>A Familiar Direction </h3>
             <div afkl-lazy-image="{{ $pageInfo['assetPath'] }}/images/innovation/iPads.png"  class=""  itemprop="workExample"></div>
-            <p>After the discovery of distrust from physicians from the NECC incident, Innovation Compounding felt it needed a way to gain the trust of the prescriber and re-educated them on the benefits of compounding. </p>
-            <p>Previously I had developed an application for Innovation called the Compounding Compass in which doctors could log in and review information about the compounded medication, but the application hadn&rsquo;t been updated in years and was no longer being used. </p>
+            <p>After the discovery of distrust from physicians from the NECC incident, Innovation Compounding felt it needed a way to gain the trust of the prescriber and re-educate them on the benefits of compounding. </p>
+            <p>Previously, I had developed an application for Innovation called the Compounding Compass in which doctors could log in and review information about the compounded medication, but the application had not been updated in years and was no longer being used. </p>
             <p>Using it as a content lead generation tool, the Compass was designed with doctors in mind.  Using simplified UI designed for the tablet or ultra book; the strategy was for the Compass to be separated into the different drug lines with search capabilities across all medications.  The physician would have access to information from white papers to prescribing work flows to help them prescribe compounded medications and understand the uses and proper application of each medication. </p>
             <p>Compounding Compass would lock down certain features such as a face-to-face online meeting with a pharmacist in exchange for an email address or other contact information.    With that contact information the CRM would work with Mandrill to send drip campaigns and dynamically generate future articles or tools for physicians to continue interacting with the Compass and Innovation Compounding. </p>
             <p>Unfortunately the compass project was canceled before production could commence.</p>
