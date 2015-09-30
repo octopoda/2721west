@@ -28,7 +28,7 @@
         		var h = $window.innerHeight - 40;	
         		var d = document.body.offsetHeight;
                 
-                if (h > 1065 && d < h) {
+                if (h > 960 && d < h) {
         			document.body.style.height = h + 'px';	
         		}
         	}

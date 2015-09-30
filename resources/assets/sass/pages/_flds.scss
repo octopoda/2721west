@@ -112,8 +112,11 @@ $king-font : 'Loved by the King', cursive;
 
 
 		@include breakpoint('laptop') {
+			
+
 			li {
 				@include span(4 of 12 1);
+				margin-top:rem-calc(40);
 				
 				.objective {
 					padding:rem-calc(20);
@@ -180,7 +183,13 @@ $king-font : 'Loved by the King', cursive;
 
 
 	@include breakpoint('laptop') {
+		margin-top:rem-calc(80);
 		background-image: url('#{$flds-image}/flds-focus@laptop.jpg');
+
+		&--statement {
+			padding-top:rem-calc(40);
+			padding-bottom:rem-calc(40);
+		}
 	}
 
 	@include breakpoint('desktop') {
@@ -238,12 +247,15 @@ $king-font : 'Loved by the King', cursive;
 	}
 
 	@include breakpoint('laptop') {
+
 		&--text {
+			margin-top:rem-calc(20);
 			@include span(4 of 12);
 		}
 
 		&--images {
-			margin-top:rem-calc(10);
+			margin-top:rem-calc(30);
+			margin-bottom:rem-calc(30);
 			@include span(8 of 12);
 			
 			&--wrapper {
@@ -693,7 +705,7 @@ $king-font : 'Loved by the King', cursive;
 */
 
 
-.flds__maximzing {
+.flds__maximize {
 	padding-top: rem-calc(50);
 	padding-bottom: rem-calc(50);
 }

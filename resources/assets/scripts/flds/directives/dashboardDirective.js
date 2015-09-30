@@ -25,7 +25,7 @@
 				handler: function(direction) {
 					element[0].classList.remove('out');
 				},
-				offset: '80%'
+				offset: '60%'
 			});
 
         }

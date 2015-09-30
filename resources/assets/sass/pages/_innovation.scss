@@ -14,6 +14,15 @@
 }
 
 
+.innovation__pills {
+	@include breakpoint('laptop') {
+		.row { 
+			padding-top:rem-calc(20);
+			padding-bottom:rem-calc(50); 
+		}
+	}
+}
+
 
 .innovation__bridging {
 	background-color:$innovation-blue;

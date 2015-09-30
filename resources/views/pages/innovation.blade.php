@@ -11,7 +11,6 @@
             <section data-into class="project-copy" itemprop="description">
               <p>Over its seven years of business Innovation Compounding built it&rsquo;s business infrastructure to compete on a national scale, but the branding and development behind their advertising and website was still on par with a local pharmacy. </p>
               <p>They were ready to take the next step, so I was brought in to help build enterprise solutions to help them on a compete national scale. </p>
-              
             </section>
           </div>
         </section>
@@ -160,7 +159,7 @@
         
 
         <div class="up-next assetbuilder" go-to-next data-link="{{ route('assetbuilder') }}" id="goToNext"> 
-            <h6>Next</h6>
+            <h6 id="removeTopButton">Next</h6>
             <div data-project-title data-title="Better Returns on Your Life" data-roles="Design, Development, Strategy" data-client="AssetBuilder Inc." ng-cloak></div>
         </div> 
 

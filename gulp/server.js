@@ -27,7 +27,7 @@ function browserSyncInit(baseDir, browser) {
     startPath: '/',
     browser: browser,
     proxy: 'http://2721west.app/',
-    reloadDelay: 3000
+    reloadDelay: 1000
   });
 }
 

@@ -309,7 +309,7 @@
     
 
     <div class="up-next innovation" go-to-next data-link="{{ route('innovation') }}" id="goToNext"> 
-        <h6>Next</h6>
+        <h6 id="removeTopButton">Next</h6>
     <div data-project-title data-title="Caring Relentlessly" data-roles="Design, Architecture, Strategy" data-client="Innovation Compounding" ng-cloak></div>
 
 

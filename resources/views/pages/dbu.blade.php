@@ -64,7 +64,7 @@
 
 
         <div class="up-next marks" go-to-next data-link="{{ route('marks') }}" id="goToNext"> 
-            <h6>Next</h6>
+            <h6 id="removeTopButton">Next</h6>
             <div data-project-title data-title="Marks" data-roles="Design" data-client=" " ng-cloak></div>
         </div> 
 

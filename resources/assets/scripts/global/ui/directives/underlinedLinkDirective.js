@@ -37,9 +37,9 @@
             var vd = $scope
 
             if (vd.page === undefined) {
-                // $element.bind('click', function (e) {
-                //   e.preventDefault();
-                // });    
+                $element.bind('click', function (e) {
+                  e.preventDefault();
+                });    
             }
     }
 })();

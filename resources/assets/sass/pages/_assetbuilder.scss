@@ -52,6 +52,7 @@
 	}
 
 	@include breakpoint('laptop') {
+		padding-top:rem-calc(50);
 		background-image: url('#{$assetbuilder-image}/wireframe-background@laptop.jpg');
 	}
 
@@ -60,6 +61,24 @@
 	}
 }
 
+
+.assetbuilder__code {
+
+	@include breakpoint('laptop') {
+		padding-top: rem-calc(50);
+		padding-bottom: rem-calc(50);
+	}
+}
+
+.assetbuilder__shots {
+	@include breakpoint('laptop') {
+		.project-screen-shot {
+			h5 {
+				padding-top:rem-calc(50);
+			}
+		}	
+	}
+}
 
 
 /*
@@ -102,33 +121,10 @@
 					@include last;
 				}
 			}
-
-			// .portfolios {
-			// 	@include span(6 of 12);
-			// 	margin:auto;
-			// }
-
-			// .survey {
-			// 	clear:both;
-			// 	margin-top:rem-calc(-340);
-			// 	@include span(6 of 12);
-			// 	@include push(6 of 12);
-				
-			// }
-
-			// .lazy  {
-			// 	margin-top:rem-calc(-140);
-			// 	@include span(6 of 12);
-			// 	@include push(6 of 12);
-			// }
-
-			// .article {
-			// 	clear:both;
-			// 	@include span(6 of 12);
-			// 	margin-top:rem-calc(-270);
-			// }
 		}
 	}
+
+
 
 	
 }
@@ -147,6 +143,10 @@
 		h3 {
 			text-align: center;
 		}
+	}
+
+	@include breakpoint('laptop') {
+		padding-top: rem-calc(50);
 	}
 }
 

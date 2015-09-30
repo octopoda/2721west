@@ -39,7 +39,7 @@
 
 
         <div class="up-next dbu" go-to-next data-link="{{ route('dbu') }}" id="goToNext"> 
-            <h6>Next</h6>
+            <h6 id="removeTopButton">Next</h6>
             <div data-project-title data-title="Getting Down to Business" data-roles="Design, Development" data-client="Dallas Baptist University" ng-cloak></div>
         </div> 
 

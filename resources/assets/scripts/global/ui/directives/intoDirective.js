@@ -25,8 +25,11 @@
                 handler: function(direction) {
                     element[0].classList.add('active');
                 },
-                offset: '75%'
+                offset: '70%'
             });
+
+
+
         }
     }
 

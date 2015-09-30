@@ -57,7 +57,7 @@
         <div class="assetbuilder__shots">
           {{-- Home --}}
           <section class="assetbuilder__shot--home project-screen-shot">
-            <div class="project-screen-shot">
+            <div>
               <h5>Home Page</h5>
             </div>
             <div class="project-screen-shot__image" data-project-image itemprop="workExample">
@@ -67,7 +67,7 @@
 
           {{-- Who are we --}}
           <section class="assetbuilder__shot--who-are-we project-screen-shot">
-            <div class="project-screen-shot">
+            <div>
               <h5>Who are we</h5>
             </div>
             <div class="project-screen-shot" data-project-image itemprop="workExample"> 
@@ -152,7 +152,7 @@
 
           
         <div class="up-next flds" go-to-next data-link="{{ route('flds') }}" id="goToNext"> 
-            <h6>Next</h6>
+            <h6 id="removeTopButton">Next</h6>
             <div data-project-title data-title="Shaping Young Hearts" data-roles="Design, Development, Strategy" data-client="Faith Lutheran Day School" ng-cloak></div>
         </div> 
 

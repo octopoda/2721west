@@ -105,6 +105,10 @@
 			&.marks {
 				background:$black;
 			}
+
+			&.red {
+				background:$red;
+			}
 		}
 
 		animation:projectTableOut 0.1s ease-in;

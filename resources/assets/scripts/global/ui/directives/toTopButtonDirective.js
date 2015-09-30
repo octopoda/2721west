@@ -42,11 +42,11 @@
            * Waypoints http://imakewebthings.com/waypoints/ 
            */
           sticky = new Waypoint({
-      			element: document.getElementById('goToNext'),
+      			element: document.getElementById('removeTopButton'),
       			handler: function () {
               el.toggleClass('fixed');
       			},
-      			offset:'60%'
+      			offset:'100%'
       		});
         
         }
