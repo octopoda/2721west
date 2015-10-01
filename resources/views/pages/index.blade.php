@@ -30,10 +30,9 @@
           </section>
       </div>
 
-
       <div data-into class="into tablet-down">
-        <section class="home__case-studies">
-          @include('layouts.front.projects')                    
+        <section class="home__case-studies project-tablet">
+          @include('layouts.front.projects', ['learnmore' =>  false]);                    
         </section>
       </div>
 

@@ -10,22 +10,24 @@
 	margin-top:rem-calc(20);
 	
 
-	div {
+	
+	.nav-logo {
 		@include span(6 of 12);
-		&:last-child { @include last; }
 	}
 
 
 
 	.logo {
+		width:80px;
 		height:40px;
-		
 	}
 
 	
 
 	&__links {
-		
+		@include span(6 of 12);
+		@include last;
+
 		ul {
 			text-align: right;
 

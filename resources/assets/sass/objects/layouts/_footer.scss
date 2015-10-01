@@ -4,20 +4,11 @@
 	border-top:1px solid lighten($gray-light, 20%);
 	margin-top:rem-calc(80);
 
-	.row {
-		@include container;
-		
-		&:first-child {
-			
-		}
-
-
-	}
-
 	.logo {
+		width:span(3 of 12);
 		display: block;
 		margin:auto;
-		width:span(3 of 12);
+		
 		height:rem-calc(40);
 		background-position:center center;
 	}

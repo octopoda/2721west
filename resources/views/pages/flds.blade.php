@@ -11,7 +11,7 @@
       
       
       {{-- Intro --}}
-      <div class="row flds__intro">
+      <div data-into class="row flds__intro into">
           <section data-into class="project-copy" itemprop="description">
              <p>At first glance, this was a simple five page WordPress site that I was requested to redesign. </p>
              <p>After my first meeting with the staff and hearing their stories of waning registration and engagement, I realized this was a much bigger project and that this wonderful non-profit school needed help.</p>

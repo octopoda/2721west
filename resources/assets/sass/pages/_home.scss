@@ -251,6 +251,10 @@ body {
 		  		@include transition-delay(0.3s);
 		  		@include transition(opacity ease-in 0.2s);
 		  	}
+
+		  	&.cuss:after {
+		  		content: 'New Cuss word';
+		  	}
 		  }	
 
 		 

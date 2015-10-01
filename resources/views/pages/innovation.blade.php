@@ -6,7 +6,7 @@
           <div data-project-title data-title="Caring Relentlessly" data-roles="Design, Architecture, Strategy" data-client="Innovation Compounding" ng-cloak></div>
         </section>
     
-        <section class="innovation__pills">
+        <section data-into class="innovation__pills into">
           <div class="row">
             <section data-into class="project-copy" itemprop="description">
               <p>Over its seven years of business, Innovation Compounding built its business infrastructure to compete on a national scale, but the branding and development behind their advertising and website was still on par with a local pharmacy. </p>
