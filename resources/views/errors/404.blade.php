@@ -1,3 +1,16 @@
+<?php  
+    if  (!isset($pageInfo))  {
+        $pageInfo = [
+          'pageTitle'  => "Zack Davis Digital Designer / Full Stack Developer",
+          'pageDesc' => 'Zack Davis is a Digital Designer and Full Stack Developer who is passionate about solving problems.',
+          'navigation' => 'show-contact',
+          'assetPath' => 'https://s3.amazonaws.com/2721west-assets',
+          'shareImage' => '/images/icons/',
+          'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer'
+        ];
+      }
+?>
+
 @extends('layouts.app')
 
 
