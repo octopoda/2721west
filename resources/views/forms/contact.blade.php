@@ -1,6 +1,6 @@
  <div class="contact" data-ng-controller="ContactFormController as vm">
 
-     <form accept-charset="utf-8" name="contactForm" data-ng-submit="vm.formSubmit()" class="top-errors">
+     <form accept-charset="utf-8" name="contactForm" id="contactMenu"  data-ng-submit="vm.formSubmit()" class="top-errors">
             <h1>Say Hello.</h1>
             <p>I am available if you need me for a job, have a great project, or just want to hang out and drink a beer.</p>
             <p>I also love to teach, lecture, or give coding workshops for designers.</p>
@@ -106,7 +106,7 @@
               </div>
               
               <div class="form-group">
-                <button class="button__loading" data-ng-disabled="contactForm.$invalid" data-ng-class="{'done' : vm.success, 'loading': vm.loading}">
+                <button class="button__loading" data-ng-disabled="contactForm.$invalid" data-ng-class="{'done' : vm.success, 'loading': vm.loading}" id="contactSubmit">
                       <div class="progress-spinner white"></div>
                       <div class="button-text">Say Hello</div> 
                 </button> 
