@@ -5,8 +5,8 @@
 			</div>
 			<div class="m-navigation__links">
 				<ul>
-					<li class="m-navigation__work" data-modal-toggle data-target="workModal"><span data-underlined-link data-text="work"></span></li>
-					<li class="m-navigation__contact" data-modal-toggle data-target="contactModal"><span data-underlined-link data-text="contact"></a></li>
+					<li class="m-navigation__work" data-modal-toggle data-target="workModal"><span data-underlined-link data-text="work" data-link-id="workLink"></span></li>
+					<li class="m-navigation__contact" data-modal-toggle data-target="contactModal"><span data-underlined-link data-text="contact" data-link-id="contactLink"></a></li>
 				</ul>
 			</div>
 		</nav>

@@ -19,6 +19,7 @@
             scope: {
             	page: "@",
             	text: "@",
+                linkId: "@"
             }
         };
         
