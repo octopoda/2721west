@@ -24,7 +24,7 @@
             
             
             <ul class="home__more">
-              <li><a href="{{ route('about') }}">Learn More About Me <i class="fa fa-angle-right"></i></a></li>
+              <li><a href="{{ route('about') }}" id="homeLearn">Learn More About Me <i class="fa fa-angle-right"></i></a></li>
               <li><a data-modal-toggle data-target="workModal" class="laptop-up">View My Work <i class="fa fa-angle-right"></i></a> </li>
             </ul>
           </section>

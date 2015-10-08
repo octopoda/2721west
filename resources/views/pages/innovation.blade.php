@@ -152,7 +152,7 @@
             <h5>Thanks for Reading</h5>
             <p>Do you like what you see?</p>
             <ul>
-              <li><span data-underlined-link data-text="Learn More About Me" data-page="{{ route('about') }}"></span></li>
+              <li><span data-underlined-link data-text="Learn More About Me" data-page="{{ route('about') }}" data-link-id="innovationAbout"></span></li>
             </ul>
 
          </section>
