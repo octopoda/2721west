@@ -5,6 +5,7 @@
 </head>
 
 <body ng-app="twentyseven" class="work">
+  @include('layouts.front.googleTag')
 
   {{-- Contact Modal --}}  
   <div class="contact-modal" id="contactModal">

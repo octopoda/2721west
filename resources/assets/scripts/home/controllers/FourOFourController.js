@@ -34,7 +34,7 @@
         });
 
         //vars
-        vm.num = 5;
+        vm.num = 1;
         vm.started = false;
         vm.type = type;
         vm.fullName = null;

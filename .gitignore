@@ -12,6 +12,9 @@
 /.phpintel
 *.DS_Store
 
+# Has user information in it. 
+/database/seeds
+
 # AssetFiles
 /public/assets/css
 /public/assets/images

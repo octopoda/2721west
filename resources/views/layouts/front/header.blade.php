@@ -71,6 +71,16 @@
     <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css?v=000000001">
   @endif
 
+
+  @if (session()->has('guid'))
+    <div data-ng-init="vm.fillCompanyInformation('{{ Session::get('guid') }}')"></div>
+    <script>
+      dataLayer = [
+        'companyVisiting' : "{{ Session::get('guid') }}"
+      ]
+    </script>
+  @endif 
+
   <base href="/">
   
   <!--[if lt IE 9]>
