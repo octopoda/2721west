@@ -14,7 +14,7 @@
             <h5 data-ng-if="vm.fullName" class="ng-cloak">Hi {! vm.fullName !},</h5>
             <h1>I am Zack Davis a <br>
               
-              <span class="malarkey" ng-click="vm.type()">
+              <span class="malarkey home--malarkey" ng-click="vm.type()">
                 <span class="malarkey--hover"></span>
                 <span class="malarkey--text" id="malarkey" on-click="dataLayer.push({
                   'event' : 'home-malarkey' 
