@@ -14,11 +14,9 @@
             <h5 data-ng-if="vm.fullName" class="ng-cloak">Hi {! vm.fullName !},</h5>
             <h1>I am Zack Davis a <br>
               
-              <span class="malarkey home--malarkey" ng-click="vm.type()">
-                <span class="malarkey--hover"></span>
-                <span class="malarkey--text" id="malarkey" on-click="dataLayer.push({
-                  'event' : 'home-malarkey' 
-                })">Designer and Full Stack Developer.</span>
+              <span class="malarkey" ng-click="vm.type()">
+                <span class="malarkey--hover home--malarkey"></span>
+                <span class="malarkey--text home--malarkey" id="malarkey">Designer and Full Stack Developer.</span>
               </span><br>
               I am a problem solver. A doer.  Someone <wbr> that 
               can wear any hat necessary to complete the job.  
