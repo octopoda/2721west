@@ -73,11 +73,15 @@
 
 
   @if (session()->has('guid'))
-    <div data-ng-init="vm.fillCompanyInformation('{{ Session::get('guid') }}')"></div>
+    <?php
+      $c = new twentyseven\Http\Controllers\CompanyController();
+      $company = $c->dataLayer(Session::get('guid'));
+      
+    ?>
     <script>
-      dataLayer = [
-        'companyVisiting' : "{{ Session::get('guid') }}"
-      ]
+      dataLayer = [{
+        'companyVisiting' : "{{ $company }}"
+      }];
     </script>
   @endif 
 

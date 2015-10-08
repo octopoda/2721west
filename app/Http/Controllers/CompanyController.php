@@ -11,6 +11,8 @@ use Carbon\Carbon;
 
 class CompanyController extends Controller {
 
+	protected $company;
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -39,14 +41,29 @@ class CompanyController extends Controller {
 	 * @return twentyseven\company 
 	 */
 	public function api($guid) {
-		$company = Company::where('guid', $guid)->first();
+		$company = Company::where('guid', $guid)->first();	
 		
-		if ($company->visited == 0) {
+		if ($company->visited == null) {
 			$company->visited = 1;	
 		}
-		
+	
 		$company->save();
 		return $company;
+	}
+
+
+
+	/**
+	 * Set the Company Name for the DataLayer
+	 * @param  string $guid 
+	 * @return string 
+	 */
+	public function dataLayer($guid) {
+		if ($this->company == null) {
+			$this->company = Company::where('guid', $guid)->first();	
+		}
+
+		return $this->company->company;
 	}
 
 
@@ -74,6 +91,7 @@ class CompanyController extends Controller {
 	}
 
 	
+
 	/**
 	 * Get the time on Page
 	 * @param  /twentyseven/session $object 

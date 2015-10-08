@@ -149,6 +149,7 @@
         function fillCompanyInformation(guid) {
             var data = companyDataService.getData();
             
+            console.dir(data);
 
             if (data == false) {
                 companyService.getCompanyInformation(guid).then(function (data) {   
@@ -163,6 +164,7 @@
             } else {
                 companyDataService.addData(data);
                 sessionService.recordSession(companyDataService.getCompanyId());
+                vm.fullName = companyDataService.fullName();
             }
 
             

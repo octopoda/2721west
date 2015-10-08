@@ -15,7 +15,7 @@ class CreateSessionsTable extends Migration {
 		Schema::create('sessions', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('company_id')->index()->unsigned();
-			$table->foreign('company_id')->references('id')->on('companies');
+			$table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
 			$table->string('browser');
 			$table->string('url');
 			$table->timestamps();
