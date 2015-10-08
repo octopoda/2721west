@@ -37,9 +37,7 @@
     function underlinedLinkController($scope, $element, $attrs) {
             var vd = $scope.vd;
 
-            console.dir(vd);
-
-            console.log(vd.page);
+            
             if (vd.page === undefined) {
                 $element.bind('click', function (e) {
                   e.preventDefault();
