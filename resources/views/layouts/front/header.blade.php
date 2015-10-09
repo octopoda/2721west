@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link rel="shortcut icon" href="favicon.ico?v=1.3" type="image/x-icon">
   <link rel="manifest" href="/images/icons/manifest.json">
+  <meta name="google-site-verification" content="-MCGYaQRX3HI59JvTiyylYP18OLWF8U6J9M--0aXnOs" />
 
   <!-- Facebook Metadata /-->
   <meta property="fb:page_id" content="{{ $pageInfo['pageDesc'] }}"> 
