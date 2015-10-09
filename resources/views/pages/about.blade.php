@@ -25,7 +25,7 @@
 				@include('layouts.front.resume')
 
 				<ul class="about__more">
-              		<li><a href="https://s3.amazonaws.com/2721west-assets/documents/zack-davis-resume.pdf" id="resumeDownload">Download My Resume<i class="fa fa-angle-right"></i></li>
+              		<li><a target="_blank" href="https://s3.amazonaws.com/2721west-assets/documents/zack-davis-resume.pdf" id="resumeDownload">Download My Resume<i class="fa fa-angle-right"></i></li>
             	</ul>
 			</div>
 
