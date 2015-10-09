@@ -78,3 +78,15 @@
 
 	
 }
+
+.about__more {
+	@include clearMP;
+	padding-top:rem-calc(20);
+	
+	margin-left:rem-calc(25);
+	list-style:none;
+
+	i {
+		padding-left:rem-calc(10);
+	}
+}
