@@ -126,7 +126,7 @@
 
 		&:hover {
 				animation:projectTableIn 0.2s ease-in 0.2s 1;
-				@include scale(1.02);
+				@include scale(1.0);
 				box-shadow:0 0 10px rgba($gray, 0.5);
 
 				.project-table__project--header {
@@ -164,7 +164,7 @@
 		box-shadow:0 0 0px rgba($gray, 0.5);
 	}
 	100% {
-		@include scale(1.02);
+		@include scale(1.0);
 		box-shadow:0 0 10px rgba($gray, 0.5);
 	}
 }
@@ -172,7 +172,7 @@
 
 @keyframes projectTableOut {
 	0% {
-		@include scale(1.02);
+		@include scale(1.0);
 		box-shadow:0 0 0px rgba($gray, 0.5);
 	}
 	100% {

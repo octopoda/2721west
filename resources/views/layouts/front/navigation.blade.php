@@ -1,7 +1,7 @@
 <header data-main-navigation class="m-navigation  {{ isset($pageInfo['navigation']) ? $pageInfo['navigation'] : '' }}">
        	<nav>
 			<div class="nav-logo">
-				<div class="logo" ><a data-go-home href="/">2721 West</a></div>
+				<div class="logo" data-go-home><a  href="/">2721 West</a></div>
 			</div>
 			<div class="m-navigation__links">
 				<ul>

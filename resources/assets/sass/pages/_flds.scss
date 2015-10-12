@@ -59,24 +59,18 @@ $king-font : 'Loved by the King', cursive;
 
 			&:first-child {
 				background-color:$flds-red;
-				&:hover {
-					background-color:darken($flds-red, 5%);
-				}
+				
 			}
 
 			&:nth-child(2) {
 				background-color:$flds-green;
-				&:hover {
-					background-color:darken($flds-green, 5%);
-				}
+				
 			}
 
 			&:last-child {
 				background-color:$flds-orange;
 				
-				&:hover {
-					background-color:darken($flds-orange, 5%);
-				}
+				
 				
 				@include last;
 			}

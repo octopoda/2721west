@@ -5,8 +5,10 @@
         .module('twentyseven.ui')
         .directive('goHome', goHome);
 
+    goHome.$inject = ['$window'];
+    
     /* @ngInject */
-    function goHome () {
+    function goHome ($window) {
         // Usage:
         // <a go-home></a>
         var directive = {
@@ -16,9 +18,9 @@
         return directive;
 
         function link(scope, element, attrs) {
-        	jq(element[0]).on('click', function (e) {
-        		window.location = '/';
-        	});
+        	element.bind('click', function (e) {
+               $window.location = "/";
+            })
         }
     }
 
