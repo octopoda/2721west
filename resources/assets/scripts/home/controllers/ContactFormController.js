@@ -46,7 +46,7 @@
         	email: null, 
         	message: null,
             company: null,
-            select: vm.formSelectOptions[0].name,
+            select: vm.formSelectOptions[3].name,
             budget: null,
             organization: null,
         };

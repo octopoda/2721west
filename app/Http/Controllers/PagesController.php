@@ -154,7 +154,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Zack Davis is a Digital Designer and Full Stack Developer who is passionate about solving problems.',
 			'navigation' => 'show-contact',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/icons/',
+			'shareImage' =>  $this->assetPath . '/images/icons',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer'
 		];
 
@@ -169,7 +169,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/icons/',
+			'shareImage' =>  $this->assetPath . '/images/icons',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer'
 		];
 
@@ -197,7 +197,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Zack Davis has been working with Faith Lutheran Day School for the past two years to build a top of the line website to increase communication and awareness with the local community.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/flds/',
+			'shareImage' =>  $this->assetPath . '/images/flds',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Website Strategy, Website Planning, Website Development'
 		];
 
@@ -210,7 +210,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Zack Davis strategized with Innovation Compounding to build a new brand and a architecture for there new enterprise application.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/innovation/',
+			'shareImage' =>  $this->assetPath . '/images/innovation',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Company Branding, Site Architecture' 
 		];
 
@@ -223,7 +223,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/assetbuilder/',
+			'shareImage' =>  $this->assetPath . '/images/assetbuilder',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Company Branding, Creative Direction, Front-end Development'
 		];
 
@@ -252,7 +252,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Various Branding Marks Zack Davis has completed in the past 2 years.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/logos/',
+			'shareImage' =>  $this->assetPath . '/images/logos',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Logos, Identity Marks'
 		];
 		
@@ -270,7 +270,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Zack Davis designed and developed the mobile application for AIGA DFW Design Week 2014.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/aiga/',
+			'shareImage' =>  $this->assetPath . '/images/aiga',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, AIGA, Board Member, Web Application, Mobile Application'
 		];
 
@@ -288,7 +288,7 @@ class PagesController extends Controller {
 			'pageDesc' => 'Zack Davis worked with DXZ to design and develop a new website for the Dallas Baptist University Graduate School of Business.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath + '/images/dbu/',
+			'shareImage' =>  $this->assetPath . '/images/dbu',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Joomla,  Website, Development'
 		];
 
