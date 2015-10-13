@@ -12,7 +12,6 @@
 	}
 
 	a {
-		border-bottom:2px solid $red;
 		font-weight:500;
 		cursor: pointer;
 
@@ -80,13 +79,40 @@
 }
 
 .about__more {
-	@include clearMP;
-	padding-top:rem-calc(20);
-	
-	margin-left:rem-calc(25);
-	list-style:none;
+	@include clearMP; 
+	margin-top:rem-calc(30);
+	font-weight:100;
 
-	i {
-		padding-left:rem-calc(10);
+	li {
+		@include clearMP;
+		list-style:none;
+		display:block;
+		margin-left:rem-calc(-20);
+
+
+		a {
+			border-bottom:none;
+			&:hover {
+				border-bottom:none;
+			}
+		}
+	}
+
+	@include breakpoint('tablet') {
+		
+		li {
+			display: inline-block;
+			margin-right:rem-calc(35);
+			margin-left:0;
+			
+			a {
+				cursor:pointer;
+				border-bottom:none;
+				i {
+					display: inline-block;
+					margin-left:rem-calc(5);
+				}
+			}
+		}
 	}
 }

@@ -32,7 +32,7 @@
 
       <div data-into class="into tablet-down">
         <section class="home__case-studies project-tablet">
-          @include('layouts.front.projects', ['learnmore' =>  false]);                    
+          @include('layouts.front.projects', ['learnmore' =>  false])            
         </section>
       </div>
 
