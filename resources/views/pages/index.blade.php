@@ -18,7 +18,6 @@
                 <span class="malarkey--hover home--malarkey"></span>
                 <span class="malarkey--text home--malarkey" id="malarkey">Creative Director.</span>
               </span><br>
-              <br>
               I am a problem solver. A doer.  Someone <wbr> that 
               can wear any hat necessary to complete the job.  
             </h1>

@@ -38,7 +38,7 @@
         var typist = malarkey(el, {
             typeSpeed:40,
             deleteSpeed: 40,
-            pauseDelay: 3000,
+            pauseDelay: 200,
             loop: true,
             postfix: ' '
         });
@@ -63,6 +63,8 @@
         function activate() {
             angular.forEach(vm.titles, function(value) {
               typist.pause().delete().type(value);
+              console.log(value);
+              if (value == 'Unicorn') { return; }
             });
              
         }
