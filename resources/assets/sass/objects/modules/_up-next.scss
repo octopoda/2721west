@@ -55,22 +55,6 @@
 			position: relative;
 			z-index:$z-layer-range-5;
 		}
-
-		&:before {
-			content: '';
-			position: absolute;
-			top:0;
-			left:0;
-			height:100%;
-			width:100%;
-			background-color:$white;
-			opacity:1;
-			@include transition(opacity ease-in 0.5s);
-		}
-
-		&:hover:before {
-			opacity:0;
-		}
 	}
 }
 

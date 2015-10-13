@@ -24,14 +24,12 @@
         vm.errors = false;
         
         vm.titles  = [
-            'Designer and Full Stack Developer.',
-            'Hybrid.',
+            'Web Application Architect.',
+            'Digital Strategist.',
             'Full Process Designer.',
-            'Full Stack Designer.',
+            'Full Stack Developer.',
             'Unicorn.',
-            'Devigner.',
-            'Deseloper.',
-            'Pink Squirrel.'
+            'Creative Director.'
         ];
 
         
@@ -40,14 +38,13 @@
         var typist = malarkey(el, {
             typeSpeed:40,
             deleteSpeed: 40,
-            pauseDelay: 10000,
+            pauseDelay: 3000,
             loop: true,
-            postfix: ''
+            postfix: ' '
         });
 
         //vars
         vm.num = 1;
-        vm.started = false;
         vm.type = type;
         vm.fullName = null;
 
@@ -58,12 +55,16 @@
 
         ////////////////
 
+        activate();
 
         /**
          * Controller Activeed
          */
         function activate() {
-            
+            angular.forEach(vm.titles, function(value) {
+              typist.pause().delete().type(value);
+            });
+             
         }
 
 
@@ -88,9 +89,7 @@
             
             el.classList.add('on');
             typist.delete().type(vm.titles[vm.num]).call(function (e) {
-                stopTyping();
-                vm.started = true;
-                document.querySelector('.malarkey').classList.add('clicked');
+                vm.num++;
             });
         }
 

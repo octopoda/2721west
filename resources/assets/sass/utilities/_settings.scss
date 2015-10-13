@@ -53,8 +53,8 @@ $aiga-blue: #0d99d7;
  * Image Paths
  */
 
-$dev: false !default; 
-// $dev: true !default;
+// $dev: false !default; 
+$dev: true !default;
 
 @if $dev { 
 	$imagePath: '/assets/images/';

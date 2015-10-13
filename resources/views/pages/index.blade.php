@@ -16,7 +16,7 @@
               
               <span class="malarkey" ng-click="vm.type()">
                 <span class="malarkey--hover home--malarkey"></span>
-                <span class="malarkey--text home--malarkey" id="malarkey">Designer and Full Stack Developer.</span>
+                <span class="malarkey--text home--malarkey" id="malarkey">Creative Director.</span>
               </span><br>
               I am a problem solver. A doer.  Someone <wbr> that 
               can wear any hat necessary to complete the job.  
