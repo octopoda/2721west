@@ -12,12 +12,13 @@
       <div class="row">
        	<section data-into class="home__main into">
             <h5 data-ng-if="vm.fullName" class="ng-cloak">Hi {! vm.fullName !},</h5>
-            <h1>I am Zack Davis a <br>
+            <h1>I am Zack Davis, a <br>
               
               <span class="malarkey" ng-click="vm.type()">
                 <span class="malarkey--hover home--malarkey"></span>
                 <span class="malarkey--text home--malarkey" id="malarkey">Creative Director.</span>
               </span><br>
+              <br>
               I am a problem solver. A doer.  Someone <wbr> that 
               can wear any hat necessary to complete the job.  
             </h1>
