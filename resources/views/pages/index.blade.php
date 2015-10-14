@@ -15,7 +15,6 @@
             <h1>I am Zack Davis, a <br>
               
               <span class="malarkey" ng-click="vm.type()">
-                <span class="malarkey--hover home--malarkey"></span>
                 <span class="malarkey--text home--malarkey" id="malarkey">Creative Director.</span>
               </span><br>
               I am a problem solver. A doer.  Someone <wbr> that 

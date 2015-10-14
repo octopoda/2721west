@@ -36,11 +36,9 @@
 
         var el = document.getElementById('malarkey')
         var typist = malarkey(el, {
-            typeSpeed:40,
-            deleteSpeed: 40,
-            pauseDelay: 200,
+            typeSpeed:100,
             loop: true,
-            postfix: ' '
+            postfix: ''
         });
 
         //vars
@@ -55,18 +53,29 @@
 
         ////////////////
 
-        activate();
+        activate(el);
 
         /**
          * Controller Activeed
          */
-        function activate() {
-            angular.forEach(vm.titles, function(value) {
-              typist.pause().delete().type(value);
-              console.log(value);
-              if (value == 'Unicorn') { return; }
-            });
-             
+        function activate(el) {
+              el.parentElement.classList.add('active');
+
+              typist
+                .pause().delete().type('Digital Strategist')
+                .pause(1500).delete().type('Web Application Architect')
+                .pause(1500).delete().type('Full Sta').pause(100).delete('Sta',400)
+                .pause(200).type('Process Designer')
+                .pause(1500).delete('Process Designer', 200).type('Stack Developer')
+                .pause(1500).delete().type('Unic').delete('nic', 300).pause(200)
+                .type('nicorn').pause(400).type('.').call(function (e) {
+                  typist.triggerPause;
+                  setTimeout(function () {
+                    el.parentElement.classList.remove('active');  
+                  }, 1000);
+                  
+                });
+                
         }
 
 

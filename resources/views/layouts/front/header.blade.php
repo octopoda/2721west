@@ -69,7 +69,7 @@
   @if ($app->environment('local'))
     <link rel="stylesheet" href="/assets/css/app.min.css">
   @elseif ($app->environment('production')) 
-    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css?v=000000001">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css?v=000000002">
   @endif
 
 
