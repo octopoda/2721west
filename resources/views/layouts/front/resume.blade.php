@@ -14,7 +14,7 @@
 	<div class="resume-table__job">
 		<ul>
 			<li>Octopoda Interactive</li>
-			<li>Principle</li>
+			<li>Principal</li>
 			<li>2008 - present</li>
 		</ul>
 	</div>
