@@ -368,6 +368,103 @@ body {
 }
 
 
+/*
+|--------------------------------------------------------------------------
+| Work 
+|--------------------------------------------------------------------------
+|
+| Description 1
+|  Description 2
+| 
+|
+*/
+*
+.home__work {
+	margin-top:rem-calc(70);
+
+	@include breakpoint('tablet') {
+		@include span(12 of 12 last);
+		// @include push(1 of 12);
+		
+		&--project {
+			border-bottom:1px solid $black;
+
+			h3 {
+				color:$gray;
+				margin-bottom:0;
+				cursor: pointer;
+			}
+		}
+	
+
+		&--desc {
+			@include clearMP;
+
+			li {
+				padding:0;
+				list-style:none;
+				display: inline-block; 
+				margin-right:rem-calc(20);
+				color:$gray;
+
+				&:first-child {
+					font-weight:600;
+				}
+			}
+		}
+		
+		&--abstract {
+			padding-left:0;
+
+			ul {
+				@include clearMP;
+				padding:rem-calc(30) rem-calc(10);
+
+				li {
+					list-style:none;
+					display: inline-block;
+					margin-right:rem-calc(30);
+
+					
+					span {
+						display: block;
+					}
+				}
+				
+				.large {
+					font-size:rem-calc(32);
+					font-weight:500;
+					margin-bttom:0;
+					// text-align: center;
+					color:$gray;
+					border-bottom:1px solid $gray;
+				}
 
 
+
+				.small {
+					font-size:rem-calc(12);
+				}
+			}
+		}
+
+
+		&--view {
+			padding:rem-calc(20);
+			padding-top:rem-calc(40);
+			
+			a {
+				display: block;
+				text-align: right;
+			}
+			
+		}
+	}
+
+
+	@include breakpoint('laptop') {
+		@include span(10 of 12);
+		@include push(2 of 12);
+	}
+}
 

@@ -63,6 +63,7 @@ class CompanyController extends Controller {
 			$this->company = Company::where('guid', $guid)->first();	
 		}
 
+		if ($this->company == null) return;
 		return $this->company->company;
 	}
 

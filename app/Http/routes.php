@@ -100,8 +100,7 @@ Route::get('about-zack-davis', [
 ]);
 
 
-Route::get('test/{id}', 'CompanyController@addSession');
-
+Route::get('test', 'PagesController@index');
 
 
 /**
