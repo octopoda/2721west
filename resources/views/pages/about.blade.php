@@ -6,8 +6,7 @@
 			<section class="about__intro">
 				<h1> I am a digital designer, strategist, and a full-stack developer. Someone who will work 
 					<span data-browser-detect class="malarkey" ng-click="vm.type()">
-						<span class="malarkey--hover"></span>
-                		<span class="malarkey--text" id="malarkey">smart</span>
+						<span class="malarkey--text" id="malarkey">smart</span>
                 	</span>
 				to get the job done.  </h1>
 				

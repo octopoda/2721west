@@ -12,7 +12,7 @@
         var vm = this;
         vm.title = 'AboutController';
 
-        activate();
+
 
 
         vm.titles  = [
@@ -39,10 +39,28 @@
         vm.type = type;
         vm.fullName = null;
 
+
+        activate();
+
         ////////////////
         
         function activate () {
             var data = companyDataService.getData();
+
+            el.parentElement.classList.add('active');
+            
+            typist
+            .pause().delete().type('hard')
+            .pause(1500).delete().type('tireles').pause(100).delete('tireles',400)
+            .pause(200).type('efficiently')
+            .pause(1500).delete().type('with a ').pause(1000).type('team')
+            .call(function (e) {
+              typist.triggerPause;
+              setTimeout(function () {
+                el.parentElement.classList.remove('active');  
+              }, 1000);
+              
+            });
 
             if (data != false) {
                 sessionService.recordSession(companyDataService.getCompanyId());
