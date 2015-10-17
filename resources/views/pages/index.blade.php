@@ -65,7 +65,7 @@
             </ul>
 
             <div class="home__work--abstract row">
-                <p>I led my development team and help direct The Richards group to build our new website from the ground up.  My responsibilities included front-end development lead generation strategy and design.  </p>
+                <p>I led my development team and help direct The Richards group to build our new website from the ground up.  My responsibilities included creative direction, front-end development, lead generation strategy, and design.  </p>
                 <ul>
                   <li><span class="large">8700%</span><span class="small">increased conversion rate</span></li>
                   <li><span class="large">14%</span><span class="small">increased engagment</span></li>
@@ -88,7 +88,7 @@
             </ul>
 
             <div class="home__work--abstract row">
-                <p>I worked with the stakeholders of Innovation Compounding to craft a new company brand and visual identity.   Once we solidified the foundation of the company, I architected and strategized a plan for an enterprise web application to help Innovation compete on a national scale. </p>
+                <p>I strategized with the stakeholders of Innovation Compounding to craft a new company brand and visual identity.   Once we solidified the foundation of the company, I architected and strategized a plan for an enterprise web application to help Innovation compete on a national scale. </p>
             </div>
 
             <div class="home__work--view row">

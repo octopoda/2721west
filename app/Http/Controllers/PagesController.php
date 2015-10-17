@@ -150,8 +150,8 @@ class PagesController extends Controller {
 
 	public function index() {
 		$pageInfo = [
-			'pageTitle'  => "Zack Davis Digital Designer / Full Stack Developer",
-			'pageDesc' => 'Zack Davis is a Digital Designer and Full Stack Developer who is passionate about solving problems.',
+			'pageTitle'  => "Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
+			'pageDesc' => 'Zack Davis is a Creative Director, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
 			'navigation' => 'show-contact',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/icons',
@@ -165,7 +165,7 @@ class PagesController extends Controller {
 
 	public function about() {
 		$pageInfo = [
-			'pageTitle'  => "About Zack Davis Digital Designer / Full Stack Developer",
+			'pageTitle'  => "About Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
 			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
@@ -207,7 +207,7 @@ class PagesController extends Controller {
 	public function innovation() {
 		$pageInfo = [
 			'pageTitle'  => "Innovation Compounding Branding - Case Study by Zack Davis",
-			'pageDesc' => 'Zack Davis strategized with Innovation Compounding to build a new brand and a architecture for there new enterprise application.',
+			'pageDesc' => 'Zack Davis strategized with the stakeholders of Innovation Compounding to craft a new company brand and visual identity.   Once the foundation of the company was solidified, He architected and strategized a plan for an enterprise web application to help Innovation compete on a national scale. ',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/innovation',
@@ -220,7 +220,7 @@ class PagesController extends Controller {
 	public function assetbuilder() {
 		$pageInfo = [
 			'pageTitle'  => "AssetBuilder Website - Case Study by Zack Davis",
-			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
+			'pageDesc' => 'Zack Davis led his development team and help direct The Richards group to build our new website from the ground up.  His responsibilities included creative diretion, front-end development, lead generation strategy and design. ',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/assetbuilder',
@@ -248,7 +248,7 @@ class PagesController extends Controller {
 	 */
 	public function marks() {
 		$pageInfo = [
-			'pageTitle'  => "Various Branding Marks - Zack Davis Digital Designer / Full Stack Developer",
+			'pageTitle'  => "Various Branding Marks - Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
 			'pageDesc' => 'Various Branding Marks Zack Davis has completed in the past 2 years.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
@@ -267,7 +267,7 @@ class PagesController extends Controller {
 	public function aiga() {
 		$pageInfo = [
 			'pageTitle'  => "AIGA Design Week -- Show case by Zack Davis",
-			'pageDesc' => 'Zack Davis designed and developed the mobile application for AIGA DFW Design Week 2014.',
+			'pageDesc' => 'Zack Davis designed and developed the mobile application for AIGA DFW Design Week 2013.',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/aiga',
