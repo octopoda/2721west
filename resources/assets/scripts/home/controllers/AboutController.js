@@ -26,9 +26,8 @@
 
         var el = document.getElementById('malarkey')
         var typist = malarkey(el, {
-            typeSpeed:40,
-            deleteSpeed: 40,
-            pauseDelay: 10000,
+            typeSpeed:100,
+            // deleteSpeed: 40,
             loop: true,
             postfix: ''
         });
@@ -53,7 +52,7 @@
             .pause().delete().type('hard')
             .pause(1500).delete().type('tireles').pause(100).delete('tireles',400)
             .pause(200).type('efficiently')
-            .pause(1500).delete().type('with a ').pause(1000).type('team')
+            .pause(1500).delete().type('with a ').pause(1000).type('team', 600)
             .call(function (e) {
               typist.triggerPause;
               setTimeout(function () {

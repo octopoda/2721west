@@ -7,8 +7,7 @@
 				<h1> I am a digital designer, strategist, and a full-stack developer. Someone who will work 
 					<span data-browser-detect class="malarkey" ng-click="vm.type()">
 						<span class="malarkey--text" id="malarkey">smart</span>
-                	</span>
-				to get the job done.  </h1>
+                	</span>to get the job done. </h1>
 				
 				<p>I have over 13 years experience in the design industry and nine years of experience in start-ups. I created Octopoda Interactive as my own digital boutique agency to give those start-ups the necessary footing needed to create a successful business.</p>  
 				<p>I understand what it takes to design and develop an application from the ground up and am experienced in business practices, data management, systems administration, server side coding, and front end coding.</p>
