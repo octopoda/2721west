@@ -136,9 +136,10 @@
            * @return {view}      
            */
           function fillForm(data) {
-            vm.formData.name = companyDataService.fullName();
-            vm.formData.email = data.email;
-            vm.formData.company = data.company;
+            return;
+            // vm.formData.name = companyDataService.fullName();
+            // vm.formData.email = data.email;
+            // vm.formData.company = data.company;
           }
 
 
