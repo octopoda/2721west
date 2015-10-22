@@ -21,7 +21,6 @@
 
             <h1>
               <span class="malarkey" ng-click="vm.type()">
-                <span class="malarkey--hover cuss"></span>
                 <span class="malarkey--text" id="malarkey">Shit!</span>
               </span><br>
               I knew I forgot to add something.   Sorry.

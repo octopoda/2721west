@@ -10,7 +10,6 @@
   "license": "ISC",
   "private": true,
   "devDependencies": {
-    "laravel-elixir": "*",
     "browser-sync": "^2.2.3",
     "del": "^1.2.0",
     "gulp": "^3.8.11",
@@ -45,6 +44,7 @@
     "imagemin-mozjpeg": "^5.1.0",
     "imagemin-optipng": "^4.2.0",
     "imagemin-pngquant": "^4.0.0",
+    "laravel-elixir": "*",
     "lodash": "^3.10.0",
     "main-bower-files": "^2.6.2",
     "path": "^0.11.14",
