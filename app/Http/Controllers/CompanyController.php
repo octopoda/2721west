@@ -84,7 +84,8 @@ class CompanyController extends Controller {
 
 	public function displaySessions($id) {
 		$company = Company::with('session')->findorFail($id);
-		$sessions = $company->session()->orderBy('created_at', 'desc')->get();
+		$sessions = $company->session()->orderBy('created_at', 'asc')->get();
+
 
 		$sessions = $this->setTimeOnPage($sessions);
 		
@@ -100,19 +101,27 @@ class CompanyController extends Controller {
 	 */
 	public function setTimeOnPage($object) {
 		
-		for ($i = 1; $i < count($object); $i++) {
-			$newTime = Carbon::parse($object[$i]->created_at);
-			$oldTime = Carbon::parse($object[$i-1]->created_at);
+
+		for ($i = 0; $i < count($object); $i++) {
 			$date = Carbon::parse($object[$i]->created_at);
-			$seconds = $oldTime->diffInSeconds($newTime);
 			
-			$divisor_for_minutes = $seconds % (60 * 60);
-    		$minutes = floor($divisor_for_minutes / 60);
+			$time = $object[$i]->time_on_page;
+			$sec = floor($time);
+			
+			$milli = (int) (($time - $sec) * 1000);
+			$hours = ($time / 3600);
+			$minutes = (($time / 60) % 60);
+			$seconds = $time % 60;
 
-    		$divisor_for_seconds = $divisor_for_minutes % 60;
-    		$seconds = ceil($divisor_for_seconds);
+			if ($minutes < 10) {
+				$minutes = "0".$minutes;
+			}
 
-    		$object[$i-1]['time_on_page'] = $minutes .  ":" .  $seconds;
+			if ($seconds < 10) {
+				$seconds = "0".$seconds;
+			}
+
+			$object[$i]['time_on_page'] = "$minutes:$seconds";
 			$object[$i]['date_viewed'] = $date->toFormattedDateString();
 		}
 

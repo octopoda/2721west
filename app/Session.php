@@ -9,7 +9,7 @@ class Session extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['url', 'company_id', 'browser'];
+	protected $fillable = ['url', 'company_id', 'browser', 'time_on_page'];
 
 
 	/**

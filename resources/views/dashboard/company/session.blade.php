@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-<?php $date = null; ?>
+<?php $date = null ?>
 @section('content')
 	
 	<div class="row">
@@ -14,7 +14,6 @@
 				<th>Time on Page:</th>
 			</thead>
 			<tbody>
-	
 	@foreach ($sessions as $session) 
 			@if ($session->date_viewed != $date)
 				<tr class="header-column">
@@ -29,6 +28,7 @@
 			</tr>
 
 			<?php $date = $session->date_viewed; ?>
+			
 	@endforeach
 			</tbody>
 		</table>

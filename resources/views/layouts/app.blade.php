@@ -5,6 +5,7 @@
           'pageDesc' => 'Zack Davis is a Digital Designer and Full Stack Developer who is passionate about solving problems.',
           'navigation' => 'show-contact',
           'assetPath' => '/assets',
+          'pageShort' => 'other',
           'shareImage' => '/assets/images/icons/',
           'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer'
         ];

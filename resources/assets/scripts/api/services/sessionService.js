@@ -14,11 +14,13 @@
         var sessionData =  {
         	'id': null,
         	'url': null, 
-        	'browser': null
+        	'browser': null,
+            'time_on_page': null
         }
 
         var service = {
-        	recordSession : recordSession
+        	recordSession : recordSession,
+            setupCompany : setupCompany
         };
         
         return service;
@@ -30,19 +32,23 @@
          * @param  {int} id 
          * @return {object}    
          */
-        function recordSession(id) {
-        	sessionData = {
-        		'company_id' : id,
-        		'url': getPath(),
-        		'browser' : getBrowser()
-        	};
-
+        function recordSession(time) {
+            sessionData.url = getPath();
+            sessionData.browser = getBrowser();
+        	sessionData.time_on_page = time	
+                
         	if (sessionData.url === '') {
         		sessionData.url =  '/'
         	}
 
-        	sendSessionInfo(sessionData);
+            sendSessionInfo(sessionData);
         }
+
+        function setupCompany(id) {
+            sessionData.company_id = id
+        }
+
+
 
         /**
          * Send the Session in the Backgroudh

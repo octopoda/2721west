@@ -7,4 +7,10 @@
  @elseif ($app->environment('production')) 
  	<script src="{{ $pageInfo['assetPath'] }}/scripts/app.min.js?v=0.00003"></script> 
  @endif
+
+ <script type="text/javascript">
+ 	TimeMe.setIdleDurationInSeconds(30);
+ 	TimeMe.setCurrentPageName('{{ $pageInfo["pageShort"] }}');
+ 	TimeMe.initialize();
+ </script>
   

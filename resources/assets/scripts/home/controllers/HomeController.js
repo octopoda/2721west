@@ -5,10 +5,10 @@
         .module('twentyseven.home')
         .controller('HomeController', HomeController);
 
-   HomeController.$inject = ['$timeout', 'mailService', 'companyService', 'companyDataService', 'common', 'sessionService'];
+   HomeController.$inject = ['$timeout', 'mailService', 'companyService', 'companyDataService', 'common', 'sessionService', '$window'];
 
     /* @ngInject */
-    function HomeController($timeout, mailService, companyService, companyDataService, common, sessionService) {
+    function HomeController($timeout, mailService, companyService, companyDataService, common, sessionService, $window) {
         var vm = this;
         vm.title = 'HomeController';
 
@@ -59,6 +59,8 @@
          * Controller Activeed
          */
         function activate(el) {
+              setupSession();      
+
               el.parentElement.classList.add('active');
 
               typist
@@ -75,7 +77,17 @@
                   }, 1000);
                   
                 });
-                
+        } 
+
+
+        /**
+         * Setup the Session Timer
+         * @return {[type]} [description]
+         */
+        function setupSession() {
+          $window.onbeforeunload = function (event) {
+            sessionService.recordSession(TimeMe.getTimeOnCurrentPageInSeconds());
+          }
         }
 
 
@@ -159,8 +171,6 @@
         function fillCompanyInformation(guid) {
             var data = companyDataService.getData();
             
-            console.dir(data);
-
             if (data == false) {
                 companyService.getCompanyInformation(guid).then(function (data) {   
                     
@@ -168,12 +178,12 @@
                     vm.fullName = data.first_name + ' ' + data.last_name;
                     
                     companyDataService.addData(data);
-                    sessionService.recordSession(companyDataService.getCompanyId());
+                    sessionService.setupCompany(companyDataService.getCompanyId());
                     common.sendHook(data.company + ' is visiting the site', 'Get excited because '  +  vm.fullName  + ' is checking out your shit');
                 });
             } else {
                 companyDataService.addData(data);
-                sessionService.recordSession(companyDataService.getCompanyId());
+                sessionService.setupCompany(companyDataService.getCompanyId());
                 vm.fullName = companyDataService.fullName();
             }
 

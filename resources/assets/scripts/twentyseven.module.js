@@ -14,7 +14,11 @@ function hooks(hooksTitle, hooksMessage, hooksApi){
   req.send(body);
 }
 
+//Jquery BullShit
 var jq = $.noConflict();
+
+
+
 
 (function() {
     'use strict';

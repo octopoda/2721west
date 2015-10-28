@@ -5,10 +5,10 @@
         .module('twentyseven.home')
         .controller('AboutController', AboutController);
 
-    AboutController.$inject = ['companyDataService', 'sessionService'];
+    AboutController.$inject = ['companyDataService', 'sessionService', '$window'];
 
     /* @ngInject */
-    function AboutController(companyDataService, sessionService) {
+    function AboutController(companyDataService, sessionService, $window) {
         var vm = this;
         vm.title = 'AboutController';
 
@@ -44,8 +44,7 @@
         ////////////////
         
         function activate () {
-            var data = companyDataService.getData();
-
+            setSession();    
             el.parentElement.classList.add('active');
             
             typist
@@ -60,9 +59,19 @@
               }, 1000);
               
             });
+        }
 
+        /**
+         * Set the Session with TimeMe.js
+         */
+        function setSession() {
+            var data = companyDataService.getData();
             if (data != false) {
-                sessionService.recordSession(companyDataService.getCompanyId());
+                sessionService.setupCompany(companyDataService.getCompanyId());
+            }
+
+            $window.onbeforeunload = function (event) {
+                 sessionService.recordSession(TimeMe.getTimeOnCurrentPageInSeconds());
             }
         }
 

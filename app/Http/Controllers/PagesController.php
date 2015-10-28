@@ -152,6 +152,7 @@ class PagesController extends Controller {
 		$pageInfo = [
 			'pageTitle'  => "Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
 			'pageDesc' => 'Zack Davis is a Creative Director, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
+			'pageShort' =>  'Home',
 			'navigation' => 'show-contact',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/icons',
@@ -167,6 +168,7 @@ class PagesController extends Controller {
 		$pageInfo = [
 			'pageTitle'  => "About Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
 			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
+			'pageShort' =>  'About',
 			'navigation' => 'show-work',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/icons',
@@ -196,6 +198,7 @@ class PagesController extends Controller {
 			'pageTitle'  => "Faith Lutheran Day School - Case Study by Zack Davis",
 			'pageDesc' => 'Zack Davis has been working with Faith Lutheran Day School for the past two years to build a top of the line website to increase communication and awareness with the local community.',
 			'navigation' => 'show-work',
+			'pageShort' =>  'FLDS',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/flds',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Website Strategy, Website Planning, Website Development'
@@ -209,6 +212,7 @@ class PagesController extends Controller {
 			'pageTitle'  => "Innovation Compounding Branding - Case Study by Zack Davis",
 			'pageDesc' => 'Zack Davis strategized with the stakeholders of Innovation Compounding to craft a new company brand and visual identity.   Once the foundation of the company was solidified, He architected and strategized a plan for an enterprise web application to help Innovation compete on a national scale. ',
 			'navigation' => 'show-work',
+			'pageShort' =>  'Innovation',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/innovation',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Company Branding, Site Architecture' 
@@ -222,6 +226,7 @@ class PagesController extends Controller {
 			'pageTitle'  => "AssetBuilder Website - Case Study by Zack Davis",
 			'pageDesc' => 'Zack Davis led his development team and help direct The Richards group to build our new website from the ground up.  His responsibilities included creative diretion, front-end development, lead generation strategy and design. ',
 			'navigation' => 'show-work',
+			'pageShort' =>  'AssetBuilder',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/assetbuilder',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Company Branding, Creative Direction, Front-end Development'
@@ -251,6 +256,7 @@ class PagesController extends Controller {
 			'pageTitle'  => "Various Branding Marks - Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
 			'pageDesc' => 'Various Branding Marks Zack Davis has completed in the past 2 years.',
 			'navigation' => 'show-work',
+			'pageShort' =>  'Marks',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/logos',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Logos, Identity Marks'
@@ -269,6 +275,7 @@ class PagesController extends Controller {
 			'pageTitle'  => "AIGA Design Week -- Show case by Zack Davis",
 			'pageDesc' => 'Zack Davis designed and developed the mobile application for AIGA DFW Design Week 2013.',
 			'navigation' => 'show-work',
+			'pageShort' =>  'AIGA',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/aiga',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, AIGA, Board Member, Web Application, Mobile Application'
@@ -287,6 +294,7 @@ class PagesController extends Controller {
 			'pageTitle'  => "Dallas Baptist University - Graduate School of Business - Showcase by Zack Davis",
 			'pageDesc' => 'Zack Davis worked with DXZ to design and develop a new website for the Dallas Baptist University Graduate School of Business.',
 			'navigation' => 'show-work',
+			'pageShort' =>  'DBU',
 			'assetPath' => $this->assetPath,
 			'shareImage' =>  $this->assetPath . '/images/dbu',
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, Joomla,  Website, Development'
@@ -295,6 +303,20 @@ class PagesController extends Controller {
 		return view('pages.dbu', compact('pageInfo'));
 	}
 
+
+	public function dailyui() {
+		$pageInfo = [
+			'pageTitle'  => "Daily UI - Showcase by Zack Davis",
+			'pageDesc' => 'Zack Davis is taking the Daily UI challange here is his progress.',
+			'navigation' => 'show-work',
+			'pageShort' =>  "UI",
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath . '/images/daily/',
+			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, User Inferface Design, Interactive Designer,'
+		];
+
+		return view('pages.daily', compact('pageInfo'));
+	}
 
 	
 	
