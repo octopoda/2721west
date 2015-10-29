@@ -12,11 +12,6 @@
           <p >I am taking part in the <a target="_blank" href="http://dailyui.co">100 days of UI challenge.</a> Each day I am giving myself 30 minutes to complete the emailed task.  Check back for more progress.</p>
         </section>
         
-        @if ($ui == false) {
-          <section>
-            No art is added. 
-          </section>
-        }
         <section class="daily__list">
           @foreach($daily as $ui)
             
