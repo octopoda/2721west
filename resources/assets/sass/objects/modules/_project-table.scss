@@ -120,6 +120,10 @@
 			&.red {
 				background:$red;
 			}
+
+			&.daily {
+				background:#3EE8A1;
+			}
 		}
 
 		animation:projectTableOut 0.1s ease-in;

@@ -36,6 +36,15 @@
 		<h3>Show Case</h3>
 	</div>
 
+	<div class="project-table__project" data-project-link data-link="{{ route('ui') }}">
+		<div class="project-table__project--header daily"></div>
+		<ul>
+			<li>100 Days of UI</li>
+			<li>Design</li>
+			<li>2015</li>
+		</ul>
+	</div>
+
 
 	<div class="project-table__project" data-project-link data-link="{{ route('dbu') }}">
 		<div class="project-table__project--header dbu"></div>

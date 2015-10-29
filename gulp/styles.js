@@ -31,7 +31,7 @@ gulp.task('sass', function() {
       .pipe(plugins.sourcemaps.init())
       .pipe(plugins.sass({
         errLogToConsole:true
-      }))
+      }).on('error', conf.errorHandler('SASS')))
       .pipe(plugins.autoprefixer(['last 4 versions', '> 1%', 'ie 8'], { cascade: true }))
       .pipe(plugins.sourcemaps.write())
       .pipe(plugins.rename('app.min.css'))

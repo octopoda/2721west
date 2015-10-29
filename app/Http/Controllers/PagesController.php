@@ -14,7 +14,7 @@ use Session;
 use Mail;
 
 use twentyseven\User;
-
+use twentyseven\daily;
 
 class PagesController extends Controller {
 
@@ -315,7 +315,9 @@ class PagesController extends Controller {
 			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, User Inferface Design, Interactive Designer,'
 		];
 
-		return view('pages.daily', compact('pageInfo'));
+		$daily = Daily::all();
+
+		return view('pages.daily', compact('pageInfo', 'daily'));
 	}
 
 	

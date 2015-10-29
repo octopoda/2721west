@@ -37,12 +37,15 @@ Route::group(['prefix' => 'dashboard', 'middleware' => 'auth'], function () {
 	Route::resource('/project-types', 'ProjectTypeController');	
 	Route::resource('/projects', 'ProjectController');	
 	Route::resource('/company', 'CompanyController');
+	Route::resource('/dailyui', 'DailyController');
 
 
 	Route::get('/company/sessions/{id}', [
 		'as' => 'company-sessions',
 		'uses' => 'CompanyController@DisplaySessions'
  	]);
+
+
 });
 
 
@@ -90,6 +93,11 @@ Route::group(['prefix' => 'work'], function () {
 	Route::get('/marks', [
 		'as' => 'marks',
 		'uses' => 'PagesController@marks'
+	]);
+
+	Route::get('/100-days-of-ui', [
+		'as' => 'ui',
+		'uses' => 'PagesController@dailyui'
 	]);
 
 });

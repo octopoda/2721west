@@ -40,6 +40,17 @@ gulp.task('build-images', function () {
 });
 
 
+gulp.task('dailyui', function() {
+  return gulp.src(path.join(conf.paths.min, '/assets/images/dailyui/**/*.{png,jpg,jpeg,gif,svg}'))
+    .pipe(plugins.chmod(755))
+    .pipe(optipng({ optimizationLevel: 3 })())
+    .pipe(pngquant({quality: '65-80', speed: 4})())
+    .pipe(mozjpeg({quality: 60})())
+    .pipe(plugins.gzip())
+    .pipe(plugins.s3(conf.amazon, conf.awsOptions('images/dailyui'))).on('error', conf.errorHandler('Uploading Daily'));
+})
+
+
 gulp.task('build-videos', function () {
   return gulp.src(path.join(conf.paths.min, '/assets/videos/**/*.{mp4,ogv,webm}'))
     .pipe(plugins.s3(conf.amazon, conf.awsOptions('videos'))).on('error', conf.errorHandler('Uploading Videos'));
