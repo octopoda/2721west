@@ -43,7 +43,7 @@
 								{{ $company->company }}
 							</td>
 							<td>{{ $company->first_name }}  {{ $company->last_namae }}</td>
-							<td class="info">http://2721west.com/{{ $company->guid }}</td>
+							<td class="info">http://beyondtheunicorn.com/{{ $company->guid }}</td>
 							<td><a href="mailto:{{ $company->email }}">{{ $company->email }}</a></td>
 							<td><a href="{{ route('company-sessions', $company->id) }}">View Sessions</a></td>
 							<td>
