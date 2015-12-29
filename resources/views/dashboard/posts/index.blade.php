@@ -4,60 +4,63 @@
 
 	<header class="dashboard__section-title">
 		<div class="dashboard__section-title__title">
-			<h1>Companies</h1>
-			<h2></h2>
+			<h1>Blog Posts</h1>
 		</div>
 		<div class="dashboard__section-title__action">
 			<ul>
-				<li><a href="{{ route('dashboard.company.create') }}">New Company</a></li>
+				<li><a href="{{ route('dashboard.posts.create') }}">Add a Post</a></li>
 			</ul>
 		</div>
 	</header>
 
 
 	<section class="dashboard__wrapper">
-		@if(count($companies) == 0) 
-			<h5>There are no companies in the database</h5>
+		@if(count($posts) == 0) 
+			<h5>There are no posts in the system</h5>
 		@else
 			<ul class="dashboard__list">
 			<table class="dashboard__list">
 				<thead>
 					<tr>
-						<th>Company</th>
-						<th>Guid</th>
-						<th>Session</th>
+						<th>Title</th>
+						<th>publish Date</th>
+						<th>published</th>
 						<th>Edit</th>
 					</tr>
 				</thead>
 				<tbody>
-					@foreach($companies as $company)
+					@foreach($posts as $post)
 						
 						<tr>
-							
-							<td class="title">
-								@if ($company->visited)
-									<i class="fa fa-check"></i>
+							<td>{{  $post->title }}</td>
+							<td>{{  $post->publish_date }}</td>
+							<td style="text-align:center">
+								@if ($post->published) 
+									<i class="fa fa-check" style="font-size:24px;"></i>
+								@else 
+									<i class="fa fa-times-circle" style="font-size:24px;"></i>
 								@endif
-								{{ $company->company }}
 							</td>
-							<td class="info">https://2721west.com/{{ $company->guid }}</td>
-							<td><a href="{{ route('company-sessions', $company->id) }}">View Sessions</a></td>
+
 							<td>
 								<ul class="dashboard__edits">
-									<li class="button--edit"><a href=" {{ route('dashboard.company.edit', $company->id) }}">Edit</a></li>
+									<li class="button--edit"><a href=" {{ route('dashboard.posts.edit', $post->id) }}">Edit</a></li>
 									<li class="button--delete transparent">
-										 {!! Form::open(['method'=>'DELETE', 'route' => ['dashboard.company.destroy', $company->id]]) !!}
+										 {!! Form::open(['method'=>'DELETE', 'route' => ['dashboard.posts.destroy', $post->id]]) !!}
 									 		{!! Form::submit('Delete', ['class' => 'transparent']) !!}
 									  	{!! Form::close() !!}
 									</li>
 								</ul>
 							</td>
+							
 						</tr>
 					@endforeach
 				</tbody>
 			</table>
 				
 			</ul>
+
+
 		 @endif
 	</section>
 

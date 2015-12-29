@@ -2,7 +2,7 @@
 
 use twentyseven\Http\Requests\Request;
 
-class CompanyRequest extends Request {
+class PostRequest extends Request {
 
 	/**
 	 * Determine if the user is authorized to make this request.
@@ -22,7 +22,9 @@ class CompanyRequest extends Request {
 	public function rules()
 	{
 		return [
-			'company' => 'required'
+			'title' => 'required|min:3',
+			'content' => 'required',
+			'summary' => 'required'
 		];
 	}
 

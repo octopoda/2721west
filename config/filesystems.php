@@ -50,10 +50,10 @@ return [
 
 		's3' => [
 			'driver' => 's3',
-			'key'    => 'AKIAJ37FIFNA5R7MF73A',
-			'secret' => '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',
-			'region' => '',
-			'bucket' => '2721west-site',
+            'key'    => env('AWS_KEY'),
+            'secret' => env('AWS_SECRET'),
+            'region' => '',
+            'bucket' => env('S3_BUCKET'),
 		],
 
 		'rackspace' => [

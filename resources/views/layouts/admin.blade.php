@@ -48,10 +48,13 @@
   <!-- CSS: implied media="all" -->
   @if ($app->environment('local'))
     <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="/assets/css/redactor.css">
   @elseif ($app->environment('production')) 
     <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app.min.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/redactor.css">
   @endif
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   
   <!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -82,6 +85,23 @@
   </section>
 
 
+  @if ($app->environment('local'))
+    <script type="text/javascript" src="/assets/scripts/redactor.min.js"></script>
+  @elseif ($app->environment('production')) 
+    <script type="text/javascript" src="https://s3.amazonaws.com/2721west-assets/scripts/redactor.min.js"></script>
+  @endif
+
+  <script>
+    $(function () {
+      $('#content').redactor({
+
+      });
+
+      $('#summary').redactor({
+
+      });
+    })
+  </script>
 
   {{-- <script src="/tmp/vendor.min.js"></script>
   <script src="/tmp/app.min.js"></script>

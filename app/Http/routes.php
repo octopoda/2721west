@@ -38,6 +38,7 @@ Route::group(['prefix' => 'dashboard', 'middleware' => 'auth'], function () {
 	Route::resource('/projects', 'ProjectController');	
 	Route::resource('/company', 'CompanyController');
 	Route::resource('/dailyui', 'DailyController');
+	Route::resource('/posts',  'PostController');
 
 
 	Route::get('/company/sessions/{id}', [
@@ -105,6 +106,16 @@ Route::group(['prefix' => 'work'], function () {
 Route::get('about-zack-davis', [
 	'as' => 'about',
 	'uses' => 'PagesController@about'
+]);
+
+Route::get('/posts',[
+	'as' => 'posts',
+	'uses' => 'PostController@viewAllPosts'
+]);
+
+Route::get('/posts/{title}', [
+	'as' => 'postsByTitle',
+	'uses' => 'PostController@postFromTitle'
 ]);
 
 
