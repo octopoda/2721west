@@ -12,8 +12,8 @@
       <div class="row">
        	<section data-into class="home__main into">
             <h1>I am Zack Davis, a <br>
-              <span class="malarkey--text home--malarkey">Senior Product Designer/Developer.</span><br>
-              I am a problem solver. A doer.  Someone <wbr> that 
+              <span class="malarkey--text home--malarkey">Senior UX Designer, Strategist, and Full-Stack Developer.</span><br>
+              I am a problem solver. A doer.  Someone that 
               can wear any hat necessary to complete the job.  
             </h1>
             
