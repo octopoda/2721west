@@ -5,11 +5,11 @@
 		<article class="daily__wrapper" itemscope itemtype="http://schema.org/VisualArtwork">
 
 		    <section>
-          <div data-project-title data-title="100 Days of UI" data-roles="Design" data-client="" ng-cloak></div>
+          <div data-project-title data-title="My own personal Dribbble" data-roles="Design" data-client="" ng-cloak></div>
         </section>
   
         <section class="daily__desc">
-          <p >I am taking part in the <a target="_blank" href="http://dailyui.co">100 days of UI challenge.</a> Each day I am giving myself 30 minutes to complete the emailed task.  Check back for more progress.</p>
+          <p>As I am not very active on social media (what guy with two jobs is) I don't have an invite to dribbble yet.  Since so many employers ask for my Dribbble account I decided to show you what I would have on it.  And if you have an invite, throw me a bone. </p>
         </section>
         
         <section class="daily__list">
