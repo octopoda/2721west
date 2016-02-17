@@ -96,7 +96,7 @@ Route::group(['prefix' => 'work'], function () {
 		'uses' => 'PagesController@marks'
 	]);
 
-	Route::get('/100-days-of-ui', [
+	Route::get('/ui-showcase', [
 		'as' => 'ui',
 		'uses' => 'PagesController@dailyui'
 	]);
