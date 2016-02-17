@@ -39,9 +39,9 @@
 	<div class="project-table__project" data-project-link data-link="{{ route('ui') }}">
 		<div class="project-table__project--header daily"></div>
 		<ul>
-			<li>100 Days of UI</li>
+			<li>UI Showcase</li>
 			<li>Design</li>
-			<li>2015</li>
+			<li>2013-2015</li>
 		</ul>
 	</div>
 
