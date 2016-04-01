@@ -6,7 +6,7 @@
 <article class="about__wrapper" >
 		<div class="row" data-ng-controller="GoogleController as vm">
 			<h2 class="google__welcome">Welcome Google</h2>
-			<form class="google__password" accept-charset="utf-8" name="googleForm" id="contactMenu"  data-ng-submit="vm.formSubmit()" class="top-errors">
+			<form class="google__password" accept-charset="utf-8" name="googleForm" id="googleForm"  data-ng-submit="vm.formSubmit()" class="top-errors">
 				 <div class="form-group">
 	                  <!-- <label for="password">Password <i class="required">*</i></label> -->
 	                  <div class="input-errors" data-ng-messages="googleForm.password.$error" data-ng-if="googleForm.password.$dirty">
@@ -19,7 +19,7 @@
 	             	  <div class="input-errors" data-ng-messages="googleForm.fileType.$error" data-ng-if="googleForm.fileType.$dirty">
 	                    <small class="error" data-ng-message="required">Please pick a file type</small>
 	                  </div>  
-	             	 <select data-ng-model="vm.formData.fileType" data-ng-options="file.name for file in vm.fileOptions" required name="fileType">
+	             	 <select data-ng-model="vm.formData.fileType" data-ng-options="file.name for file in vm.fileOptions track by file.id" required name="fileType">
 	      				<option value="" selected disabled>Select File Type</option>
 	    			</select>
     			</div>

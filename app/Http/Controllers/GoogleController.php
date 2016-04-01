@@ -71,14 +71,14 @@ class GoogleController extends Controller {
 		if ($request->get('password') == 'hireme') {
 			$file = $request->get('fileType');
 
-			switch ($request->get('fileType')['name']) {
-				case 'Keynote': 
+			switch ($request->get('fileType')['id']) {
+				case 1: 
 					return $keynoteLink;
 					break;
-				case 'Power Point': 
+				case 2: 
 					return $ppLink;
 					break;
-				case 'PDF': 
+				case 3: 
 					return $pdfLink;
 					break;
 			}

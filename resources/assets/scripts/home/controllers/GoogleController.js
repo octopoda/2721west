@@ -5,10 +5,10 @@
         .module('twentyseven.home')
         .controller('GoogleController', GoogleController);
 
-    GoogleController.$inject = ['googleService'];
+    GoogleController.$inject = ['$scope', 'googleService'];
 
     /* @ngInject */
-    function GoogleController(googleService) {
+    function GoogleController($scope, googleService) {
         var vm = this;
         vm.title = 'GoogleController';
         vm.loading = false;
@@ -19,9 +19,9 @@
 
       
         vm.fileOptions =  [
-            {name:'Keynote (71.5 mb)', disabled: false},
-            {name:'Power Point (67.2 mb)', disabled: false},
-            {name:'PDF (27 mb)', disabled: false},
+            {name:'Keynote (71.5 mb)', id:1, disabled: false},
+            {name:'Power Point (67.2 mb)', id:2, disabled: false},
+            {name:'PDF (27 mb)', id:3, disabled: false},
         ];
         
         
@@ -54,7 +54,8 @@
         		.then(function (data) {
         			vm.loading = false;
         			if (data.status === 200) {
-        			   window.location = data.data;
+                         console.dir(data);
+                         window.location = data.data;
         			} else {
                         vm.error = true;
                     }

@@ -359,12 +359,22 @@ textarea {
 
 
 select {
+   appearance: none;
    background-color: rgba($white, 0.9);
    border: 1px solid $input-border-color;
    border-radius:0px !important;
    width: 100%;
-   padding: rem-calc(20);
+   padding: rem-calc(8);
    height: rem-calc(54);
+
+   background-image: url('#{$icon}select-box-arrows.jpg');
+   background-repeat:no-repeat;
+   background-position:95% 50%;
+
+   @include breakpoint('retina') {
+     background-image: url('#{$icon}select-box-arrows@2x.jpg');
+     background-size:13px 26px;
+   }
 }
 
 
