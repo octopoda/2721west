@@ -44,8 +44,8 @@ class GoogleController extends Controller {
 	public function index()
 	{
 		$pageInfo = [
-			'pageTitle'  => "Zack Davis - Senior UX Designer, Digitial Strategist, and Full-Stack Developer",
-			'pageDesc' => 'Zack Davis is a Senior UX Designer, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
+			'pageTitle'  => "Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
+			'pageDesc' => 'Zack Davis is a Creative Director, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
 			'pageShort' =>  'Home',
 			'navigation' => 'show-contact',
 			'assetPath' => $this->assetPath,
@@ -90,8 +90,8 @@ class GoogleController extends Controller {
 
 	public function easteregg() {
 		$pageInfo = [
-			'pageTitle'  => "Zack Davis - Senior UX Designer, Digitial Strategist, and Full-Stack Developer",
-			'pageDesc' => 'Zack Davis is a Senior UX Designer, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
+			'pageTitle'  => "Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
+			'pageDesc' => 'Zack Davis is a Creative Director, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
 			'pageShort' =>  'Home',
 			'navigation' => 'show-contact',
 			'assetPath' => $this->assetPath,
@@ -105,8 +105,8 @@ class GoogleController extends Controller {
 
 	public function animation() {
 		$pageInfo = [
-			'pageTitle'  => "Zack Davis - Senior UX Designer, Digitial Strategist, and Full-Stack Developer",
-			'pageDesc' => 'Zack Davis is a Senior UX Designer, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
+			'pageTitle'  => "Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
+			'pageDesc' => 'Zack Davis is a Creative Director, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
 			'pageShort' =>  'Home',
 			'navigation' => 'show-contact',
 			'assetPath' => $this->assetPath,

@@ -17,11 +17,30 @@
 
 	.button__loading {
 		margin-top:rem-calc(20);
+		color:$white;
+
+	
+		&:disabled {
+			background:none;
+			border:1px solid $gray-light;
+			color:$gray-light;
+		}
 	}
 
-	.button-text {
-		color:$white;
+	input.ng-invalid {
+		border:1px solid $red;
 	}
+
+	.input-errors {
+		position: absolute;
+		float:right;
+	}
+
+	.error {
+		color:$red;
+	}
+
+	
 
 	@include breakpoint('tablet') {
 		width: span(8 of 12);
