@@ -12,8 +12,8 @@
     
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="/assets/css/vendor-6c91c750c5.css">
-    <link rel="stylesheet" href="/assets/css/app-e8869fed52.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/vendor-6c91c750c5.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/2721west-assets/css/app-e8869fed52.css">
   </head>
 
   <body  class="no-js">
@@ -25,8 +25,8 @@
     <div class="building-background__wrapper">
         <div class="building-background__image"></div>
     </div>
-    <script src="/assets/scripts/vendor-0eb61fe301.js"></script>
-    <script src="/assets/scripts/app-4dadf34e5f.js"></script>
+    <script src="https://s3.amazonaws.com/2721west-assets/scripts/vendor-0eb61fe301.js"></script>
+    <script src="https://s3.amazonaws.com/2721west-assets/scripts/app-4dadf34e5f.js"></script>
 
   </body>
 </html>

@@ -15,6 +15,14 @@
 .google__password {
 	margin-top:rem-calc(30);
 
+	.button__loading {
+		margin-top:rem-calc(20);
+	}
+
+	.button-text {
+		color:$white;
+	}
+
 	@include breakpoint('tablet') {
 		width: span(8 of 12);
 		margin:auto;

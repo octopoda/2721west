@@ -45,7 +45,7 @@ gulp.task('sass', function() {
  * Combine minify, and upload CSS
  */
 gulp.task('build-css', ['sass'], function() {
-    return gulp.src(path.join(conf.paths.min, '/**/*.css'))
+    return gulp.src(path.join(conf.paths.min, '/assets/css/app.min.css'))
       .pipe(plugins.chmod(755))
       .pipe(plugins.csso())
       .pipe(plugins.flatten())
