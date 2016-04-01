@@ -19,9 +19,9 @@
 
       
         vm.fileOptions =  [
-            {name:'Keynote', disabled: false},
-            {name:'Power Point', disabled: false},
-            {name:'PDF', disabled: false},
+            {name:'Keynote (71.5 mb)', disabled: false},
+            {name:'Power Point (67.2 mb)', disabled: false},
+            {name:'PDF (27 mb)', disabled: false},
         ];
         
         
