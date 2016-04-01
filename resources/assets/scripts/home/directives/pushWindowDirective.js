@@ -27,18 +27,17 @@
         	function changeHeight() {
         		var h = $window.innerHeight - 40;	
         		var d = document.body.offsetHeight;
-                
+
+
                 if (h > 960 && d < h) {
-        			document.body.style.height = h + 'px';	
+        		    document.body.style.height = h + 'px';	
         		}
         	}
 
         	changeHeight();
 		}
     }
-
-    /* @ngInject */
-    function Controller () {
-
-    }
 })();
+
+
+

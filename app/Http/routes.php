@@ -57,6 +57,7 @@ Route::group(['prefix' => 'api'], function () {
 	Route::post('mailme', 'PagesController@mail');
 	Route::get('company/{guid}', 'CompanyController@api');
 	Route::post('addSession', 'CompanyController@addSession');
+	Route::post('google', 'GoogleController@password');
 });
 
 
@@ -117,6 +118,13 @@ Route::get('/posts/{title}', [
 	'as' => 'postsByTitle',
 	'uses' => 'PostController@postFromTitle'
 ]);
+
+Route::group(['prefix' => 'google'], function () {
+	Route::get('/', 'GoogleController@index');
+	Route::get('/name-game', 'GoogleController@namegame');
+	Route::get('/easter-egg', 'GoogleController@easteregg');
+	Route::get('/wait-rate-animation', 'GoogleController@animation');
+});
 
 
 Route::get('test', 'PagesController@index');
