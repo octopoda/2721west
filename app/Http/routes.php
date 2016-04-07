@@ -119,12 +119,12 @@ Route::get('/posts/{title}', [
 	'uses' => 'PostController@postFromTitle'
 ]);
 
-Route::group(['prefix' => 'google'], function () {
-	Route::get('/', 'GoogleController@index');
-	Route::get('/name-game', 'GoogleController@namegame');
-	Route::get('/hire-me', 'GoogleController@easteregg');
-	Route::get('/wait-rate-animation', 'GoogleController@animation');
-});
+// Route::group(['prefix' => 'google'], function () {
+// 	Route::get('/', 'GoogleController@index');
+// 	Route::get('/name-game', 'GoogleController@namegame');
+// 	Route::get('/hire-me', 'GoogleController@easteregg');
+// 	Route::get('/wait-rate-animation', 'GoogleController@animation');
+// });
 
 
 Route::get('test', 'PagesController@index');
