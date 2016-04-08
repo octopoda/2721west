@@ -11,10 +11,9 @@
 
       <div class="row">
        	<section data-into class="home__main into">
-            <h1>I am Zack Davis, a <br>
-              <span class="malarkey--text home--malarkey">Senior UX Designer, Strategist, and Full-Stack Developer.</span><br>
-              I am a problem solver. A doer.  Someone that 
-              can wear any hat necessary to complete the job.  
+            <h1>I am Zack Davis, an <br>
+             <a href="{{ route('about') }}" ><span class="malarkey--text home--malarkey">UX Architect, Digital Strategist, and Full-Stack Developer.</span></a>
+             
             </h1>
             
             
@@ -26,7 +25,7 @@
       </div>
 
 
-      <div class="home__work tablet-up project-table">
+     <!--  <div class="home__work tablet-up project-table">
           <div data-into class="into project-table__title">
             <h3>Case Studies</h3>
           </div>
@@ -91,11 +90,11 @@
               <a href="{{ route('innovation') }}">View Innovation <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
-
+ -->
           
 
 
-      </div>
+      <!-- </div> -->
 
 
       <div data-into class="phone-only">

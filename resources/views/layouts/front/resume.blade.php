@@ -76,4 +76,13 @@
 		</ul>
 	</div>
 
+
+	<div class="resume-table__job">
+		<ul>
+			<li>SpringBoard</li>
+			<li>UX Mentor</li>
+			<li>2016-present</li>
+		</ul>
+	</div>
+
 </div>
