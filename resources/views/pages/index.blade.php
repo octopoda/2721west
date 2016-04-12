@@ -12,7 +12,7 @@
       <div class="row">
        	<section data-into class="home__main into">
             <h1>I am Zack Davis, an <br>
-             <a href="{{ route('about') }}" ><span class="malarkey--text home--malarkey">UX Architect, Digital Strategist, and Full-Stack Developer.</span></a>
+             <a href="{{ route('about') }}" ><span class="malarkey--text home--malarkey">Experience Designer, Digital Strategist, and Full-Stack Developer.</span></a>
              
             </h1>
             
