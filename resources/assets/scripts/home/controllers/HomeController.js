@@ -23,14 +23,128 @@
 
         vm.errors = false;
         
-        vm.titles  = [
-            'Web Application Architect.',
-            'Digital Strategist.',
-            'Full Process Designer.',
-            'Full Stack Developer.',
-            'Unicorn.',
-            'Creative Director.'
+        vm.Titles  = [
+          'Experience Designer',
+          'Digital Strategist',
+          'Front-End Developer',
+          'Back-End Developer',
+          'UX Architect',
+          'Creative Director',
+          'Small Business Marketing Director',
+          'Brand Manager',
+          'Content Strategist',
+          'Visual Designer',
+          'Unicorn'
         ];
+
+
+        vm.Projects = [
+          {
+            name: 'Faith Lutheran Day School',
+            titles: [
+              'Experience Designer',
+              'Digital Strategist',
+              'Front-End Developer',
+              'Back-End Developer',
+              'UX Architect',
+              'Small Business Marketing Director',
+              'Visual Designer',
+              'Brand Manager',
+            ]
+          },
+          {
+            name: "Innovation Compounding",
+            titles: [
+              'Experience Designer',
+              'Digital Strategist',
+              'UX Architect',
+              'Small Business Marketing Director',
+              'Visual Designer',
+              'Brand Manager'
+            ]
+          },
+          {
+            name: "AssetBuilder Inc",
+            titles: [
+              'Experience Designer',
+              'Digital Strategist',
+              'Front-End Developer',
+              'Back-End Developer',
+              'UX Architect',
+              'Creative Director',
+              'Brand Manager',
+              'Content Strategist',
+              'Visual Designer',
+            ]
+          },
+          {
+            name: 'Dallas Baptist University',
+            titles: [
+              'Experience Designer',
+              'Front-End Developer',
+              'Back-End Developer',
+              'Visual Designer',
+              'UX Architect',
+            ]
+          },
+          {
+            name: "AIGA Design Week",
+            titles: [
+              'Experience Designer',
+              'Front-End Developer',
+              'Back-End Developer',
+              'UX Architect',
+              'Visual Designer'
+            ]
+          }, 
+          {
+            name: 'Wait Rate',
+            titles: [
+              'Experience Designer',
+              'Digital Strategist',
+              'Visual Designer',
+            ]
+          },
+          {
+            name: 'McDaniel Nutrition',
+            titles: [
+              'Experience Designer',
+              'Digital Strategist',
+              'Front-End Developer',
+              'Back-End Developer',
+              'UX Architect',
+              'Small Business Marketing Director',
+              'Content Strategist',
+              'Visual Designer',
+            ]
+          },
+          {
+            name: 'Suburan Parent',
+            titles:  [
+              'Front-End Developer',
+              'Back-End Developer',
+              'UX Architect',
+            ]
+          },
+          {
+            name: 'Audio Guy',
+            titles: [
+              'Experience Designer',
+              'Digital Strategist',
+              'Front-End Developer',
+              'Back-End Developer',
+              'UX Architect',
+              'Creative Director',
+              'Small Business Marketing Director',
+              'Content Strategist',
+              'Visual Designer',
+            ]
+          }
+
+        ];
+
+
+
 
         
 

@@ -21,7 +21,7 @@
 				</tr>
 			@endif
 			<tr>
-				<td>&nbsp;</td>
+				<td>{{ date("h:i A", strtotime($session->created_at)) }}</td>
 				<td>{{ $session->url }}</td>
 				<td>{{ $session->browser }}</td>
 				<td>{{ $session->time_on_page }}</td>

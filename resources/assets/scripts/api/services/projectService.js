@@ -24,6 +24,7 @@
          * @return {object} 
          */
         function getProjects() {
+            console.dir(apiUrl);
             return $http.get(apiUrl)
                 .then(projectsComplete)
                 .catch(function (message) {

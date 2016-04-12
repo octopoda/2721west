@@ -1,0 +1,15 @@
+<div class="row">
+	<section class="home__main--titles">
+		<ul>
+	      <li data-ng-repeat="title in vd.titles" ng-click="selectProject(title)">
+	        {{ title }}
+	      </li> 
+	    </ul>
+    </section>
+
+    <section class="home__main--projects">
+		<div data-ng-repeat="project in vd.selectedProjects track by project.name">
+			{{ project.name }}
+		</div>
+    </section>
+</div>

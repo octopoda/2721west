@@ -109,34 +109,22 @@ body {
 		font-size:rem-calc(30);
 	}
 
-	h3 {
-		font-family:$body-font-family;
-		font-size:18px;
-	}
-
-	h5 {
-		font-weight:100;
-		margin-bottom:0;
-		margin-right:rem-calc(-20);
-		margin-left:rem-calc(-20);
+	h4 {
+		margin-top:rem-calc(-40);
 	}
 
 
-	.button {
-		cursor: pointer;
-		background:$red;
-		display:inline-block;
-		padding:rem-calc(20);
 
-		a {
-			color:$white;
+	ul {
+		@include clearMP;
+		margin-left:rem-calc(5);
+		margin-bottom:rem-calc(60);
+
+		li {
+			list-style:none;
+			line-height:2.0;
 		}
 	}
-
-	.red {
-		color:$red;
-	}
-
 
 	@include breakpoint('large-phone') {
 		h1, h3, h5 {
@@ -171,6 +159,22 @@ body {
 
 }
 
+
+.home__main--titles { 
+	li {
+		cursor:pointer;
+	}
+
+	@include breakpoint('tablet') {
+		@include span(6 of 12);
+	}
+}
+
+.home__main--project {
+	@include breakpoint('tablet') {
+		@include span(6 of 12 last);
+	}
+}
 
 
 @keyframes cursor-blink {
