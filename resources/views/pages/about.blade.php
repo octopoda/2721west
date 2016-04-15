@@ -20,6 +20,7 @@
               		<li><a target="_blank" href="https://s3.amazonaws.com/2721west-assets/documents/zack-davis-resume.pdf" id="resumeDownload">Download My Resume<i class="fa fa-angle-right"></i></a></li>
               		<li><a target="_blank" href="https://www.linkedin.com/in/zackdavis" id="linkedIn">Linked In <i class="fa fa-angle-right"></i></a></li>
               		<li><a target="_blank" href="https://twitter.com/2721west" id="twitter">Twitter<i class="fa fa-angle-right"></i></a></li>
+              		<li><a target="_blank" href="https://dribbble.com/octopoda" id="twitter">Dribbble<i class="fa fa-angle-right"></i></a></li>
             	</ul>
 
 			</section>
