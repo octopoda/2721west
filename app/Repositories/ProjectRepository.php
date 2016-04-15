@@ -66,8 +66,8 @@ class ProjectRepository {
 	protected function saveImage($name, $project) {
 		$projectImage = new ProjectImage();
 		$projectImage->image_url = $projectImage->getUrl($name);
-		// $projectImage->project()->associate($project);
-		// $projectImage->save();
+		$projectImage->project()->associate($project);
+		$projectImage->save();
 
 		$project->projectImage()->save($projectImage);
 

@@ -13,11 +13,17 @@
        	<section data-into class="home__main into">
             
             <div class="home__main--hgroup">
-              <h1>Titles are f@*k!ng worthless.</h1>
-              <h4>Within a given week I am a</h4>
+              <h1>Titles are <span class="cool"></span> worthless.</h1>
+              <h4>Within a given week <span> I am a </span> </h4>
+            </div>
+
+            
+            <div data-role-select data-roles="vm.Roles" data-selected="vm.Selected" class="row"></div> 
+            
+            <div class="row">
+              <div data-project-listing data-projects="vm.Projects"></div>
             </div>
             
-            <div data-home-title data-titles="vm.Titles" data-projects="vm.Projects"></div>
             
             <ul class="home__more">
               <li>
@@ -30,18 +36,5 @@
 
 
    
-          
-
-     <div data-into class="phone-only">
-        @include('layouts.front.projects', ['learnmore' => false])
-      </div>
-
-
-      
-
-            
-
-
-
-  </div> <!-- End Controller -->
+</div> <!-- End Controller -->
 @endsection

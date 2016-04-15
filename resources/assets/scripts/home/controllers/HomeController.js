@@ -5,10 +5,10 @@
         .module('twentyseven.home')
         .controller('HomeController', HomeController);
 
-   HomeController.$inject = ['$timeout', 'mailService', 'companyService', 'companyDataService', 'common', 'sessionService', '$window'];
+   HomeController.$inject = [ 'roleService', 'companyService', 'companyDataService', 'common', 'sessionService', '$window', '$rootScope'];
 
     /* @ngInject */
-    function HomeController($timeout, mailService, companyService, companyDataService, common, sessionService, $window) {
+    function HomeController( roleService, companyService, companyDataService, common, sessionService, $window, $rootScope) {
         var vm = this;
         vm.title = 'HomeController';
 
@@ -22,145 +22,12 @@
        */      
 
         vm.errors = false;
-        
-        vm.Titles  = [
-          'Experience Designer',
-          'Digital Strategist',
-          'Front-End Developer',
-          'Back-End Developer',
-          'UX Architect',
-          'Creative Director',
-          'Small Business Marketing Director',
-          'Brand Manager',
-          'Content Strategist',
-          'Visual Designer',
-          'Unicorn'
-        ];
-
-
-        vm.Projects = [
-          {
-            name: 'Faith Lutheran Day School',
-            titles: [
-              'Experience Designer',
-              'Digital Strategist',
-              'Front-End Developer',
-              'Back-End Developer',
-              'UX Architect',
-              'Small Business Marketing Director',
-              'Visual Designer',
-              'Brand Manager',
-            ]
-          },
-          {
-            name: "Innovation Compounding",
-            titles: [
-              'Experience Designer',
-              'Digital Strategist',
-              'UX Architect',
-              'Small Business Marketing Director',
-              'Visual Designer',
-              'Brand Manager'
-            ]
-          },
-          {
-            name: "AssetBuilder Inc",
-            titles: [
-              'Experience Designer',
-              'Digital Strategist',
-              'Front-End Developer',
-              'Back-End Developer',
-              'UX Architect',
-              'Creative Director',
-              'Brand Manager',
-              'Content Strategist',
-              'Visual Designer',
-            ]
-          },
-          {
-            name: 'Dallas Baptist University',
-            titles: [
-              'Experience Designer',
-              'Front-End Developer',
-              'Back-End Developer',
-              'Visual Designer',
-              'UX Architect',
-            ]
-          },
-          {
-            name: "AIGA Design Week",
-            titles: [
-              'Experience Designer',
-              'Front-End Developer',
-              'Back-End Developer',
-              'UX Architect',
-              'Visual Designer'
-            ]
-          }, 
-          {
-            name: 'Wait Rate',
-            titles: [
-              'Experience Designer',
-              'Digital Strategist',
-              'Visual Designer',
-            ]
-          },
-          {
-            name: 'McDaniel Nutrition',
-            titles: [
-              'Experience Designer',
-              'Digital Strategist',
-              'Front-End Developer',
-              'Back-End Developer',
-              'UX Architect',
-              'Small Business Marketing Director',
-              'Content Strategist',
-              'Visual Designer',
-            ]
-          },
-          {
-            name: 'Suburan Parent',
-            titles:  [
-              'Front-End Developer',
-              'Back-End Developer',
-              'UX Architect',
-            ]
-          },
-          {
-            name: 'Audio Guy',
-            titles: [
-              'Experience Designer',
-              'Digital Strategist',
-              'Front-End Developer',
-              'Back-End Developer',
-              'UX Architect',
-              'Creative Director',
-              'Small Business Marketing Director',
-              'Content Strategist',
-              'Visual Designer',
-            ]
-          }
-
-        ];
-
-
-
-
-        
-
-        // var el = document.getElementById('malarkey')
-        // var typist = malarkey(el, {
-        //     typeSpeed:100,
-        //     loop: true,
-        //     postfix: ''
-        // });
-
-        //vars
         vm.num = 1;
-        vm.type = type;
         vm.fullName = null;
+        vm.Roles = null;
+        vm.Projects = null;
+        vm.Selected = null;
 
-        
         vm.fillCompanyInformation = fillCompanyInformation;
 
         
@@ -172,26 +39,38 @@
         /**
          * Controller Activeed
          */
-        function activate(el) {
+        function activate() {
+              getRolesAndProjects();
               setupSession();      
 
-              // el.parentElement.classList.add('active');
-
-              // typist
-              //   .pause().delete().type('Digital Strategist')
-              //   .pause(1500).delete().type('Web Application Architect')
-              //   .pause(1500).delete().type('Full Sta').pause(100).delete('Sta',400)
-              //   .pause(200).type('Process Designer')
-              //   .pause(1500).delete('Process Designer', 200).type('Stack Developer')
-              //   .pause(1500).delete().type('Unic').delete('nic', 300).pause(200)
-              //   .type('nicorn').pause(400).type('.').call(function (e) {
-              //     typist.triggerPause;
-              //     setTimeout(function () {
-              //       el.parentElement.classList.remove('active');  
-              //     }, 1000);
-                  
-              //   });
         } 
+
+          /**
+         * Parse through data to find the index for the portfolio id
+         * @param  {object} data         
+         * @param  {int} portfolio_id 
+         * @return {int}              
+         */
+        function findIndexByRoleId(role_id) {
+            for (var i = 0; i < vm.Roles.length; i++) {
+                if (vm.Roles[i].id === role_id) {
+                    break;
+                }
+            }
+
+            return i;
+        }
+
+        function findIndexByRoleTitle(title) {
+          
+          for (var i = 0; i < vm.Roles.length; i++) {
+            if (vm.Roles[i].title === title) {
+              break;
+            }
+          }
+          
+          return i;
+        }
 
 
         /**
@@ -205,70 +84,6 @@
         }
 
 
-/*
-|--------------------------------------------------------------------------
-| Malarky Methods
-|--------------------------------------------------------------------------
-|
-| Methods for the Malarky Plugin
-|
-*/
-
-        /**
-         * Type 
-         * @return {CB} 
-         */
-        function type() {
-            if (vm.started) {
-              typeAgain();
-              return;
-            }
-            
-            el.classList.add('on');
-            typist.delete().type(vm.titles[vm.num]).call(function (e) {
-                vm.num++;
-            });
-        }
-
-        /**
-         * Stop the Typing
-         * @return {[type]} [description]
-         */
-        function stopTyping() {
-            el.classList.remove('on');
-            typist.triggerPause();
-        }
-
-        /**
-         * Resume the Typing
-         */
-        function resumingTyping() {
-            if (typist.isRunning()) {
-                return;
-            } else {
-                
-                typist.triggerResume();
-            }
-        }
-
-        
-        /**
-         * Type it again once the button is pressed
-         * @return {[type]} [description]
-         */
-        function typeAgain() {
-            el.classList.add('on');
-            resumingTyping();
-            vm.num++;
-
-            if (vm.num > (vm.titles.length -1)) {
-                vm.num = 0;
-            }
-            
-            typist.delete().type(vm.titles[vm.num]).call(function () {
-                stopTyping();
-            });
-        }
 /*
 |--------------------------------------------------------------------------
 | Playing with the Company
@@ -301,11 +116,42 @@
                 vm.fullName = companyDataService.fullName();
             }
 
-            
             return false;
-            
         }
 
+
+        /**
+         * Get all the Roles and Projects
+         * @return {object} 
+         */
+        function getRolesAndProjects(title) {
+          return roleService.getRoles().then(function (data) {
+              vm.Roles = data.data
+              if (title == null) {
+                vm.Selected = vm.Roles[1].role;
+                vm.Projects = vm.Roles[1].projects;
+              } else {
+                var index = findIndexByRoleTitle(title);
+                vm.Selected = vm.Roles[index].role;
+                vm.Projects = vm.Roles[index].projects;
+              }
+              
+              
+              return vm.Roles;
+          });
+        }
+
+        /**
+         * Listen for the Role to Change
+         * @param  {event} event    
+         * @param  {int} role_id
+         * @return {func}
+         */
+        $rootScope.$on('role_changed', function (event, role_id) {
+              var index = findIndexByRoleId(role_id);
+              vm.Selected = vm.Roles[index].role;
+              vm.Projects = vm.Roles[index].projects;
+        });
 
 
     }

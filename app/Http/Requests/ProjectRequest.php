@@ -23,7 +23,7 @@ class ProjectRequest extends Request {
 	{
 		return [
 			'title' => 'required',
-			'role' =>  'required',
+			'role_id' =>  'required',
 			'site_url'  => 'url|min:4',
 		];
 	}

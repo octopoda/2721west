@@ -8,10 +8,6 @@
 			<h2></h2>
 		</div>
 		<div class="dashboard__section-title__action">
-			<ul>
-				<!-- <li><a href="{{ route('company.archives') }}">Archives</a></li> -->
-				<li><a href="{{ route('dashboard.company.create') }}">New Company</a></li>
-			</ul>
 		</div>
 	</header>
 

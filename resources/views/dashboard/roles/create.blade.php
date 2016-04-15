@@ -4,16 +4,14 @@
 
 		<header class="dashboard__section-title">
 			<div class="dashboard__section-title__title">
-				<h1>Create New Project</h1>
+				<h1>Create New Role</h1>
 				<h2></h2>
 			</div>
 		</header>
 
-		@include('errors.list')
-
 		<section class="dashboard__form">
-			 {!! Form::open(['method'=> 'POST', 'route'=>'dashboard.projects.store', 'files' => true]) !!}
-				@include('dashboard.projects._form', ['submitButtonText' => 'Create New Project'])
+			 {!! Form::open(['method'=> 'POST', 'route'=>'dashboard.roles.store']) !!}
+				@include('dashboard.roles._form', ['submitButtonText' => 'Create New Role'])
 			 {!! Form::close() !!}
 		</section>
 
