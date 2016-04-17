@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'sickamore';
+    src: url('#{$fonts}/sickamore/sickamore-webfont.eot');
+    src: url('#{$fonts}/sickamore/sickamore-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fonts}/sickamore/sickamore-webfont.woff2') format('woff2'),
+         url('#{$fonts}/sickamore/sickamore-webfont.woff') format('woff'),
+         url('#{$fonts}/sickamore/sickamore-webfont.ttf') format('truetype'),
+         url('#{$fonts}/sickamore/sickamore-webfont.svg#sickamoreregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,30 @@
+.footer {
+	padding-top:rem-calc(30);
+	background:$white;
+	border-top:1px solid lighten($gray-light, 20%);
+	margin-top:rem-calc(80);
+
+	.logo {
+		width:span(3 of 12);
+		display: block;
+		margin:auto;
+		
+		height:rem-calc(40);
+		background-position:center center;
+	}
+
+
+	.copyright {
+		text-align: center;
+		width:100%;
+		margin-top:rem-calc(10);
+		padding-bottom:rem-calc(20);
+		padding-top:rem-calc(20);
+		color:ligten($gray, 10%);
+		font-size:rem-calc(11);
+	}
+
+
+	
+}
+

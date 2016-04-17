@@ -17,7 +17,7 @@ class UpdateProjectsTable extends Migration {
    		 	$table->dropColumn('description');
    		 	$table->dropForeign('projects_project_type_id_foreign');
         	$table->dropColumn('project_type_id');
-        	$table->string('project_image');
+        	$table->string('project_class');
    		});
 	}
 
@@ -32,7 +32,7 @@ class UpdateProjectsTable extends Migration {
         $table->text('description')->nullable();
         $table->integer('project_type_id')->index()->unsigned();
         $table->foreign('project_type_id')->references('id')->on('project_types');
-        $table->dropColumn('project_image');
+        $table->dropColumn('project_class');
 	}
 
 }

@@ -1,0 +1,202 @@
+
+
+/**
+ * Set the Background for the Images
+ * @param  {[type]} $name [description]
+ * @return {[type]}       [description]
+ */
+@mixin buildProject($name) {
+	background-image:url('#{$front-images}/#{$name}.jpg');
+	background-size:cover;
+	background-position:center center;
+	color:$white;
+	overflow:hidden;
+
+	&:before {
+		content: "";
+		position: absolute;
+		height:100%;
+		width:100%;
+		background:rgba($black, 0.32);
+	}
+
+	
+	.project-listing__logo {
+		position: absolute;
+		@include center(xy);
+		text-index:-1000px;
+		background-image:url('#{$front-images}/logos/#{$name}.png');
+		background-size:contain;
+		background-position:center center;
+		background-repeat:no-repeat;
+		display: block;
+		text-indent:rem-calc(-20000);
+		width:60%;
+		height:40%;
+	}
+
+	.project-listing__view {
+		display: none;
+	}
+
+
+
+	@include breakpoint('tablet') {
+		&:before {
+			top:100%;
+
+		}
+		
+		
+
+		.project-listing__view {
+			display: block;
+			position: absolute;
+			bottom:rem-calc(5);
+			right:rem-calc(-250);
+			font-family:$body-font-family;
+			height:auto;
+			opacity:0;
+			@include transition(all ease-in 0.4s);
+		}
+	
+
+		&:hover {
+			.project-listing__view {
+				opacity:1;
+				right:rem-calc(5);
+			}
+		}
+	}
+
+
+}
+
+
+.project-listing {
+	width:100%;
+	margin-top:rem-calc(50);
+	padding:rem-calc(-20);
+	cursor:pointer;
+	
+
+	ul, li { @include clearMP; }
+
+
+	li {
+		list-style:none;
+		min-height:150px;
+		border:4px solid $white;
+	}
+
+	.repeat-animation { 
+	    &.ng-move,&.ng-enter {
+	        @include transition(opacity $cubic 0.5s);
+	    }
+
+	    &.ng-enter-stagger {
+	        @include transition-delay(0.2s)
+	    }
+
+	    &.ng-enter {
+	    	margin-bottom:rem-calc(-50);
+	        opacity:0;
+	    }
+
+	    &.ng-leave {
+	    	margin-top:rem-calc(-50);
+	    	opacity:0;
+	    }
+
+	    &.ng-enter-active {
+	        opacity:1;
+	    }
+	}
+
+
+
+	@include breakpoint('tablet') {
+		ul {
+			display:flex;
+			flex-direction:column;
+			justify-content: left;
+			flex-wrap: wrap;
+			height:1000px;
+		}
+
+		li {
+			// width:25%;
+			
+			&.small {
+				height:25%;
+			}
+
+			&.medium {
+				height: 33%;
+			}
+
+			&.large {
+				height: 45%;
+			}
+		}
+	}
+
+
+	@include breakpoint('laptop') {
+		li {
+			// @include gallery(3 of 12 wide);
+		}
+	}
+
+}
+
+
+
+.project-listing__project {
+	position: relative;
+
+	
+
+	&.assetbuilder {
+		@include buildProject('assetbuilder');
+	}
+
+	&.innovation {
+		@include buildProject('innovation');
+	}
+
+	&.flds {
+		@include buildProject('flds');
+	}
+
+	&.wait-rate {
+		@include buildProject('wait-rate');
+	}
+
+	&.aiga {
+		@include buildProject('aiga');
+	}
+
+	&.dbu {
+		@include buildProject('dbu');
+	}
+
+	&.mcdaniel {
+		@include buildProject('mcdaniel');
+	}
+
+	&.marks {
+		@include buildProject('marks');
+	}
+
+	&.audioguy {
+		@include buildProject('audioguy');
+	}
+
+	
+
+
+
+}
+
+

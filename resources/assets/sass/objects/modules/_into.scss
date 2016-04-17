@@ -1,0 +1,16 @@
+
+
+
+.into {
+	@include breakpoint('tablet') {
+		opacity:0;
+		@include transition(transform ease-in 1.2s, opacity ease-in 1.2s);
+		@include translate3d(0, 10%, 0);	//code)
+
+
+		&.active {
+			opacity:1;
+			@include translate3d(0, 0, 0);
+		}
+	}
+}

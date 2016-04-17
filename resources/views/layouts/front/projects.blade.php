@@ -7,7 +7,7 @@
 		<div class="project-table__project--header flds"></div>
 		<ul>
 			<li>Faith Lutheran Day School</li>
-			<li>Design, Development, Strategy</li>
+			<li>Strategy, UX Design, Development</li>
 			<li>2013 &ndash; 2015</li>
 		</ul>
 	</div>
@@ -17,7 +17,7 @@
 		<div class="project-table__project--header assetbuilder"></div>
 		<ul>
 			<li>AssetBuilder</li>
-			<li>Design, Development, Strategy</li>
+			<li> Strategy, UX Design, Development</li>
 			<li>2014 - 2015</li>
 		</ul>
 	</div>
@@ -26,7 +26,7 @@
 		<div class="project-table__project--header innovation"></div>
 		<ul>
 			<li>Innovation Compounding</li>
-			<li>Design, Architecture, Strategy</li>
+			<li>Strategy, UX Design, UX Architecture</li>
 			<li>2014</li>
 		</ul>
 	</div>
@@ -36,12 +36,30 @@
 		<h3>Show Case</h3>
 	</div>
 
-	<div class="project-table__project" data-project-link data-link="{{ route('ui') }}">
-		<div class="project-table__project--header daily"></div>
+	<div class="project-table__project" data-project-link data-link="{{ route('wait-rate') }}">
+		<div class="project-table__project--header wait"></div>
 		<ul>
-			<li>UI Showcase</li>
-			<li>Design</li>
-			<li>2013-2015</li>
+			<li>Wait Rate</li>
+			<li>UX, Research, UX Design</li>
+			<li>2016</li>
+		</ul>
+	</div>
+
+	<div class="project-table__project" data-project-link data-link="{{ route('mcdaniel') }}">
+		<div class="project-table__project--header mcdaniel"></div>
+		<ul>
+			<li>McDaniel Nutrition</li>
+			<li>Strategy, UX Design, Developement</li>
+			<li>2016</li>
+		</ul>
+	</div>
+
+	<div class="project-table__project" data-project-link data-link="{{ route('audioguy') }}">
+		<div class="project-table__project--header audioguy"></div>
+		<ul>
+			<li>Audio Guy </li>
+			<li>Strategy, UX Design, Developement</li>
+			<li>2015</li>
 		</ul>
 	</div>
 
@@ -50,7 +68,7 @@
 		<div class="project-table__project--header dbu"></div>
 		<ul>
 			<li>Dallas Baptist University</li>
-			<li>Design, Development</li>
+			<li>UX Design, Development</li>
 			<li>2013 &ndash; 2014</li>
 		</ul>
 	</div>
@@ -59,7 +77,7 @@
 		<div class="project-table__project--header aiga"></div>
 		<ul>
 			<li>AIGA Design Week</li>
-			<li>Design, Development</li>
+			<li>UX Design, Development</li>
 			<li>2013</li>
 		</ul>
 	</div>
@@ -68,7 +86,7 @@
 		<div class="project-table__project--header marks"></div>
 		<ul>
 			<li>Marks</li>
-			<li>Design</li>
+			<li>Visual Design</li>
 			<li>2012 &ndash; 2015</li>
 		</ul>
 	</div>
@@ -81,7 +99,7 @@
 			<div class="project-table__project--header red"></div>
 			<ul>
 				<li>About Zack Davis</li>
-				<li>Digital Design / Full Stack Developer</li>
+				<li></li>
 				<li></li>
 			</ul>
 		</div>

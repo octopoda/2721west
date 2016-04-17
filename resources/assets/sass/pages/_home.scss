@@ -1,0 +1,113 @@
+
+
+/*
+|--------------------------------------------------------------------------
+| Main
+|--------------------------------------------------------------------------
+|
+| Description 1
+|  Description 2
+| 
+|
+*/
+
+html, body {
+	width:100%;
+	margin:0;
+	box-sizing:border-box;
+}
+
+
+html.bordered {
+	border:10px solid $gray;
+	background-color:$white;
+
+	padding:rem-calc(10);
+
+	@include breakpoint('tablet') {
+		padding:rem-calc(10);
+	}
+
+	// body {
+	// 	background-color:$white;
+	// 	box-shadow: 0 0 10px rgba($black, 0.4);
+	// }
+}
+
+
+body {
+	background:$white;
+}
+
+
+
+
+
+
+.app-wrapper {
+	@include breakpoint('tablet') {
+		padding:rem-calc(10);
+	}
+
+	@include breakpoint('laptop') {
+		padding:rem-calc(20);
+	}
+
+}
+
+.app-container {
+	background:$white;
+	padding:rem-calc(10);
+
+	@include breakpoint('large-phone') {
+		padding: rem-calc(20);
+	}
+}
+
+
+.home__wrapper {
+	@include clearMP;
+	
+	@include breakpoint('tablet') {
+		@include container;
+	}
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| MainTitle
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+
+.home__main {
+
+}
+
+
+.home__main--hgroup {
+	h1, h4 {
+		font-family:$header-font;
+		@include clearMP;
+	}
+
+	h1 {
+		margin-top:rem-calc(60);
+		color:$gray;
+		font-size:rem-calc(45);
+		line-height:rem-calc(45);
+	}
+
+	h4 {
+		font-size:rem-calc(18);
+	}
+
+	@include breakpoint('tablet') {
+		text-align: center;
+	}
+}
+
+

@@ -1,7 +1,9 @@
 <div data-ng-if="vd.projects" class="project-listing">
 	<ul>
-		<li data-ng-repeat="project in vd.projects" data-ng-cloak class="project-listing__project assetbuilder repeat-animation" data-ng-click="vd.goToLink(project.url)">
-			<span class="project-listing__title">{{ project.title }}</span>
+		<li data-ng-repeat="project in vd.projects" data-ng-cloak class="project-listing__project assetbuilder repeat-animation {{ project.project_class }}" data-ng-click="vd.goToLink(project.url)">
+			<!-- <span class="project-listing__title">{{ project.title }}</span> -->
+			<span class="project-listing__logo"> {{ project.title }}</span>
+			<span class="project-listing__view">View Project &gt;</span>
 		</li>
 	</ul>
 </div>

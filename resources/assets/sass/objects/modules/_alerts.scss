@@ -1,0 +1,102 @@
+/*
+|--------------------------------------------------------------------------
+| Flash Styles
+|--------------------------------------------------------------------------
+| 
+|
+*/
+
+.alert-flash {
+	width:100%;
+	z-index:$z-layer-range-9;
+	position: fixed;
+	bottom:0;
+	opacity:0.9;
+	@include transition(transform $cubic 0.4s);
+	@include translateY(100%);
+
+	h4 {
+		@include clearMP;
+	}
+	
+	&.active {
+		@include translateY(0%);
+	}
+	
+
+	&.success {
+		background:$success;
+		color:$white;
+	}
+
+	&.error {
+		background:$error;
+		color:$white;
+	}
+
+	&.info {
+		background:$info;
+		color:$white;
+	}
+
+	&.warning {
+		background:$warning;
+		color:darken($warning, 20%);
+	}
+
+	
+		
+	&__wrapper {
+		@include container;
+	}	
+
+	&__heading {
+		@include span(11 of 12);
+
+		&.active {
+			@include span(8 of 12);
+		}
+	}
+
+
+	&__action {
+		@include span(1 of 12 last);
+		
+		&.active {
+			@include span(4 of 12 last);	
+		}
+	}
+
+	@include breakpoint('tablet') {
+		padding:rem-calc(20);
+	}
+
+
+}
+
+/**
+ * Close Button
+ */
+.alert-flash__close {
+	font-size:$font-size-large;
+
+
+	.success & {
+		color:darken($green, 20%);
+	}
+
+	.error & {
+		color:darken($red, 20%);
+	}
+
+	.info & {
+		color:$white;
+	}
+
+	.warning & {
+		color:darken($warning, 20%);
+	}
+}
+
+
+

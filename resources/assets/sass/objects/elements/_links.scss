@@ -1,0 +1,40 @@
+.underlined-link {
+	position: relative;
+	overflow:hidden;
+	display: block;
+	padding-bottom:rem-calc(8);
+
+	&__link {
+		position: relative;
+		color:$red;
+		padding:rem-calc(8);
+		@include transition-delay(0.1s);
+		@include transition(color $cubic 0);
+	}		
+	
+	&__hover {
+		
+
+		&:before {
+			content: "";
+			position: absolute;
+			background:$red;
+			width:100%;
+			height:100%;
+			top:80%;	
+			@include transition(all $cubic 0.2s);
+		}
+	}
+
+
+	&:hover {
+		.underlined-link__hover:before {
+			top:0;
+		}
+
+		.underlined-link__link {
+			color:$white;
+		}
+	}
+	
+}

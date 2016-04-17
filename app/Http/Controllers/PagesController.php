@@ -150,8 +150,8 @@ class PagesController extends Controller {
 
 	public function index() {
 		$pageInfo = [
-			'pageTitle'  => "Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
-			'pageDesc' => 'Zack Davis is a Creative Director, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
+			'pageTitle'  => "Zack Davis - UX Designer, Digitial Strategist, and Full-Stack Developer",
+			'pageDesc' => 'Zack Davis is a UX Designer, Digital Strategist and Full-Stack Developer who is passionate about solving problems.',
 			'pageShort' =>  'Home',
 			'navigation' => 'show-contact',
 			'assetPath' => $this->assetPath,
@@ -166,7 +166,7 @@ class PagesController extends Controller {
 
 	public function about() {
 		$pageInfo = [
-			'pageTitle'  => "About Zack Davis - Creative Director, Digitial Strategist, and Full-Stack Developer",
+			'pageTitle'  => "About Zack Davis - UX Designer, Digitial Strategist, and Full-Stack Developer",
 			'pageDesc' => 'Zack Davis has over 13 years in the design industry and 9 years of experience in start-ups. He is experienced in business practices, data management, systems administration, server side coding, front end coding, and of course, design.',
 			'pageShort' =>  'About',
 			'navigation' => 'show-work',
@@ -304,22 +304,48 @@ class PagesController extends Controller {
 	}
 
 
-	public function dailyui() {
+	public function waitrate() {
 		$pageInfo = [
-			'pageTitle'  => "Daily UI - Showcase by Zack Davis",
-			'pageDesc' => 'Zack Davis is taking the Daily UI challange here is his progress.',
+			'pageTitle'  => "Wait Rate - Waiter Rating Application  Showcase by Zack Davis",
+			'pageDesc' => 'Applicatioh Study for Zack Davis in UX Research and UX Design.',
 			'navigation' => 'show-work',
-			'pageShort' =>  "UI",
+			'pageShort' =>  'wait',
 			'assetPath' => $this->assetPath,
-			'shareImage' =>  $this->assetPath . '/images/daily/',
-			'keywords' => 'Digital Design, Full Process Designer, Designer/Developer, Hybrid Designer, User Inferface Design, Interactive Designer,'
+			'shareImage' =>  $this->assetPath . '/images/wait',
+			'keywords' => 'Ux Research, UX Designer, Visual Design'
 		];
 
-		$daily = Daily::all();
-
-		return view('pages.daily', compact('pageInfo', 'daily'));
+		return view('pages.wait-rate', compact('pageInfo'));
 	}
 
+
+	public function mcdaniel() {
+		$pageInfo = [
+			'pageTitle'  => "McDaniel Nutrition Website -  Website for McDaniel Nutrition -  Showcase by Zack Davis",
+			'pageDesc' => 'Zack Davis has been working with McDaniel Nutrition  to help her business reach the next step in her digital marketing.',
+			'navigation' => 'show-work',
+			'pageShort' =>  'mcdaniel',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath . '/images/mcdaniel',
+			'keywords' => 'Digital Strategy, Digital Marketing, Brand Managment, Full-Stack Developement, UI Design, UX Design'
+		];
+
+		return view('pages.mcdaniel', compact('pageInfo'));
+	}
+
+	public function audioguy () {
+		$pageInfo = [
+			'pageTitle'  => "The Audio Guy - Version 3 Webiste  - Showcase by Zack Davis",
+			'pageDesc' => 'Zack Davis has been working with The Audio Guy to help their business reach the next step in her digital marekting..',
+			'navigation' => 'show-work',
+			'pageShort' =>  'audioguy',
+			'assetPath' => $this->assetPath,
+			'shareImage' =>  $this->assetPath . '/images/audioguy',
+			'keywords' => 'Digital Strategy, Digital Marketing, Brand Managment, Full-Stack Developement, UI Design, UX Design'
+		];
+
+		return view('pages.audioguy', compact('pageInfo'));
+	}
 	
 	
 

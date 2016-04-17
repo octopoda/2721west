@@ -1,0 +1,23 @@
+html {
+	height:100%;
+}
+
+body {
+	@include clearMP;
+	height:100%;
+}
+
+nav {
+	ul li {list-style:none;}
+}
+
+
+.color {@include clearMP();
+	li {
+		width:rem-calc(100);
+		height:rem-calc(100);
+		@include clearMP(); 
+		list-style:none; 
+		display: inline-block;}
+}
+

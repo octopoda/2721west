@@ -21,20 +21,49 @@
         function link(scope, element, attrs) {
         	
         	$window.onresize = function () {
-        		changeHeight();
+        		setHeight();
         	}
 
-        	function changeHeight() {
-        		var h = $window.innerHeight - 40;	
-        		var d = document.body.offsetHeight;
+        	/**
+             * Set the Height of the Document
+             */
+            function setHeight() {
+        		var body = document.body,
+                    html = document.documentElement;
 
-
-                if (h > 960 && d < h) {
-        		    document.body.style.height = h + 'px';	
-        		}
+                var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );   
+                document.documentElement.style.height = height + 'px';
         	}
 
-        	changeHeight();
+
+
+            /**
+             *  Watch function for Height Change of Element     
+             * @param  {[type]}   elm      [description]
+             * @param  {Function} callback [description]
+             * @return {[type]}            [description]
+             */
+            function onElementHeightChange(elm, callback){
+                var lastHeight = elm.clientHeight, newHeight;
+                
+                (function run(){
+                    newHeight = elm.clientHeight;
+                    if( lastHeight != newHeight )
+                        callback();
+                    lastHeight = newHeight;
+
+                    if( elm.onElementHeightChangeTimer )
+                        clearTimeout(elm.onElementHeightChangeTimer);
+
+                    elm.onElementHeightChangeTimer = setTimeout(run, 200);
+                })();
+            }
+
+
+        	// changeHeight();
+            onElementHeightChange(document.querySelector('.app-wrapper'), function () {
+                setHeight();
+            })
 		}
     }
 })();

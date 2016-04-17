@@ -22,8 +22,12 @@
 
 	<div class="form-group">
 			{!! Form::label('project_image', 'Project Image: (https://s3.amazonaws.com/2721west-assets/images/thumbs)') !!}
-			{!! Form::text('project_image', null, ['class'=>'form-input', 'placeholder'=>'Url of Project') !!}
+			{!! Form::text('project_image', null, ['class'=>'form-input', 'placeholder'=>'Url of Project']) !!}
+	</div>
 
+	<div class="form-group">
+		{!! Form::label('project_class', 'Class Attribute Name:') !!}
+		{!! Form::text('project_class', null, ['class'=>'', 'placeholder'=>'FLDS']) !!}
 	</div>
 
  

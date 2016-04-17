@@ -1,0 +1,31 @@
+.logo {
+	background:url('#{$icon}logo.png');
+	background-position:left center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	text-indent:-9999px;
+	z-index:$z-layer-range-5;
+	cursor:pointer;
+	
+	
+	&.white {
+		background-image:url('#{$icon}logo-white@2x.png');
+	}
+
+	&.black {
+		background:url('#{$icon}logo-black.png') center center  no-repeat;
+	}
+
+
+	@include breakpoint('retina') {
+		background-image:url('#{$icon}logo@2x.png');
+
+		&.white {
+			background-image:url('#{$icon}logo@2x.png');
+		}
+
+		&.black {
+			background-image:url('#{$icon}logo-black@2x.png');
+		}
+	}
+}

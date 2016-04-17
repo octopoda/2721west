@@ -1,0 +1,93 @@
+.wait-rate__wrapper {
+	.project-copy h3, .project-title h1  {
+		color:$wait-rate-purple;
+	}
+
+	.shadow .project-image {
+		
+		box-shadow:0 0 10px rgba($black, 0.4);
+	}
+
+	h5 {
+	    color: $gray-light;
+	    text-transform: uppercase;
+	    font-family: $body-font-family;
+	    font-weight: 100;
+	    text-align: center;
+	    margin-bottom: 0;
+	    margin-top:rem-calc(60);
+	}
+}
+
+
+.wait-rate-diner {
+	margin-top:rem-calc(90);
+	
+	h3 {
+		color:$wait-rate-purple;	
+		text-align: center;
+	}
+}
+
+
+.wait-rate-proprietor {
+	margin-top:rem-calc(90);
+	h3 {
+		text-align: center;
+		color:$wait-rate-green !important;
+	}	
+}
+
+.wait-rate-hr {
+	margin-top:rem-calc(90);
+	margin-bottom:rem-calc(90);
+}
+
+
+.wait-rate--animation {
+	width:span(8 of 12);
+	margin:auto;
+	margin-bottom:rem-calc(60);
+	
+	@include breakpoint('tablet') {
+		width:span(6 of 12);
+	}
+	
+	@include breakpoint('laptop') {
+		width:span(4 of 12);
+	}
+}
+
+
+
+.wait-rate-download {
+	margin-top:rem-calc(60);
+	text-align: center;
+	
+	.button {
+		width:60%;
+		text-align: center;
+		margin:auto;
+	}
+
+	@include breakpoint('tablet') {
+		width:span(8 of 12);
+		margin:auto;
+
+		.button {
+			width:50%;
+		}
+	}
+
+	@include breakpoint('laptop') {
+		padding-top:rem-calc(90 );
+		width:span(4 of 12);
+		margin:auto;
+
+		.button {
+			width:70%;
+		}
+	}
+
+	
+}

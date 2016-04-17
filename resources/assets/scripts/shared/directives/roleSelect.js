@@ -57,11 +57,11 @@
         }
 
         function dropdown() {
-            jq('#roleSelectDropdown').slideDown(200).addClass('active');
+            jq('#roleSelectDropdown').slideDown(500).addClass('active');
         }
 
         function dropUp() {
-            jq('#roleSelectDropdown').slideUp(200).removeClass('active');
+            jq('#roleSelectDropdown').slideUp(500).removeClass('active');
         }
 
 

@@ -1,0 +1,100 @@
+.resume-table {
+	width:100%;
+}
+
+
+
+.resume-table__title {
+	width:100%;
+	border-bottom: rem-calc(2) solid $gray;
+	margin-top:rem-calc(90);
+	
+	h5 {
+		margin-bottom:rem-calc(5);
+		font-size:rem-calc(16);
+		color:$gray;
+	}
+}
+
+
+
+.resume-table__job {
+	@include container;
+	width:100%;
+	border-bottom:rem-calc(1) solid $gray;
+	position: relative;
+	overflow:hidden;
+	
+
+
+	ul {
+		position: relative;
+		@include clearMP;
+		li {
+			list-style:none;
+			display: inline-block;
+			width:100%;
+			line-height:1.8;
+
+			a {
+				color:$black;
+			}
+		}
+
+
+		li:first-child {
+			font-weight:bolder;
+			margin-top:rem-calc(10);
+		}
+
+		li:nth-child(2), li:nth-child(3) {
+			font-size:rem-calc(14);
+		}
+
+		li:last-child {
+			margin-bottom:rem-calc(10);
+			font-style:italic;
+		}
+	}
+
+
+
+	@include breakpoint('tablet') {
+		
+
+		ul {
+			li {
+				@include span(1 of 2);
+				line-height:1.2;
+			}
+
+
+			li:first-child {
+				margin-top:rem-calc(40);
+				margin-bottom:rem-calc(40);
+			}
+			
+			li:nth-child(2) {
+				margin-top:rem-calc(40);
+			}
+		}
+	}
+
+
+	@include breakpoint('laptop') {
+		ul {
+			li {
+				@include span(1 of 3);
+			}
+
+			li:nth-child(2) {
+				margin-top:rem-calc(34);
+				line-height:1.6;
+			}
+
+			li:last-child {
+				margin-top:rem-calc(40);
+			}
+		}
+	}
+}

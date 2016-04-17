@@ -1,0 +1,19 @@
+
+
+.dbu__video {
+	@include container;
+	clear:both;
+	
+	video {
+		width:100%;
+	}	
+
+	h5 {
+		text-align: center;
+		text-transform: uppercase;
+		color:$gray-light;
+		font-weight:100;
+	}
+}
+
+

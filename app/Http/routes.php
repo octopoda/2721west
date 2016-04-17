@@ -103,9 +103,21 @@ Route::group(['prefix' => 'work'], function () {
 		'uses' => 'PagesController@marks'
 	]);
 
-	Route::get('/ui-showcase', [
-		'as' => 'ui',
-		'uses' => 'PagesController@dailyui'
+	
+	Route::get('/wait-rate', [
+		'as' => 'wait-rate',
+		"uses" => "PagesController@waitrate"
+	]);
+
+
+	Route::get('/mcdaniel-nutrition', [
+		'as' => 'mcdaniel',
+		"uses" => "PagesController@mcdaniel"
+	]);
+
+	Route::get('/audio-guy', [
+		"as" => 'audioguy',
+		"uses" => "PagesController@audioguy"
 	]);
 
 });

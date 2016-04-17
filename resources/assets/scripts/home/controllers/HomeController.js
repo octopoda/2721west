@@ -128,12 +128,12 @@
           return roleService.getRoles().then(function (data) {
               vm.Roles = data.data
               if (title == null) {
-                vm.Selected = vm.Roles[1].role;
-                vm.Projects = vm.Roles[1].projects;
+                vm.Selected = 'Pick a Title';
+                // vm.Projects = shuffle(vm.Roles[1].projects);
               } else {
                 var index = findIndexByRoleTitle(title);
                 vm.Selected = vm.Roles[index].role;
-                vm.Projects = vm.Roles[index].projects;
+                vm.Projects = shuffle(vm.Roles[index].projects);
               }
               
               
@@ -152,6 +152,26 @@
               vm.Selected = vm.Roles[index].role;
               vm.Projects = vm.Roles[index].projects;
         });
+
+
+        function shuffle(array) {
+          var currentIndex = array.length, temporaryValue, randomIndex;
+
+          // While there remain elements to shuffle...
+          while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+          }
+
+          return array;
+        }
 
 
     }

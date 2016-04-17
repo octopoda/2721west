@@ -1,0 +1,706 @@
+$king-font : 'Loved by the King', cursive; 
+
+/*
+|--------------------------------------------------------------------------
+| Every Child Section
+|--------------------------------------------------------------------------
+|
+|
+*/
+.flds__wrapper {
+	.project-copy h3, .project-title h1 {
+		color:$flds-red;
+	}
+}
+
+
+.flds__discovery blockquote {
+	@include clearMP;
+	box-sizing:border-box;
+	width:100%;
+	@include clearMP;
+	color:$flds-blue;
+	font-size:rem-calc(24);
+	font-family:$header-font;
+	border-top:1px solid $flds-blue;
+	border-bottom:1px solid $flds-blue;
+	
+	
+
+
+	@include breakpoint('tablet') {
+		float:right;
+		padding:rem-calc(20);
+		width:50%;
+		margin:rem-calc(20) rem-calc(-60) rem-calc(10) rem-calc(40);
+
+	}	
+}
+
+
+.flds__discovery {
+	&--cards {
+		width:100%;
+		@include clearMP;
+		@include clearfix;
+		margin-top:rem-calc(20);
+		
+		
+		li {
+			list-style:none;
+			position: relative;
+			box-sizing:border-box;
+			@include clearfix;
+			color:$white;
+			margin-bottom:rem-calc(30);
+			box-shadow:0 0 10px rgba($gray, 0.4);
+			padding:rem-calc(20);
+			@include transition(background $cubic 0.3s);
+
+			&:first-child {
+				background-color:$flds-red;
+				
+			}
+
+			&:nth-child(2) {
+				background-color:$flds-green;
+				
+			}
+
+			&:last-child {
+				background-color:$flds-orange;
+				
+				
+				
+				@include last;
+			}
+
+			.number {
+				display: block;
+				text-align: center;
+				font-weight:bold;
+				font-size:rem-calc(24);
+				font-weight:100;
+				height:rem-calc(38);
+				width:rem-calc(38);
+				border:1px solid $white;
+				border-radius: rem-calc(38);
+			}
+
+			.objective {
+				display: block;
+				padding:rem-calc(10);
+				position: relative;
+				font-size:rem-calc(20);
+				margin-top:rem-calc(40);
+			}
+		}
+
+		
+		@include breakpoint('tablet') {
+			li {
+				@include span(4 of 12);
+				height:rem-calc(320);
+			}
+		}	
+
+
+		@include breakpoint('laptop') {
+			
+
+			li {
+				@include span(4 of 12 1);
+				margin-top:rem-calc(40);
+				
+				.objective {
+					padding:rem-calc(20);
+				}
+				
+			}
+		}
+
+
+	}
+}
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Brand Section
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+
+.flds__brand {
+	background:$flds-blue;
+	background-image: url('#{$flds-image}/flds-focus@phone.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	padding-top:rem-calc(50);
+	paddding-bottom:rem-calc(70);
+
+	h3,p, blockquote {
+		color:$white !important;
+	}
+
+	.afkl-lazy-wrapper, .afkl-lazy-image {
+		@include clearMP;
+	}
+
+	&--statement {
+		@include container;
+		text-align: center;
+
+		blockquote {
+			@include clearMP;
+			padding:rem-calc(20);
+			font-size:rem-calc(40);
+			line-height:1.6;
+			font-weight:100;
+			font-family:$king-font;	
+		}
+	}
+
+
+	img {
+		@include clearMP;
+	}
+
+
+	@include breakpoint('tablet') {
+		background-image: url('#{$flds-image}/flds-focus@tablet.jpg');
+	}
+
+
+	@include breakpoint('laptop') {
+		margin-top:rem-calc(80);
+		background-image: url('#{$flds-image}/flds-focus@laptop.jpg');
+
+		&--statement {
+			padding-top:rem-calc(40);
+			padding-bottom:rem-calc(40);
+		}
+	}
+
+	@include breakpoint('desktop') {
+		background-image: url('#{$flds-image}/flds-focus@large.jpg');
+	}
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+|
+*/
+
+.flds__type {
+	padding-top:rem-calc(50);
+	padding-bottom:rem-calc(50);	
+	background:$flds-green;
+
+
+	&--text {
+		color:$white;
+	}
+
+	&--images {
+		margin-top:rem-calc(20);
+	}
+
+
+	@include breakpoint('tablet') {
+		position: relative;
+		
+		&--text {
+			@include span(4 of 12);
+		}
+
+		&--images {
+			 position: relative;
+			 left:rem-calc(20);
+			 margin-top:rem-calc(40);
+			 @include span(8 of 12);
+			 @include last;
+			
+			.afkl-lazy-wrapper {
+				float:left;
+				width:46%;
+				
+
+				&:last-child {
+					margin-left:10px;
+				}
+			}
+		}
+	}
+
+	@include breakpoint('laptop') {
+
+		&--text {
+			margin-top:rem-calc(20);
+			@include span(4 of 12);
+		}
+
+		&--images {
+			margin-top:rem-calc(30);
+			margin-bottom:rem-calc(30);
+			@include span(8 of 12);
+			
+			&--wrapper {
+				@include clearfix;
+				width:120%;
+			}
+		}
+	}
+
+	@include breakpoint('desktop') {
+		&--images--wrapper {
+			width:140%;
+		}
+	}
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Photogrpahy and Icons
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+.flds__photography {
+	padding-top: rem-calc(50);
+	padding-bottom: rem-calc(50);
+	position: relative;
+	overflow:hidden;
+
+	&--parallax {
+		display:none;
+	}
+
+
+	@include breakpoint('laptop') {
+		&--parallax {
+			display: block;
+			position: absolute;
+			top:0;
+			left:0;
+			height:100%;
+			width:100%;
+
+			
+			img {
+				&.front {
+					width:rem-calc(200);
+					height:rem-calc(200);
+					z-index:$z-layer-range-3;
+				}
+
+				&.mid {
+					width:rem-calc(150);
+					height:rem-calc(150);
+					z-index:$z-layer-range-2;
+				}
+
+				&.back {
+					width:rem-calc(100);
+					height:rem-calc(100);
+				}
+
+				&.shadow {
+					box-shadow:0 0 10px rgba($gray, 0.4);
+				}
+			}
+
+			//Left
+			.icon-1 {
+				position: absolute;
+				left:4%;
+				bottom:30%;
+			}
+			
+			.icon-2 {
+				position: absolute;
+				left:8%;
+				top:60%;
+			}
+
+			.icon-3 {
+				position: absolute;
+				left:13%;
+				top:10%;
+			}
+
+			.icon-7 {
+				position: absolute;
+				left:12%;
+				bottom:70%;
+			}
+
+
+			//Right
+			.icon-4 {
+				position: absolute;
+				right:12%;
+				top:80%;
+			}
+
+			.icon-5 {
+				position: absolute;
+				right:4%;
+				bottom:10%;
+			}
+
+			.icon-6 {
+				position: absolute;
+				right:12%;
+				top:10%;
+			}
+
+			.icon-8 {
+				position: absolute;
+				right:5%;
+				bottom:40%;
+			}
+		}	
+	}
+	
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Updating the Site
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+.flds__wireframes {
+	padding-top:rem-calc(50);
+	padding-bottom:rem-calc(50);
+	background-color:$flds-tan;
+	background-image:none;
+	background-repeat:no-repeat;
+
+	h3 {
+		color:$red;
+	}
+
+
+	@include breakpoint('tablet') {
+		background-image:url('#{$flds-image}/flds-wireframes@large.jpg');
+		background-position:bottom right;
+		background-size:100%;
+		min-height:rem-calc(1094);
+
+		&--text {
+			@include span(7 of 12);
+		}
+	}
+
+
+	@include breakpoint('laptop') {
+		background-position:bottom right;
+		background-size:90%;
+		min-height:rem-calc(1260);
+
+		&--text{
+			@include span(7 of 12);
+		}
+	}
+
+	@include breakpoint('desktop') {
+		background-position:bottom right;
+		min-height:rem-calc(1350);
+	}
+
+	@media screen and (min-width: 1690px) {
+		min-height:rem-calc(1550);
+	}
+
+	@media screen and (min-width: 2000px) {
+		min-height:rem-calc(1750);
+		max-height:rem-calc(1800);
+	}
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Bulletin Board
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+
+.flds__bulletin {
+	padding-top:rem-calc(50);
+	padding-bottom:rem-calc(50);
+
+	h3 {
+		text-align: center;
+	}
+
+
+	&--dashboard {
+		img {
+			width:100%;
+			margin-top:rem-calc(10);
+		}	
+	}
+	
+
+
+	@include breakpoint('tablet') {
+		
+		&--dashboard {
+			position: relative;
+			margin-top:rem-calc(60);
+			margin-bottom:rem-calc(180);
+
+			img {
+				width:auto;
+				margin:auto;
+			}
+			
+			.flds__dashboard--1 {
+				position: absolute;
+			}
+
+			.flds__dashboard--2 {
+				position: absolute;
+				top:rem-calc(50);
+				left:10%;
+			}
+
+			.flds__dashboard--3 {
+				position: absolute;
+				top:rem-calc(100);
+				left:20%;	
+			}
+
+			.flds__dashboard--4 {
+				position: relative;
+				top:rem-calc(150);
+				left:30%;
+			}
+		}
+	}
+
+
+	@include breakpoint('laptop') {
+		&--dashboard {
+			width:span(12 of 12);
+
+			img {
+				@include transition(opacity $cubic 0.3s, transform $cubic 1.2s);	
+				@include staggerList(4, '');
+			}
+			
+			
+			.flds__dashboard--2 {
+				left:20%;
+			}
+
+			.flds__dashboard--3 {
+				left:40%;	
+			}
+
+			.flds__dashboard--4 {
+				left:60%;
+			}
+			
+
+			&.out {
+				img {
+					@include translate3d(250%, 0, 0);
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Video Section
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+
+.flds__video {
+	position: relative;
+	@include clearfix;
+	
+	h3 {
+		color:$flds-blue;
+	}
+
+	&--text {
+		@include container;
+		padding:20px;
+	}
+
+	&--wrapper {
+		video {
+			width:100%;
+		}
+	}
+
+
+	&--graident {
+		display:none;
+	}
+	
+	@include breakpoint('tablet') {
+		&--text {
+			width:span(10 of 12);
+			margin:auto;
+		}
+	}
+
+	@include breakpoint('laptop') {
+		&--poster {
+			display:none;
+		}
+
+		&--wrapper {
+			position: absolute;
+			width:110%;
+			left:-10%;
+
+			video {
+				width:100%;
+			}
+		}
+
+
+		&--gradient {
+			display:block;
+			height:30%;
+			width:100%;
+			position: absolute;
+			bottom:0;
+			z-index:$z-layer-range-2;
+
+			background: -moz-linear-gradient(top,  rgba($white,0) 0%, rgba($white,0.8) 90%, rgba($white,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($white,0)), color-stop(90%,rgba($white,0.8)), color-stop(100%,rgba($white,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba($white,0) 0%,rgba($white,0.8) 90%,rgba($white,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba($white,0) 0%,rgba($white,0.8) 90%,rgba($white,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba($white,0) 0%,rgba($white,0.8) 90%,rgba($white,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba($white,0) 0%,rgba($white,0.8) 90%,rgba($white,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		}
+		
+
+		&--text {
+			margin-top:rem-calc(50);
+			text-align: left;
+			position: relative;
+			@include span(5 of 12);
+			@include last;
+			z-index:$z-layer-range-3;
+
+
+			text-align: left;
+			h3 {font-size:rem-calc(34);}
+			p {width:auto;}
+		}
+	}
+
+
+	@include breakpoint('desktop') {
+		&--wrapper {
+			width:100%;
+			left:0;
+		}
+		
+	}
+}
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Mobile Screen Shots
+|--------------------------------------------------------------------------
+|
+*/
+
+.flds__desktop  {
+	padding-top:rem-calc(50);
+	padding-bottom:rem-calc(50);
+}
+ 
+
+
+.flds__mobile {
+	background:$flds-orange;
+	padding-top:rem-calc(50);
+	padding-bottom:rem-calc(50);
+
+	h5 {
+		color:$white;
+		font-size:rem-calc(16);
+		margin-bottom:rem-calc(20);
+	}
+
+	@include breakpoint('tablet') {
+		&--phones {
+			.project-screen-shot--thirty {
+				@include span(4 of 12);
+				&:last-child {@include last;}
+			}
+		}
+
+		&--tablets {
+			.project-screen-shot--fifty {
+				@include span(6 of 12);
+				&:last-child {@include last;}
+			}
+		}
+	}
+
+	@include breakpoint('laptop') {
+		&--phones {
+			.project-screen-shot--thirty {
+				@include span(4 of 12);
+				text-align: center;
+			}
+
+			.afkl-lazy-wrapper {
+				width:60% !important;
+				margin:auto;
+			}
+		}
+	}
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Maximizing Engagement
+|--------------------------------------------------------------------------
+|
+*/
+
+
+.flds__maximize {
+	padding-top: rem-calc(50);
+	padding-bottom: rem-calc(50);
+}
+
