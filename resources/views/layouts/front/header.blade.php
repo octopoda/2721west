@@ -87,6 +87,30 @@
   @endif 
 
   <base href="/">
+
+<script>
+    trq('account', 't-5713f1938b5db5a50e50d51a');
+    (function(d,t){var s=d.createElement(t),c=d.getElementsByTagName(t)[0];s.async=1;s.src="https://cdn.capturly.com/js/track.js";c.parentNode.insertBefore(s,c);}(document,'script'));function trq(){(trq.q=trq.q||[]).push(arguments);}
+</script>
+
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1315097108519630',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   
   <!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
