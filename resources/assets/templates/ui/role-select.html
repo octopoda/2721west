@@ -1,0 +1,18 @@
+<div class="role-select" ng-if="vd.roles">
+	<div class="role-select__title" id="roleSelectTitle" data-ng-click="vd.toggleDrop()">
+		{{ vd.selected }}
+		<span class="role-select__down-arrow"></span>
+	</div>
+	<div class="role-select__dropdown" id="roleSelectDropdown">
+		<ul>
+			<li data-ng-repeat="role in vd.roles" data-ng-click="vd.changeSelect(role.id, role.role)">{{ role.role }}</li>
+		</ul>
+	</div>
+</div>
+
+<div class="role-select" ng-if="!vd.roles">
+	<div class="role-select__title" id="roleSelectTitle" data-ng-click="vd.toggleDrop()">
+		Pick a Title
+		<span class="role-select__down-arrow"></span>
+	</div>
+</div>

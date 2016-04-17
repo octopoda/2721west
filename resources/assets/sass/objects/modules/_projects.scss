@@ -160,6 +160,10 @@
 		}
 	}
 
+	&.no-shadow {
+		.project-image img { box-shadow:none; }
+	}
+
 
 	@include breakpoint('tablet') {
 		

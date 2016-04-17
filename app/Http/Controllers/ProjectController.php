@@ -5,8 +5,8 @@ use twentyseven\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use twentyseven\Project;
-use twentyseven\ProjectType;
 use twentyseven\ProjectImage;
+use twentyseven\Role;
 
 use twentyseven\Repositories\ProjectRepository;
 
@@ -51,8 +51,8 @@ class ProjectController extends Controller {
 	 */
 	public function create()
 	{
-		$projectType = ProjectType::lists('name', 'id');
-		return view('dashboard.projects.create', compact('projectType'));
+		$roles = Role::lists('role', 'id');
+		return view('dashboard.projects.create', compact('projectTypes', 'roles'));
 	}
 
 	/**
@@ -63,10 +63,14 @@ class ProjectController extends Controller {
 	public function store(Cloud $cloud, ProjectRequest $request)
 	{
 		$project = $this->projectRepository->saveProject($request->all());
-		$projectImage = $this->projectRepository->placeImage($request->file('main-image'), $project);
+		
+		foreach ($request->get('role_id') as $role_id) {
+			$project->roles()->attach($role_id);
+		}
 
-		$projects = Project::all();
-		return view('dashboard.projects.list', compact('projects'));
+		
+		
+		return redirect('/dashboard/projects');
 	}
 
 	/**
@@ -91,8 +95,10 @@ class ProjectController extends Controller {
 	public function edit($id)
 	{
 		$project = Project::findOrFail($id);
-		$projectType = ProjectType::lists('name', 'id');
-		return view('dashboard.projects.edit', compact('project', 'projectType'));
+		$projectRoles = $project->roles()->lists('role_id');
+		$roles = Role::lists('role', 'id');
+	
+		return view('dashboard.projects.edit', compact('project', 'roles', 'projectRoles'));
 	}
 
 
@@ -114,8 +120,21 @@ class ProjectController extends Controller {
 	 */
 	public function update($id, ProjectRequest $request)
 	{
+		
+
 		$project = Project::findOrFail($id);
 		$project->update($request->all());
+
+		if (!empty($request->get('main-image'))) {
+			$projectImage = $this->projectRepository->placeImage($request->file('main-image'), $project);
+		}
+
+		$project->roles()->detach();
+
+		foreach ($request->get('role_id') as $role_id) {
+			$project->roles()->attach($role_id);
+		}
+		
 		return redirect('/dashboard/projects');
 	}
 

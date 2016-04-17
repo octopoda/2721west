@@ -18,7 +18,7 @@
 			<li><a href=" {{ route('dashboard.projects.index') }}">Projects</a></li>
 			<li><a href=" {{ route('dashboard.company.index') }}">Companies</a></li>
 			<li><a href="{{ route('dashboard.dailyui.index') }}">Daily UI</a></li>
-			<li><a href="{{ route('dashboard.project-types.index') }}">Types</a></li>
+			<li><a href="{{ route('dashboard.roles.index') }}">Roles</a></li>
 		</ul>
 	</nav>
 </div>

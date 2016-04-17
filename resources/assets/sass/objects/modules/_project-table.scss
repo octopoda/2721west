@@ -124,6 +124,18 @@
 			&.daily {
 				background:#3EE8A1;
 			}
+
+			&.wait {
+				background:$wait-rate-purple;
+			}
+
+			&.mcdaniel {
+				background:$mcdaniel-orange;
+			}
+
+			&.audioguy {
+				background:$audioguy-purple;
+			}
 		}
 
 		animation:projectTableOut 0.1s ease-in;

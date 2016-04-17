@@ -4,6 +4,6 @@
 	</div>
 
 	<div class="row copyright">
-		&copy; {{ date('Y') }}  Zack Davis, All Rights Reserved.
+		&copy; {{ date('Y') }}  
 	</div>
 </div>

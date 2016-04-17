@@ -5,21 +5,19 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model {
 
 	protected $fillable =  [
-		'first_name', 'last_name', 'company', 'email', 'guid'
+		'message', 'company', 'position', 'guid', 'archived'
 	];
 
 
 	
-
-	public function fullName() {
-		return $this->first_name . ' ' .  $this->last_name;
-	}
-
-
 	public function session() {
 		return $this->hasMany('twentyseven\Session');
 	}
 
+
+	public function projects() {
+		return $this->belongsToMany('twentyseven\Project');
+	}
 
 
 }

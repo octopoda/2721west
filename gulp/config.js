@@ -67,5 +67,3 @@ exports.awsOptions = function(aws_folder) {
 }
 
 
-
-

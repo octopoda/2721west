@@ -1,0 +1,71 @@
+
+
+.role-select {
+	@include container;
+	position: relative;
+	cursor:pointer;
+
+	
+	&__title {
+		border:3px dashed $gray;
+		margin-top:rem-calc(11);
+		padding:rem-calc(12) rem-calc(20);
+		font-size:rem-calc(18);
+		font-family:$header-font;
+
+		&:after {
+			content: '';
+			display:block;
+			float:right;
+			border-right:rem-calc(8) solid transparent;
+			border-left:rem-calc(8) solid transparent;
+			border-top:rem-calc(8) solid $red;
+			margin-top:rem-calc(5);
+		}
+	}
+
+	&__dropdown {
+		display:none;
+		
+
+
+		ul, li { @include clearMP; }
+
+		ul {
+			position: absolute;
+			z-index:$z-layer-range-8;
+			margin:auto;
+			background:$white;
+			box-shadow:0 0 4px rgba($black, 0.32);
+			width:100%;
+		}
+
+		li {
+			list-style:none;
+			padding:rem-calc(8) rem-calc(12);
+			border-bottom:1px solid $gray-light;
+
+			&:last-child {
+				border-bottom:none;
+			}
+
+			&:hover {
+				background:$gray;
+				color:$white;
+			}
+		}
+	}
+
+
+	@include breakpoint('tablet') {
+		width:44%;
+		margin:auto;
+		margin-top:rem-calc(24);
+	}
+
+	@include breakpoint('laptop') {
+		width:26%;
+	}
+}
+
+

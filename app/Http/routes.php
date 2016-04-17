@@ -34,16 +34,22 @@ Route::get('/home', 'PagesController@index');
  */
 Route::group(['prefix' => 'dashboard', 'middleware' => 'auth'], function () {
 	Route::get('/', 'DashboardController@index');
-	Route::resource('/project-types', 'ProjectTypeController');	
 	Route::resource('/projects', 'ProjectController');	
 	Route::resource('/company', 'CompanyController');
 	Route::resource('/dailyui', 'DailyController');
 	Route::resource('/posts',  'PostController');
+	Route::resource('/roles', 'RoleController');
+
 
 
 	Route::get('/company/sessions/{id}', [
 		'as' => 'company-sessions',
 		'uses' => 'CompanyController@DisplaySessions'
+ 	]);
+
+ 	Route::get('/company/archives', [
+		'as' => 'company.archives',
+		'uses' => 'CompanyController@archives'
  	]);
 
 
@@ -52,12 +58,12 @@ Route::group(['prefix' => 'dashboard', 'middleware' => 'auth'], function () {
 
 
 Route::group(['prefix' => 'api'], function () {
-	Route::resource('project-types', 'ProjectTypeController');
 	Route::get('projects', 'ProjectController@apiIndex');
 	Route::post('mailme', 'PagesController@mail');
 	Route::get('company/{guid}', 'CompanyController@api');
 	Route::post('addSession', 'CompanyController@addSession');
 	Route::post('google', 'GoogleController@password');
+	Route::get('roles', "RoleController@apiIndex");
 });
 
 
@@ -97,9 +103,21 @@ Route::group(['prefix' => 'work'], function () {
 		'uses' => 'PagesController@marks'
 	]);
 
-	Route::get('/ui-showcase', [
-		'as' => 'ui',
-		'uses' => 'PagesController@dailyui'
+	
+	Route::get('/wait-rate', [
+		'as' => 'wait-rate',
+		"uses" => "PagesController@waitrate"
+	]);
+
+
+	Route::get('/mcdaniel-nutrition', [
+		'as' => 'mcdaniel',
+		"uses" => "PagesController@mcdaniel"
+	]);
+
+	Route::get('/audio-guy', [
+		"as" => 'audioguy',
+		"uses" => "PagesController@audioguy"
 	]);
 
 });

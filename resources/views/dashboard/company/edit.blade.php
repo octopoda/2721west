@@ -4,11 +4,11 @@
 
 		<header class="dashboard__section-title">
 			<div class="dashboard__section-title__title">
-				<h1>Company Contact</h1>
+				<h1>{{ $company->company }}</h1>
 			</div>
 
 			<div class="dashboard__section-title__action">
-				<h2>Edit: {{ $company->fullName() }}</h2>
+				<h2>Edit: </h2>
 			</div>
 		</header>
 	

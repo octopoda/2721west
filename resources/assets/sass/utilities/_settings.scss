@@ -16,7 +16,7 @@ $green: #548c75;
 $blue: #394368;
 // $red: #c6385d;
 $red: #d20c2c;
-$gray: #666;
+$gray: #68696C;
 $gray-light: #BEBDBD;
 $gray-dark: darken($gray, 10%);
 
@@ -46,6 +46,10 @@ $assetbuilder-ivory: #F6F5C5;
 $dbu-blue: #031e2f;
 $aiga-pink: #ee3178;
 $aiga-blue: #0d99d7;
+$audioguy-purple: #490a27;
+$mcdaniel-orange: #f3901d;
+$wait-rate-purple: #675667;
+$wait-rate-green: #7B8E6A;
 
 
 
@@ -70,6 +74,8 @@ $assetbuilder-image: '#{$imagePath}assetbuilder';
 $innovation-image: '#{$imagePath}innovation';
 $flds-image: '#{$imagePath}flds';
 $home-images: '#{$imagePath}home';
+$front-images: '#{$imagePath}front';
+$wait-images : '#{$imagePath}waitrate';
 
 
 
