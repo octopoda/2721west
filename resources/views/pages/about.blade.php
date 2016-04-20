@@ -4,7 +4,7 @@
 	<article class="about__wrapper" data-ng-controller="AboutController as vm">
 		<div class="row">
 			<section class="about__intro">
-				<h1> Like I said, title are worthless.  I love UX and I am someone tht will work smart to get the job done. </h1>
+				<h1> Like I said, titles are worthless. </h1>
 				
 				<p>I am a UX designer, digital strategist, and full-stack developer with 13 years of experience in the design/finance industry 9 years of that time has been focused on providing branding, design, and development services to start-ups and small businesses through my boutique agency.</p>
 				<p>I am passionate about building beautiful and engaging digital experiences that draw in users and exceed client expectations, My expertise lies in understanding and executing everything end-to-end, from visual brands and corporate identities through the integration of design, digital strategy, and full-stack development.</p>
