@@ -88,10 +88,6 @@
 
   <base href="/">
 
-<script>
-    trq('account', 't-5713f1938b5db5a50e50d51a');
-    (function(d,t){var s=d.createElement(t),c=d.getElementsByTagName(t)[0];s.async=1;s.src="https://cdn.capturly.com/js/track.js";c.parentNode.insertBefore(s,c);}(document,'script'));function trq(){(trq.q=trq.q||[]).push(arguments);}
-</script>
 
 
 <script>
