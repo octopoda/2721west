@@ -9,24 +9,20 @@
       @endif 
 
 
-      <main>
-       	<section data-into class="home__main into">
-            
-            <div class="home__main--hgroup row">
-              <h1>Titles are <span class="cool"></span> worthless.</h1>
-              <h4>Within a given week <span> I am a(n) </span> </h4>
-            </div>
-
-            
-            <div data-role-select data-roles="vm.Roles" data-selected="vm.Selected" class="row"></div> 
-            
-            <div>
-              <div data-project-listing data-projects="vm.Projects"></div>
-            </div>
+       <div class="row">
+        <section data-into class="home__main into">
+            <h1>I am Zack Davis, an <br>
+             <a href="{{ route('about') }}" ><span class="malarkey--text home--malarkey">UX Lead @ AssetBuilder Inc.</span></a>
+             
+            </h1>
             
             
+            <ul class="home__more">
+              <li><a href="{{ route('about') }}" id="homeLearn">Learn More About Me <i class="fa fa-angle-right"></i></a></li>
+              {{-- <li><a data-modal-toggle data-target="workModal" class="laptop-up">View My Work <i class="fa fa-angle-right"></i></a> </li> --}}
+            </ul>
           </section>
-      </main>
+      </div>
 
 
    
