@@ -148,6 +148,7 @@ Route::get('/posts/{title}', [
 Route::get('test', 'PagesController@index');
 
 
+
 /**
  * Guid Route for Companies that I setup. 
  */
@@ -155,6 +156,8 @@ Route::get('/{guid}', [
 	'as' => 'pageWithCompany',
 	'uses' => 'PagesController@guid'
 ]);
+
+
 
 
 
