@@ -59,6 +59,10 @@ $wait-rate-green: #7B8E6A;
 
 $dev: false !default; 
 // $dev: true !default;
+// 
+
+$imagePath: '';
+$fontPath: '';
 
 @if $dev { 
 	$imagePath: '/assets/images/';

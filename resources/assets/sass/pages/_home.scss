@@ -91,6 +91,7 @@ body {
 .home__main--hgroup {
 	h1, h4 {
 		font-family:$header-font;
+		color:red;
 		@include clearMP;
 	}
 

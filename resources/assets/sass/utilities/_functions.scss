@@ -16,7 +16,7 @@
 
 @function image-calc($width, $height) {
 	$size: ($height/$width) * 100;
-	@return #{$size}%;
+	@return #{$size} + %;
 }
 
 
@@ -37,6 +37,7 @@
  * @return {string}
  */
 @function getMediaQuery($name) {
+	$query: '';
 	@if map-get(map-get($breakpoints, $name), mq) != null {
 		$query: map-get(map-get($breakpoints, $name), mq);
 	} @else {
