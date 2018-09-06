@@ -5,6 +5,15 @@
 
     RewriteEngine On
 
+    #Redirect to non-WWW
+    RewriteCond %{HTTP_HOST} ^www.2721west.com$
+    RewriteRule ^(.*) https://2721west.com/$1  [QSA,L,R=301]
+
+    #if the request is not secure
+    RewriteCond %{HTTPS} off
+    #redirect to the secure version
+    RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
