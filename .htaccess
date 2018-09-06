@@ -1,13 +1,19 @@
+<IfModule mod_rewrite.c>
+<IfModule mod_negotiation.c>
+Options -MultiViews
+</IfModules>
+
+Options +FollowSymLinks
 RewriteEngine On
 
 #Redirect to non-WWW
 RewriteCond %{HTTP_HOST} ^www.example.com$
-RewriteRule ^(.*) http://example.com/$1  [QSA,L,R=301]
+RewriteRule ^(.*) https://example.com/$1  [QSA,L,R=301]
 
 #if the request is not secure
 RewriteCond %{HTTPS} off
 #redirect to the secure version
-RewriteRule (.*) http://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
 
 # Redirect Trailing Slashes If Not A Folder...
 RewriteCond %{REQUEST_FILENAME} !-d
