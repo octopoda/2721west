@@ -22,3 +22,4 @@ Route::get('company/{guid}', 'CompanyController@api');
 Route::post('addSession', 'CompanyController@addSession');
 Route::post('google', 'GoogleController@password');
 Route::get('roles', "RoleController@apiIndex");
+Route::get('health', 'ProjectController@apiHealth');

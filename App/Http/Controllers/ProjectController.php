@@ -44,6 +44,11 @@ class ProjectController extends Controller {
 		return Project::all();
 	}
 
+	public function apiHealth() 
+	{
+		return 'healthy';
+	}
+
 	/**
 	 * Show the form for creating a new resource.
 	 *

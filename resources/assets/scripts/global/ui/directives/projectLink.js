@@ -24,6 +24,7 @@
 
         function link(scope, element, attrs) {
        			element.bind('click', function () {
+                    console.log(scope.link);
        				$window.location = scope.link;
        			}); 
         }

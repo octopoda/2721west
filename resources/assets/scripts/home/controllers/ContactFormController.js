@@ -11,7 +11,7 @@
     function ContactFormController($rootScope, mailService, companyDataService, common) {
         var vm = this;
         vm.title = 'ContactFormController';
-        vm.testing = true;
+        vm.testing = false;
 
        /**
         * Select Options
