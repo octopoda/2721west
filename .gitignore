@@ -11,6 +11,7 @@
 *.pem
 /.phpintel
 *.DS_Store
+*.sh
 
 # Has user information in it. 
 /database/seeds
