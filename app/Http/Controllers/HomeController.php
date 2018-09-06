@@ -1,4 +1,4 @@
-<?php namespace twentyseven\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
 use Illuminate\Contracts\Filesystem\Cloud;
 

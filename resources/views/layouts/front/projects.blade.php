@@ -55,14 +55,6 @@
 		</ul>
 	</div>
 
-	<div class="project-table__project" data-project-link data-link="{{ route('audioguy') }}">
-		<div class="project-table__project--header audioguy"></div>
-		<ul>
-			<li>Audio Guy </li>
-			<li>Strategy, UX Design, Developement</li>
-			<li>2015</li>
-		</ul>
-	</div>
 
 	<div class="project-table__project" data-project-link data-link="{{ route('dbu') }}">
 		<div class="project-table__project--header dbu"></div>

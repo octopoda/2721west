@@ -1,11 +1,11 @@
-<?php namespace twentyseven\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use twentyseven\Http\Requests\MailRequest;
-use twentyseven\Http\Controllers\Controller;
+use App\Http\Requests\MailRequest;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use twentyseven\ProjectImage;
-use twentyseven\Repositories\ProjectRepository;
+use App\Models\ProjectImage;
+use App\Repositories\ProjectRepository;
 
 use Illuminate\Contracts\Filesystem\Cloud as Cloud;
 use Illuminate\Contracts\Mail\Mailer;
@@ -13,8 +13,8 @@ use Illuminate\Contracts\Mail\Mailer;
 use Session;
 use Mail;
 
-use twentyseven\User;
-use twentyseven\daily;
+use App\Models\User;
+use App\Models\daily;
 
 class PagesController extends Controller {
 

@@ -1,9 +1,9 @@
-<?php namespace twentyseven\Repositories;
+<?php namespace App\Repositories;
 
 use Illuminate\Http\Request;
 use Illuminate\Contracts\Filesystem\Cloud as Cloud;
-use twentyseven\ProjectImage;
-use twentyseven\Project;
+use App\Models\ProjectImage;
+use App\Models\Project;
 
 class ProjectRepository {
 

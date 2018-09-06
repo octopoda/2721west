@@ -1,4 +1,5 @@
-<?php namespace twentyseven\Providers;
+<?php 
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Auth\Guard;
@@ -27,8 +28,8 @@ class RepositoryServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		$this->app->bind(
-			'twentyseven\Repositories\ProjectRepsitory',
-			'twentyseven\Project'
+			'App\Repositories\ProjectRepsitory',
+			'App\Project'
 		);
 	}
 

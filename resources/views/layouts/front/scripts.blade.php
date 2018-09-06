@@ -10,7 +10,7 @@
 
  <script type="text/javascript">
  	TimeMe.setIdleDurationInSeconds(30);
- 	TimeMe.setCurrentPageName('{{ $pageInfo["pageShort"] }}');
+ 	TimeMe.setCurrentPageName('{{ $pageInfo["pageShort"] or 'Other' }}');
  	TimeMe.initialize();
  </script>
 

@@ -1,11 +1,11 @@
-<?php namespace twentyseven\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use twentyseven\Http\Requests;
-use twentyseven\Http\Requests\DailyRequest;
-use twentyseven\Http\Controllers\Controller;
+use App\Http\Requests;
+use App\Http\Requests\DailyRequest;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use twentyseven\daily;
+use App\Models\daily;
 
 class DailyController extends Controller {
 

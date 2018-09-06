@@ -1,6 +1,6 @@
-<?php namespace twentyseven\Http\Requests;
+<?php namespace App\Http\Requests;
 
-use twentyseven\Http\Requests\Request;
+use App\Http\Requests\Request;
 
 class CompanyRequest extends Request {
 

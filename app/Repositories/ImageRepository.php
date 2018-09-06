@@ -1,6 +1,6 @@
 <?php 
 	
-	namespace twentyseven\Repositories;
+	namespace App\Repositories;
 
 	use Storage;
 	use Response;
@@ -9,7 +9,7 @@
 
 		/**
 		 * Store Image on S3
-		 * @param  /twentyseven/request/PostRequest $request 
+		 * @param  /App/request/PostRequest $request 
 		 * @param  string $folder  
 		 * @param  string $name    
 		 * @return string          

@@ -1,4 +1,4 @@
-<?php namespace twentyseven\Providers;
+<?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Auth\Guard;

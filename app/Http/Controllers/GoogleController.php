@@ -1,7 +1,7 @@
-<?php namespace twentyseven\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use twentyseven\Http\Requests;
-use twentyseven\Http\Controllers\Controller;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 

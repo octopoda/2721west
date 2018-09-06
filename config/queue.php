@@ -29,50 +29,43 @@ return [
 	|
 	*/
 
-	'connections' => [
+	 'connections' => [
 
-		'sync' => [
-			'driver' => 'sync',
-		],
+        'sync' => [
+            'driver' => 'sync',
+        ],
 
-		'database' => [
-			'driver' => 'database',
-			'table' => 'jobs',
-			'queue' => 'default',
-			'expire' => 60,
-		],
+        'database' => [
+            'driver' => 'database',
+            'table' => 'jobs',
+            'queue' => 'default',
+            'retry_after' => 90,
+        ],
 
-		'beanstalkd' => [
-			'driver' => 'beanstalkd',
-			'host'   => 'localhost',
-			'queue'  => 'default',
-			'ttr'    => 60,
-		],
+        'beanstalkd' => [
+            'driver' => 'beanstalkd',
+            'host' => 'localhost',
+            'queue' => 'default',
+            'retry_after' => 90,
+        ],
 
-		'sqs' => [
-			'driver' => 'sqs',
-			'key'    => 'your-public-key',
-			'secret' => 'your-secret-key',
-			'queue'  => 'your-queue-url',
-			'region' => 'us-east-1',
-		],
+        'sqs' => [
+            'driver' => 'sqs',
+            'key' => env('AWS_KEY'),
+            'secret' => env('AWS_SECRET'),
+            'prefix' => env('QUEUE_URL'),
+            'queue' => env('QUEUE_NAME'),
+            'region' => env('AWS_REGION'),
+        ],
 
-		'iron' => [
-			'driver'  => 'iron',
-			'host'    => 'mq-aws-us-east-1.iron.io',
-			'token'   => 'your-token',
-			'project' => 'your-project-id',
-			'queue'   => 'your-queue-name',
-			'encrypt' => true,
-		],
+        'redis' => [
+            'driver' => 'redis',
+            'connection' => 'default',
+            'queue' => 'default',
+            'retry_after' => 90,
+        ],
 
-		'redis' => [
-			'driver' => 'redis',
-			'queue'  => 'default',
-			'expire' => 60,
-		],
-
-	],
+    ],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -85,8 +78,9 @@ return [
 	|
 	*/
 
-	'failed' => [
-		'database' => 'mysql', 'table' => 'failed_jobs',
-	],
+    'failed' => [
+        'database' => env('DB_CONNECTION', 'mysql'),
+        'table' => 'failed_jobs',
+    ],
 
 ];

@@ -45,26 +45,18 @@ return [
 
 		'local' => [
 			'driver' => 'local',
-			'root'   => storage_path().'/app',
+			'root'   => storage_path('/app'),
 		],
 
 		's3' => [
 			'driver' => 's3',
             'key'    => env('AWS_KEY'),
             'secret' => env('AWS_SECRET'),
-            'region' => '',
+            'region' => env('AWS_REGION'),
             'bucket' => env('S3_BUCKET'),
 		],
 
-		'rackspace' => [
-			'driver'    => 'rackspace',
-			'username'  => 'your-username',
-			'key'       => 'your-key',
-			'container' => 'your-container',
-			'endpoint'  => 'https://identity.api.rackspacecloud.com/v2.0/',
-			'region'    => 'IAD',
-			'url_type'  => 'publicURL'
-		],
+		
 
 	],
 

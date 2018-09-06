@@ -75,7 +75,7 @@
 
   @if (session()->has('guid'))
     <?php
-      $c = new twentyseven\Http\Controllers\CompanyController();
+      $c = new App\Http\Controllers\CompanyController();
       $company = $c->dataLayer(Session::get('guid'));
       
     ?>

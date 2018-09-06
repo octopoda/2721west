@@ -4,6 +4,7 @@
   "description": "",
   "main": "/public/index.php",
   "scripts": {
+    "connect" : "./2721.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "zack davis",

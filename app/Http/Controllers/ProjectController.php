@@ -1,14 +1,14 @@
-<?php namespace twentyseven\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use twentyseven\Http\Requests\ProjectRequest;
-use twentyseven\Http\Controllers\Controller;
+use App\Http\Requests\ProjectRequest;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use twentyseven\Project;
-use twentyseven\ProjectImage;
-use twentyseven\Role;
+use App\Models\Project;
+use App\Models\ProjectImage;
+use App\Models\Role;
 
-use twentyseven\Repositories\ProjectRepository;
+use App\Repositories\ProjectRepository;
 
 use Illuminate\Contracts\Filesystem\Cloud as Cloud;
 

@@ -1,13 +1,14 @@
-<?php namespace twentyseven\Http\Controllers;
+<?php 
+namespace App\Http\Controllers;
 
-use twentyseven\Http\Requests\CompanyRequest;
-use twentyseven\Http\Requests\SessionRequest;
-use twentyseven\Http\Controllers\Controller;
+use App\Http\Requests\CompanyRequest;
+use App\Http\Requests\SessionRequest;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use twentyseven\Company;
-use twentyseven\Session;
-use twentyseven\Project;
+use App\Models\Company;
+use App\Models\Session;
+use App\Models\Project;
 use Carbon\Carbon;
 
 class CompanyController extends Controller {
@@ -182,8 +183,8 @@ class CompanyController extends Controller {
 
 	/**
 	 * Get the time on Page
-	 * @param  /twentyseven/session $object 
-	 * @return /twentyseven/session 
+	 * @param  /App/session $object 
+	 * @return /App/session 
 	 */
 	public function setTimeOnPage($object) {
 		for ($i = 0; $i < count($object); $i++) {
@@ -229,11 +230,13 @@ class CompanyController extends Controller {
 	/**
 	 * Get the Company from the Guid
 	 * @param  string $guid 
-	 * @return twentyseven\company 
+	 * @return App\company 
 	 */
 	public function api($guid) {
 		$company = Company::where('guid', $guid)->first();	
-		
+		if (!$company) {
+			return null;
+		}
 		if ($company->visited == null) {
 			$company->visited = 1;	
 		}
