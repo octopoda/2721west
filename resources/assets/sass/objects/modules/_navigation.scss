@@ -41,13 +41,21 @@
 
 
 	@include breakpoint('phone') {
-		&.show-work {
-			.m-navigation__contact {display:none;}
+		.m-navigation__contact {
+			display: inline-block;
+		}
+		
+		.m-navigation__work {
+			display: inline-block;
 		}
 
-		&.show-contact {
-			.m-navigation__work { display: none;}
-		}
+		// &.show-work {
+		// 	.m-navigation__contact {display:none;}
+		// }
+
+		// &.show-contact {
+		// 	.m-navigation__work { display: none;}
+		// }
 
 		margin-bottom:rem-calc(50);
 	}

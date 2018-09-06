@@ -6,8 +6,8 @@
 	<div class="resume-table__job">
 		<ul>
 			<li>AssetBuilder</li>
-			<li>Creative Director</li>
-			<li>2006 - present</li>
+			<li>Vice President</li>
+			<li>2018 - present</li>
 		</ul>
 	</div>
 
@@ -16,6 +16,22 @@
 			<li>Octopoda Interactive</li>
 			<li>Principal</li>
 			<li>2008 - present</li>
+		</ul>
+	</div>
+
+	<div class="resume-table__job">
+		<ul>
+			<li>AssetBuilder</li>
+			<li>UX Lead/Full-Stack Developer</li>
+			<li>2010 - 2018</li>
+		</ul>
+	</div>
+
+	<div class="resume-table__job">
+		<ul>
+			<li>AssetBuilder</li>
+			<li>Art Director/Front End Developer</li>
+			<li>2006 - 2010</li>
 		</ul>
 	</div>
 
@@ -72,7 +88,7 @@
 		<ul>
 			<li>Precision Nutrition</li>
 			<li>Men&rsquo;s Coaching Mentor</li>
-			<li>2013-present</li>
+			<li>2013-2017</li>
 		</ul>
 	</div>
 

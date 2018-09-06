@@ -26,7 +26,7 @@ function browserSyncInit(baseDir, browser) {
   browserSync.instance = browserSync.init({
     startPath: '/',
     browser: browser,
-    proxy: 'http://2721west.app/',
+    proxy: 'http://2721west.test/',
     reloadDelay: 1000
   });
 }
