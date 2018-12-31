@@ -6,8 +6,8 @@
 			<section class="about__intro">
 				<h1> Titles are worthless. </h1>
 				
-				<p>I am a UX lead, digital marketing strategist, and full-stack developer. I have 15 years of experience in the design/finance industry, focused on branding, design, and development services to start-ups and small businesses.</p>
-				<p>I am passionate about building beautiful and engaging digital experiences that draw in users and exceed client expectations. My expertise lies in understanding and executing everything end-to-end, from visual brands and corporate identities through the integration of design, digital marketing strategy, and full-stack development.</p>
+				<p>I am a UX lead, digital marketing strategist, and full-stack developer. I have 16 years of experience in the design/finance industry, focused on branding, design, and development services to start-ups and small businesses.</p>
+				<p>I am passionate about building beautiful and engaging digital products that draw in users and exceed client expectations. My expertise lies in understanding and executing the product end-to-end, from visual brands and corporate identities through the integration of design, digital marketing strategy, and full-stack development.</p>
 				
 
 
