@@ -307,7 +307,7 @@ class PagesController extends Controller {
 	public function waitrate() {
 		$pageInfo = [
 			'pageTitle'  => "Wait Rate - Waiter Rating Application  Showcase by Zack Davis",
-			'pageDesc' => 'Applicatioh Study for Zack Davis in UX Research and UX Design.',
+			'pageDesc' => 'Application Study for Zack Davis in UX Research and UX Design.',
 			'navigation' => 'show-work',
 			'pageShort' =>  'wait',
 			'assetPath' => $this->assetPath,
