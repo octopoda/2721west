@@ -22,6 +22,8 @@
 /public/tmp
 /public/assets/scripts
 /public/assets/videos
+/gulp/config.js
+
 
 
 # Elastic Beanstalk Files
