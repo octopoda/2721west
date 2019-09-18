@@ -4,16 +4,15 @@
 	<article class="about__wrapper" data-ng-controller="AboutController as vm">
 		<div class="row">
 			<section class="about__intro">
-				<h1> Titles are worthless. </h1>
-				
-				<p>I am a UX lead, digital marketing strategist, and full-stack developer. I have 16 years of experience in the design/finance industry, focused on branding, design, and development services to start-ups and small businesses.</p>
-				<p>I am passionate about building beautiful and engaging digital products that draw in users and exceed client expectations. My expertise lies in understanding and executing the product end-to-end, from visual brands and corporate identities through the integration of design, digital marketing strategy, and full-stack development.</p>
+				<h2 style="color:#d20c2c">I am a product generalist.  </h2>
+				<p>I have 15 years experience in agencies and in-house with the past 12 focused on startups of all sizes. My focus is alway on customer empathy and using qualitative and quantitative data to create innovative product strategies. </p>
+				<p>I am a constant learner and have learned to wear many hats over the years. I have a background in innovation strategy, product vision, design thinking, full-stack engineering and finally strategic marketing. I&rsquo;ve used this generalist skill set to build over 120+ products in the past 10 years working with and leading teams of all sizes.</p>
 				
 
 
 				<ul class="about__more">
 					<li><a data-modal-toggle data-target="contactModal">Contact me<i class="fa fa-angle-right"></i></a></li>
-              		<li><a target="_blank" href="https://s3.amazonaws.com/2721west-assets/documents/zack-davis-resume.pdf" id="resumeDownload">Download My Resume<i class="fa fa-angle-right"></i></a></li>
+              		<li><a target="_blank" href="https://2721west-assets.s3.amazonaws.com/documents/Zack+Davis.pdf" id="resumeDownload">Download My Resume<i class="fa fa-angle-right"></i></a></li>
               		<li><a target="_blank" href="https://www.linkedin.com/in/zackdavis" id="linkedIn">Linked In <i class="fa fa-angle-right"></i></a></li>
               		{{-- <li><a target="_blank" href="https://twitter.com/2721west" id="twitter">Twitter<i class="fa fa-angle-right"></i></a></li> --}}
               		<li><a target="_blank" href="https://dribbble.com/octopoda" id="dribbble">Dribbble<i class="fa fa-angle-right"></i></a></li>

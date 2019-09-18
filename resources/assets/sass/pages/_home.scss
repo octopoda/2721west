@@ -83,7 +83,10 @@ body {
 
 
 .home__main {
-
+	h1 {
+		color:$red;
+		font-family:$header-font;
+	}
 }
 
 .home__more {

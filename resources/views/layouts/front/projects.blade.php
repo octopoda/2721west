@@ -8,7 +8,7 @@
 		<ul>
 			<li>Faith Lutheran Day School</li>
 			<li>Strategy, UX Design, Development</li>
-			<li>2013 &ndash; 2015</li>
+			{{-- <li>2013 &ndash; 2015</li> --}}
 		</ul>
 	</div>
 
@@ -18,7 +18,7 @@
 		<ul>
 			<li>AssetBuilder</li>
 			<li> Strategy, UX Design, Development</li>
-			<li>2014 - 2015</li>
+			{{-- <li>2014 - 2015</li> --}}
 		</ul>
 	</div>
 
@@ -27,7 +27,7 @@
 		<ul>
 			<li>Innovation Compounding</li>
 			<li>Strategy, UX Design, UX Architecture</li>
-			<li>2014</li>
+			{{-- <li>2014</li> --}}
 		</ul>
 	</div>
 
@@ -42,7 +42,7 @@
 		<ul>
 			<li>Wait Rate</li>
 			<li>UX, Research, UX Design</li>
-			<li>2016</li>
+			{{-- <li>2016</li> --}}
 		</ul>
 	</div>
 
@@ -51,7 +51,7 @@
 		<ul>
 			<li>McDaniel Nutrition</li>
 			<li>Strategy, UX Design, Developement</li>
-			<li>2016</li>
+			{{-- <li>2016</li> --}}
 		</ul>
 	</div>
 
@@ -61,7 +61,7 @@
 		<ul>
 			<li>Dallas Baptist University</li>
 			<li>UX Design, Development</li>
-			<li>2013 &ndash; 2014</li>
+			{{-- <li>2013 &ndash; 2014</li> --}}
 		</ul>
 	</div>
 
@@ -70,7 +70,7 @@
 		<ul>
 			<li>AIGA Design Week</li>
 			<li>UX Design, Development</li>
-			<li>2013</li>
+			{{-- <li>2013</li> --}}
 		</ul>
 	</div>
 
@@ -79,7 +79,7 @@
 		<ul>
 			<li>Marks</li>
 			<li>Visual Design</li>
-			<li>2012 &ndash; 2015</li>
+			{{-- <li>2012 &ndash; 2015</li> --}}
 		</ul>
 	</div>
 

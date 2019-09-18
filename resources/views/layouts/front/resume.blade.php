@@ -6,7 +6,7 @@
 	<div class="resume-table__job">
 		<ul>
 			<li>AssetBuilder</li>
-			<li>Vice President</li>
+			<li>Vice President of CX</li>
 			<li>2018 - present</li>
 		</ul>
 	</div>
@@ -22,36 +22,21 @@
 	<div class="resume-table__job">
 		<ul>
 			<li>AssetBuilder</li>
-			<li>UX Lead/Full-Stack Developer</li>
-			<li>2010 - 2018</li>
+			<li>UX Lead</li>
+			<li>2014 - 2018</li>
 		</ul>
 	</div>
 
 	<div class="resume-table__job">
 		<ul>
 			<li>AssetBuilder</li>
-			<li>Art Director/Front End Developer</li>
-			<li>2006 - 2010</li>
+			<li>Creative  Director/ <br> Full-Stack Engineer</li>
+			<li>2010 - 2014</li>
 		</ul>
 	</div>
 
 
-	<div class="resume-table__job">
-		<ul>
-			<li>Webnoxious</li>
-			<li>Designer/Developer</li>
-			<li>2004 - 2014</li>
-		</ul>
-	</div>
-
-
-	<div class="resume-table__job">
-		<ul>
-			<li>Eisenberg &amp; Associates</li>
-			<li>Interactive Art Director</li>
-			<li>2006</li>
-		</ul>
-	</div>
+	
 
 	
 
