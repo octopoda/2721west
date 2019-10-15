@@ -261,7 +261,7 @@
         <div class="row">
           <section class="project-copy" itemprop="description">
             <h3>Maximizing Engagement</h3>
-            <p>Once the site was operational, we started to test engagement of the parents and users. Initially, we saw a phenomenal participation rate. The site increased from 30 users a month to over 4,000, time on site increased from 0:23 to over 7:10 and over 98% of the school&rsquo;s families had at least one parent online.</p>
+            <p>Once the site was operational, we started to test engagement of the parents and users. Initially, we saw a phenomenal participation rate. The site increased from 30 users a month to over 400, time on site increased from 0:23 to over 7:10 and over 98% of the school&rsquo;s families had at least one parent online.</p>
             <p>As time passed, we noticed that parents engagement dropped and they were still getting multiple versions of communication from teachers. We pushed for more consistency from the teachers, but also added a daily/weekly email for each parent.</p>
             <p>Parents now have an option of daily or weekly email emails that dynamically compiles the days activities for their children, and wraps it up in a short email that is delivered to all parents around their children&rsquo;s bed time.</p>
             <p>Each parent was added to a MailChimp list and I built newsletters for important upcoming events in the school. These emails go out twice a quarter.</p>
