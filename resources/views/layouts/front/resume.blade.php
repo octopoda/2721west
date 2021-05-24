@@ -82,7 +82,7 @@
 		<ul>
 			<li>SpringBoard</li>
 			<li>UX Mentor</li>
-			<li>2016-present</li>
+			<li>2016-2019</li>
 		</ul>
 	</div>
 
