@@ -6,8 +6,8 @@
 	<div class="resume-table__job">
 		<ul>
 			<li>AssetBuilder</li>
-			<li>Vice President of CX</li>
-			<li>2018 - present</li>
+			<li>Vice President of Product</li>
+			<li>2019 - present</li>
 		</ul>
 	</div>
 
@@ -15,7 +15,7 @@
 		<ul>
 			<li>Octopoda Interactive</li>
 			<li>Principal</li>
-			<li>2008 - present</li>
+			<li>2010 - present</li>
 		</ul>
 	</div>
 

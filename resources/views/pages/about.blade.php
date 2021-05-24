@@ -5,7 +5,7 @@
 		<div class="row">
 			<section class="about__intro">
 				<h2 style="color:#d20c2c">I am a product generalist.  </h2>
-				<p>I have 15+ years experience in agencies and in-house with the past 12 focused on startups of all sizes. My focus is always on customer empathy and using qualitative and quantitative data to create innovative product strategies. </p>
+				<p>I have 16+ years experience in agencies and in-house with the past 12 focused on startups of all sizes. My focus is always on customer empathy and using qualitative and quantitative data to create innovative product strategies. </p>
 				<p>Being a constant learner, I wear many hats in innovation strategy, product vision, design thinking, full-stack engineering, and strategic marketing. I&rsquo;ve used this generalist skill set to build over 120+ products in the past 10 years working with and leading teams of all sizes.</p>
 				<p>Please reach out to me for any opporunities to help you build your next idea.</p>
 
