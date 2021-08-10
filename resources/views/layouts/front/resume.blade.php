@@ -50,7 +50,7 @@
 		<ul>
 			<li>University of North Texas</li>
 			<li>BFA Communication Design Advertising, Minor: Marketing</li>
-			<li>2001-2006</li>
+			<li>2001 - 2006</li>
 		</ul>
 	</div>
 
@@ -64,7 +64,7 @@
 		<ul>
 			<li>AIGA Dallas/Ft. Worth</li>
 			<li>Director, UI/UX Engagement</li>
-			<li>2013-2015</li>
+			<li>2013 - 2015</li>
 		</ul>
 	</div>
 
@@ -73,7 +73,7 @@
 		<ul>
 			<li>Precision Nutrition</li>
 			<li>Men&rsquo;s Coaching Mentor</li>
-			<li>2013-2017</li>
+			<li>2013 - 2017</li>
 		</ul>
 	</div>
 
@@ -82,7 +82,7 @@
 		<ul>
 			<li>SpringBoard</li>
 			<li>UX Mentor</li>
-			<li>2016-2019</li>
+			<li>2016 - 2019</li>
 		</ul>
 	</div>
 
